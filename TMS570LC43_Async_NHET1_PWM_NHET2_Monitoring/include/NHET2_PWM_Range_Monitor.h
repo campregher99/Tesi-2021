@@ -1,0 +1,97 @@
+#ifndef __NHET2_PWM_Range_Monitor_h
+#define __NHET2_PWM_Range_Monitor_h
+
+#define HET_v2 1
+#define AID1_7
+
+#include "std_nhet.h"
+
+#define HET_L00_1	(e_HETPROGRAM1_UN.Program1_ST.L00_1)
+#define pHET_L00_1  	0
+
+#define HET_L01_1	(e_HETPROGRAM1_UN.Program1_ST.L01_1)
+#define pHET_L01_1  	1
+
+#define HET_L02_1	(e_HETPROGRAM1_UN.Program1_ST.L02_1)
+#define pHET_L02_1  	2
+
+#define HET_L03_1	(e_HETPROGRAM1_UN.Program1_ST.L03_1)
+#define pHET_L03_1  	3
+
+#define HET_L04_1	(e_HETPROGRAM1_UN.Program1_ST.L04_1)
+#define pHET_L04_1  	4
+
+#define HET_L05_1	(e_HETPROGRAM1_UN.Program1_ST.L05_1)
+#define pHET_L05_1  	5
+
+#define HET_L06_1	(e_HETPROGRAM1_UN.Program1_ST.L06_1)
+#define pHET_L06_1  	6
+
+#define HET_L07_1	(e_HETPROGRAM1_UN.Program1_ST.L07_1)
+#define pHET_L07_1  	7
+
+#define HET_L08_1	(e_HETPROGRAM1_UN.Program1_ST.L08_1)
+#define pHET_L08_1  	8
+
+#define HET_L09_1	(e_HETPROGRAM1_UN.Program1_ST.L09_1)
+#define pHET_L09_1  	9
+
+#define HET_L10_1	(e_HETPROGRAM1_UN.Program1_ST.L10_1)
+#define pHET_L10_1  	10
+
+#define HET_L11_1	(e_HETPROGRAM1_UN.Program1_ST.L11_1)
+#define pHET_L11_1  	11
+
+#define HET_L12_1	(e_HETPROGRAM1_UN.Program1_ST.L12_1)
+#define pHET_L12_1  	12
+
+#define HET_L13_1	(e_HETPROGRAM1_UN.Program1_ST.L13_1)
+#define pHET_L13_1  	13
+
+#define HET_L14_1	(e_HETPROGRAM1_UN.Program1_ST.L14_1)
+#define pHET_L14_1  	14
+
+#define HET_REM_MAX_DUTY_1	(e_HETPROGRAM1_UN.Program1_ST.REM_MAX_DUTY_1)
+#define pHET_REM_MAX_DUTY_1  	15
+
+#define HET_REM_MIN_DUTY_1	(e_HETPROGRAM1_UN.Program1_ST.REM_MIN_DUTY_1)
+#define pHET_REM_MIN_DUTY_1  	16
+
+#define HET_DUMMY_1	(e_HETPROGRAM1_UN.Program1_ST.DUMMY_1)
+#define pHET_DUMMY_1  	17
+
+
+
+typedef union 
+{ 
+ 	HET_MEMORY	Memory1_PST[18];
+	struct
+	{
+		MOV32_INSTRUCTION L00_1;
+		ECMP_INSTRUCTION L01_1;
+		PCNT_INSTRUCTION L02_1;
+		ECNT_INSTRUCTION L03_1;
+		MCMP_INSTRUCTION L04_1;
+		MOV32_INSTRUCTION L05_1;
+		MOV32_INSTRUCTION L06_1;
+		SUB_INSTRUCTION L07_1;
+		BR_INSTRUCTION L08_1;
+		SUB_INSTRUCTION L09_1;
+		BR_INSTRUCTION L10_1;
+		MOV32_INSTRUCTION L11_1;
+		ECMP_INSTRUCTION L12_1;
+		MOV32_INSTRUCTION L13_1;
+		ECMP_INSTRUCTION L14_1;
+		ECMP_INSTRUCTION REM_MAX_DUTY_1;
+		ECMP_INSTRUCTION REM_MIN_DUTY_1;
+		BR_INSTRUCTION DUMMY_1;
+	} Program1_ST; 
+
+} HETPROGRAM1_UN;
+
+extern volatile HETPROGRAM1_UN e_HETPROGRAM1_UN;
+
+extern const HET_MEMORY HET_INIT1_PST[18];
+
+#endif
+

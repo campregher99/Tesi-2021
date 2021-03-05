@@ -1,0 +1,143 @@
+#define EndCharachter '&'
+#define InitzialCharacter '!'
+#define UART sciREG1
+#define SD sciREG2
+
+int count (char *Stringa, char cara) {
+  int ap = 0;
+  while (*Stringa != cara) {
+    Stringa++;
+    ap++;
+  }
+  return ap;
+}
+char * SetUpCom(char *ERROR ) {
+
+  sciInit();
+
+  sprintf(ERROR, "%cERROR%c", InitzialCharacter , EndCharachter );
+  return ERROR;
+}
+
+char * Ricezione (char *Ricevuto, int *n, int port) {
+  int lunghezza = 0, appoggio, ap, ciao;
+  if (port == 0) {
+    if (sciReceiveByte(UART) == InitzialCharacter) {
+      *Ricevuto = '!';
+
+      while (*(Ricevuto + lunghezza) != EndCharachter) {
+        if (sciIsRxReady(UART)) {
+          lunghezza++;
+          *(Ricevuto + lunghezza) = sciReceiveByte(UART);
+
+        }
+        if (lunghezza > 20) {
+
+          *n = 1;
+          sprintf(Ricevuto, "");
+          return Ricevuto;
+
+        }
+      }
+
+
+
+      *(Ricevuto + lunghezza + 1) = 0;
+      lunghezza = 0;
+      ap = 0;
+      while (*(Ricevuto + 1 + lunghezza) != '#') {
+        ap += (*(Ricevuto + 1 + lunghezza));
+        lunghezza++;
+      }
+
+      ciao = (int)Ricevuto + count(Ricevuto, '#') + 1;
+      appoggio = 0;
+      while (*((char*)ciao) != EndCharachter) {
+        appoggio +=  (int)((*((char*)ciao) - 48) * pow(10 , (count((char*)(ciao), '&')) - 1));
+        ciao++;
+
+      }
+
+
+      if (ap != appoggio) {
+        sprintf(Ricevuto, "");
+        *n = 1;
+
+        return Ricevuto;
+      }
+      *n = 0;
+      return Ricevuto;
+
+    } else {
+
+      sprintf(Ricevuto, "");
+      *n = 1;
+      return Ricevuto;
+
+    }
+  } else {
+    if (sciReceiveByte(SD) == InitzialCharacter) {
+      *Ricevuto = '!';
+
+      while (*(Ricevuto + lunghezza) != EndCharachter) {
+        if (sciIsRxReady(SD)) {
+          lunghezza++;
+          *(Ricevuto + lunghezza) = sciReceiveByte(SD);
+
+        }
+        if (lunghezza > 20) {
+
+          *n = 1;
+          sprintf(Ricevuto, "");
+          return Ricevuto;
+
+        }
+      }
+
+
+
+      *(Ricevuto + lunghezza + 1) = 0;
+      lunghezza = 0;
+      ap = 0;
+      while (*(Ricevuto + 1 + lunghezza) != '#') {
+        ap += (*(Ricevuto + 1 + lunghezza));
+        lunghezza++;
+      }
+
+      ciao = (int)Ricevuto + count(Ricevuto, '#') + 1;
+      appoggio = 0;
+      while (*((char*)ciao) != EndCharachter) {
+        appoggio +=  (int)((*((char*)ciao) - 48) * pow(10 , (count((char*)(ciao), '&')) - 1));
+        ciao++;
+
+      }
+
+
+      if (ap != appoggio) {
+        sprintf(Ricevuto, "");
+        *n = 1;
+
+        return Ricevuto;
+      }
+      *n = 0;
+      return Ricevuto;
+
+    } else {
+
+      sprintf(Ricevuto, "");
+      *n = 1;
+      return Ricevuto;
+
+    }
+  }
+}
+
+void split (char *Stringa, char Carattere,  int *OffsetStringhe) {
+  while (*Stringa != EndCharachter) {
+    while (*Stringa != Carattere) {
+      Stringa++;
+    }
+    *OffsetStringhe = (int)Stringa;
+    OffsetStringhe++;
+  }
+}

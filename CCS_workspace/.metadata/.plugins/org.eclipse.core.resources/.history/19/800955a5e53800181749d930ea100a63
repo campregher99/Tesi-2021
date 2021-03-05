@@ -1,0 +1,8 @@
+void Motore1 (unsigned int impulsi, bool dir, int velocita, int Kaccelerazione){
+	int R1, R2, R3, Passi;
+	while (Passi!=impulsi){
+		R1= floorf(1000000/(((float)Kaccelerazione*(float)Passi)+1000);
+		R2= floorf(1000000/(float)velocita);
+		R3= floorf(1000000/(-((float)Kaccelerazione*(float)(Passi-impulsi+
+	}
+}

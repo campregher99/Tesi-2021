@@ -1,0 +1,69 @@
+# Created by Ultra Librarian Gold 8.3.286 Copyright © 1999-2018
+# Frank Frank, Accelerated Designs
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'T_3_ADI.pac';
+Change Drill 30;
+Pad '1' Square 0 60 R0 (0 0);
+Change Drill 30;
+Pad '2' Round 0 60 R0 (50 100);
+Change Drill 30;
+Pad '3' Round 0 60 R0 (100 0);
+Layer 21;
+Wire 6 (43 -18) (61 -18);
+Wire 6 (-122 0) -180 (-132 0);
+Wire 6 (-132 0) -180 (-122 0);
+Wire 6 (157 50) -30 (143 -4);
+Wire 6 (-43 -4) -209 (158 50);
+Change Size 50;
+Change Ratio 6;
+Text '>Value' SR0 (-18 25);
+Layer 51;
+Wire 6 (-10 0) (10 0);
+Wire 6 (0 -10) (0 10);
+Wire 6 (-31 -12) (131 -12);
+Wire 0 (-38 0) -180 (-48 0);
+Wire 0 (-48 0) -180 (-38 0);
+Wire 6 (-31 -12) -255 (131 -12);
+Layer 25;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (-79 25);
+Layer 27;
+
+Edit 'TMP37FT9Z.sym';
+Layer 94;
+Pin '+VS' Pwr None Middle R0 Both 0 (100 0)
+Pin 'VOUT' Pas None Middle R180 Both 0 (2100 -100)
+Pin 'GND' Pas None Middle R180 Both 0 (2100 0)
+Wire 6 (300 200) (300 -300);
+Wire 6 (300 -300) (1900 -300);
+Wire 6 (1900 -300) (1900 200);
+Wire 6 (1900 200) (300 200);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 6;
+Text '>Name' SR0 (914 359);
+Layer 96;
+Change Size 82;
+Change Ratio 6;
+Text '>Value' SR0 (889 259);
+
+Edit 'TMP37FT9Z.dev';
+Prefix 'U';
+Description '';
+Value Off;
+Add TMP37FT9Z 'A' Next  0 (0 0);
+Package 'T_3_ADI';
+Technology '';
+Attribute Vendor 'Analog Devices Inc';
+Attribute Manufacturer_Part_Number 'TMP37FT9Z';
+Attribute Built_By 'EMA_UL_Team';
+Attribute SourceLibrary 'Analog_2012-01-01_9';
+Connect 'A.+VS' '1';
+Connect 'A.VOUT' '2';
+Connect 'A.GND' '3';

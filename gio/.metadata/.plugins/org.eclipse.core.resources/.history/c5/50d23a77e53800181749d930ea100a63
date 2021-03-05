@@ -1,0 +1,7 @@
+void Motore1 (unsigned int impulsi, bool dir, int velocita, int accelerazione){
+	int R1, R2, R3, Passi;
+	
+	while (Passi!=impulsi){
+		
+	}
+}

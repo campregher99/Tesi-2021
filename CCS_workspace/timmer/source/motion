@@ -1,0 +1,88 @@
+void Motore1 (unsigned int impulsi, bool dir, int velocita, int Kaccelerazione, bool *EOT){
+    int R1, R2, R3, Passi=0, dPassi, Passifiniti;
+    dPassi= (int)(impulsi/1000);
+    R1= (int)(500000/(((float)Kaccelerazione*(float)Passi)+1000));                     // accelerazione
+    R2= (int)(500000/(float)velocita);                                                 // V massima
+    R3= (int)(-500000/(((float)Kaccelerazione*(float)(Passi-impulsi)+1000)));           // decelerazione
+    Passifiniti= Passi+dPassi;
+    rtiSetPeriod(rtiREG1, rtiCOUNTER_BLOCK0, (Max(R1,R2,R3)*900));
+    rtiStartCounter(rtiREG1,rtiCOUNTER_BLOCK0);
+    while (Passi!=impulsi){
+        if ((Passifiniti-Passi)==3){
+            R1= (int)(500000/(((float)Kaccelerazione*(float)Passi)+1000));                     // accelerazione
+            R2= (int)(500000/(float)velocita);                                                 // V massima
+            int ap = Passi-impulsi;
+            R3= (int)(-500000/(((float)Kaccelerazione*(float)ap)+1000));           // decelerazione
+        }
+        if (Passi==Passifiniti){
+            rtiSetPeriod(rtiREG1, rtiCOUNTER_BLOCK0, (Max(R1,R2,R3)*900));
+            Passifiniti= Passi+dPassi;
+            }
+        if(Passi<Passifiniti){
+
+            if(*EOT==1){
+                *EOT=0;
+                if (dir){
+                    gioSetBit(gioPORTB,3,!gioGetBit(gioPORTB,3));   // avanti
+                    gioSetBit(gioPORTB,6,!gioGetBit(gioPORTB,6)); 
+                }else{
+                    gioSetBit(gioPORTB,3,!gioGetBit(gioPORTB,3));   // indietro
+                    gioSetBit(gioPORTB,6,!gioGetBit(gioPORTB,6)); 
+                }
+                Passi++;
+
+            }
+        }
+    }
+    rtiStopCounter(rtiREG1,rtiCOUNTER_BLOCK0);
+}
+
+void Motore2 (unsigned int impulsi, bool dir, int velocita, int Kaccelerazione, bool *EOT){
+    int R1, R2, R3, Passi=0, dPassi, Passifiniti;
+    dPassi= (int)(impulsi/1000);
+    R1= (int)(500000/(((float)Kaccelerazione*(float)Passi)+1000));                     // accelerazione
+    R2= (int)(500000/(float)velocita);                                                 // V massima
+    R3= (int)(-500000/(((float)Kaccelerazione*(float)(Passi-impulsi)+1000)));           // decelerazione
+    Passifiniti= Passi+dPassi;
+    rtiSetPeriod(rtiREG1, rtiCOUNTER_BLOCK0, (Max(R1,R2,R3)*9));
+    rtiStartCounter(rtiREG1,rtiCOUNTER_BLOCK0);
+    while (Passi!=impulsi){
+        if ((Passifiniti-Passi)==3){
+            R1= (int)(500000/(((float)Kaccelerazione*(float)Passi)+1000));                     // accelerazione
+            R2= (int)(500000/(float)velocita);                                                 // V massima
+            int ap = Passi-impulsi;
+            R3= (int)(-500000/(((float)Kaccelerazione*(float)ap)+1000));           // decelerazione
+        }
+        if (Passi==Passifiniti){
+            rtiSetPeriod(rtiREG1, rtiCOUNTER_BLOCK0, (Max(R1,R2,R3)*900));
+            Passifiniti= Passi+dPassi;
+            }
+        if(Passi<Passifiniti){
+
+            if(*EOT==1){
+                *EOT=0;
+                if (dir){
+                    gioSetBit(gioPORTB,6,!gioGetBit(gioPORTB,6));   // avanti
+                }else{
+                    gioSetBit(gioPORTB,7,!gioGetBit(gioPORTB,7));   // indietro
+                }
+                Passi++;
+
+            }
+        }
+    }
+    rtiStopCounter(rtiREG1,rtiCOUNTER_BLOCK0);
+}
+int Max(int a, int b, int c){
+    if (a<b){
+        if (b<c){
+            return c;
+        }else{
+            return b;
+        }
+    } else if(a<c){
+        return c;
+    }else{
+        return a;
+    }
+}

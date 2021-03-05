@@ -1,0 +1,105 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; This example code is to be loaded to N2HET2 to monitor the PWM waveform generated
+; by another source. The N2HET2 expects a range of valid duty cycles (specified in MAX_DUTY
+; and MIN_DUTY) to be monitored. If the PWM waveform is out of range then the N2HET2 
+; will generate an interrupt to the host CPU as well as set the specified pin high. 
+; N2HET2 will reset the pin if the monitored duty cycles are within the range between 
+; MIN_DUTY and MAX_DUTY.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; this is the pin number to monitor the PWM duty cycle
+PULSE_MONITOR_PIN_NUM  .equ 4
+; this is the maximum duty cycle of a valid range
+MAX_DUTY               .equ 6
+; this is the minimum duty cycle of a valid range
+MIN_DUTY               .equ 3
+; this is the number of rising edges on the PWM input to skip
+SKIP_EDGES             .equ 3
+; this is the pin number to assert/de-assert error
+ERROR_PIN_NUM          .equ 0
+; this is the unlock key for code execution
+UNLOCK_KEY             .equ 0xA
+
+; The data field of the MOV32 instruction contains an initial value (0x5) that is not
+; equal to the key to unlock the NHET program. First the MOV32 instruction moves the
+; initial value to a temporaray register T
+L00   MOV32 { remote=DUMMY,type=IMTOREG,reg=T,data=0x5,hr_data=0};
+
+; Compare the register T value with the key to unlock NHET. The key to unlock is
+; 0xA. If the key is not matched then go back to L00. The CPU is supposed to write
+; the proper key (0xA) to unlock the NHET
+L01   ECMP { next=L00,hr_lr=LOW,cond_addr=L02,pin=0,reg=T,data=UNLOCK_KEY,hr_data=0};
+
+; Use PCNT to measure the high phase of the PWM using type=RISE2FALL
+; Note that the pin selected to measure pulse is pin=PULSE_MONITOR_PIN_NUM which
+; is changeable by the host CPU.    
+L02   PCNT { hr_lr=HIGH,type=RISE2FALL,pin=PULSE_MONITOR_PIN_NUM};
+
+; Use ECNT to first detect the number of rising edges. The purpose here is to throw 
+; away the measurements of the first few edges becasue the period/pulse measurement 
+; from PCNT will not be accurate for the first edge.
+L03   ECNT { cond_addr=L05,pin=PULSE_MONITOR_PIN_NUM,event=RISE,reg=R,data=0};
+
+; Compare with SKIP_EDGES. Only when the number of edges is greater or equal to SKIP_EDGES  
+; will we take the pulse measurement from PCNTs
+L04   MCMP { next=L00,hr_lr=LOW,cond_addr=L05,pin=0,order=REG_GE_DATA,reg=R,data=SKIP_EDGES,hr_data=0};
+
+; Reset the compare value to 0 so that when ECNT counter overflows it will not need 
+; to skip edges again.
+L05   MOV32 { remote=L04,type=IMTOREG&REM,reg=NONE,data=0x0,hr_data=0};
+
+; Move the pulse captured by PCNT RISE2FALL to a temp register T
+L06   MOV32 { remote=L02,type=REMTOREG,reg=T};
+
+; Subtract the captured value in T by the expected period value stored in the 
+; label REM_PERIOD. Note that the expected period stored in REM_PERIOD
+; is actually the expected period plus one. For example, if the expected period is
+; 10 then REM_PERIOD will store 11. The PCNT can measure the period with accuracy
+; of +/-1 from the expected meaning it may measure within the bound of 9 to 11. 
+; If we set expected value to 11 then it eases our comparision so that the measured
+; value should never be greater than REM_PERIOD. The largest difference between
+; the measured value against the expected value will be between 9 and 11. To
+; tolerate this difference of 2 we first do the subtraction and then perform a right
+; shift of the result by two bits.
+L07   SUB { src1=REM,src2=T,dest=IMM,rdest=NONE,remote=REM_MAX_DUTY,smode=LSR,scount=2,data=0};
+
+; If the captured pulse is larger than max duty then enable interrupt to the CPU
+; and set the error pin
+L08   BR { next=L09,cond_addr=L11,event=LT,irq=ON};
+
+; Subtract the min duty cycle boundary from the current captured pulse width. If
+; the the min duty cycle is greater than the current pulse then it means the
+; current pulse is smaller than the min duty which is out of bound. 
+L09   SUB { src1=REM,src2=T,dest=IMM,rdest=NONE,remote=REM_MIN_DUTY,smode=LSR,scount=2,data=0};
+
+; Generate an interrupt and set the pin high if the current captured pulse width is 
+; out of range. 
+L10   BR { next=L13,cond_addr=L11,event=GT,irq=ON};
+
+; Move 0 to register A. The register A will be used by the subsequent ECMP instruction
+; to compare with. The purpose is for the ECMP to have a compare match all the time.
+L11   MOV32 { remote=DUMMY,type=IMTOREG,reg=A,data=0};
+
+; Depending on the result of the substraction. If the subtraction result indicates that
+; PWM to be monitored exceeds the expected amount, we will assert the ERROR_PIN_NUM. 
+L12   ECMP { next=L00,hr_lr=LOW,en_pin_action=ON,cond_addr=L00,pin=ERROR_PIN_NUM,action=SET,reg=A,data=0};
+
+; If the subtraction result indicates that the PWM to be monitored does not exceed
+; the epxected amount, we will clear the ERROR_PIN_NUM using the below ECMP instruction.
+L13   MOV32 { remote=DUMMY,type=IMTOREG,reg=A,data=0};
+
+; Clear the ERROR_PIN_NUM pin.
+L14   ECMP { next=L00,hr_lr=LOW,en_pin_action=ON,cond_addr=L00,pin=ERROR_PIN_NUM,action=CLEAR,reg=A,data=0}; 
+
+; The max duty is stored in the data field in the below dummy ECMP instruction. This 
+; instruction is never executed.
+REM_MAX_DUTY   ECMP { next=REM_MAX_DUTY,cond_addr=REM_MAX_DUTY,pin=0,reg=A,data=MAX_DUTY,hr_data=0};
+
+; The min duty is stored in the data field in the below dummy ECMP instruction. This 
+; instruction is never executed.
+REM_MIN_DUTY   ECMP { next=REM_MIN_DUTY,cond_addr=REM_MIN_DUTY,pin=0,reg=A,data=MIN_DUTY,hr_data=0};
+
+; This is a dummy instruction. It is more a HET IDE issue where in L00 if a 
+; remote address is not given it is throwing an error even though that in 
+; L00 there is no need to move data from/to the remote field.
+DUMMY   BR { next=DUMMY,cond_addr=DUMMY,event=NOCOND,irq=OFF};

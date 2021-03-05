@@ -1,0 +1,679 @@
+# Created by Ultra Librarian Gold 8.3.286 Copyright © 1999-2018
+# Frank Frank, Accelerated Designs
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'CONN_SBH11-PBPC-D25-ST-BK_SUL.pac';
+Change Drill 40;
+Pad '1' Round 0 60 R0 (0 0);
+Change Drill 40;
+Pad '2' Round 0 60 R0 (0 100);
+Change Drill 40;
+Pad '3' Round 0 60 R0 (100 0);
+Change Drill 40;
+Pad '4' Round 0 60 R0 (100 100);
+Change Drill 40;
+Pad '5' Round 0 60 R0 (200 0);
+Change Drill 40;
+Pad '6' Round 0 60 R0 (200 100);
+Change Drill 40;
+Pad '7' Round 0 60 R0 (300 0);
+Change Drill 40;
+Pad '8' Round 0 60 R0 (300 100);
+Change Drill 40;
+Pad '9' Round 0 60 R0 (400 0);
+Change Drill 40;
+Pad '10' Round 0 60 R0 (400 100);
+Change Drill 40;
+Pad '11' Round 0 60 R0 (500 0);
+Change Drill 40;
+Pad '12' Round 0 60 R0 (500 100);
+Change Drill 40;
+Pad '13' Round 0 60 R0 (600 0);
+Change Drill 40;
+Pad '14' Round 0 60 R0 (600 100);
+Change Drill 40;
+Pad '15' Round 0 60 R0 (700 0);
+Change Drill 40;
+Pad '16' Round 0 60 R0 (700 100);
+Change Drill 40;
+Pad '17' Round 0 60 R0 (800 0);
+Change Drill 40;
+Pad '18' Round 0 60 R0 (800 100);
+Change Drill 40;
+Pad '19' Round 0 60 R0 (900 0);
+Change Drill 40;
+Pad '20' Round 0 60 R0 (900 100);
+Change Drill 40;
+Pad '21' Round 0 60 R0 (1000 0);
+Change Drill 40;
+Pad '22' Round 0 60 R0 (1000 100);
+Change Drill 40;
+Pad '23' Round 0 60 R0 (1100 0);
+Change Drill 40;
+Pad '24' Round 0 60 R0 (1100 100);
+Change Drill 40;
+Pad '25' Round 0 60 R0 (1200 0);
+Change Drill 40;
+Pad '26' Round 0 60 R0 (1200 100);
+Change Drill 40;
+Pad '27' Round 0 60 R0 (1300 0);
+Change Drill 40;
+Pad '28' Round 0 60 R0 (1300 100);
+Change Drill 40;
+Pad '29' Round 0 60 R0 (1400 0);
+Change Drill 40;
+Pad '30' Round 0 60 R0 (1400 100);
+Change Drill 40;
+Pad '31' Round 0 60 R0 (1500 0);
+Change Drill 40;
+Pad '32' Round 0 60 R0 (1500 100);
+Change Drill 40;
+Pad '33' Round 0 60 R0 (1600 0);
+Change Drill 40;
+Pad '34' Round 0 60 R0 (1600 100);
+Change Drill 40;
+Pad '35' Round 0 60 R0 (1700 0);
+Change Drill 40;
+Pad '36' Round 0 60 R0 (1700 100);
+Change Drill 40;
+Pad '37' Round 0 60 R0 (1800 0);
+Change Drill 40;
+Pad '38' Round 0 60 R0 (1800 100);
+Change Drill 40;
+Pad '39' Round 0 60 R0 (1900 0);
+Change Drill 40;
+Pad '40' Round 0 60 R0 (1900 100);
+Change Drill 40;
+Pad '41' Round 0 60 R0 (2000 0);
+Change Drill 40;
+Pad '42' Round 0 60 R0 (2000 100);
+Change Drill 40;
+Pad '43' Round 0 60 R0 (2100 0);
+Change Drill 40;
+Pad '44' Round 0 60 R0 (2100 100);
+Change Drill 40;
+Pad '45' Round 0 60 R0 (2200 0);
+Change Drill 40;
+Pad '46' Round 0 60 R0 (2200 100);
+Change Drill 40;
+Pad '47' Round 0 60 R0 (2300 0);
+Change Drill 40;
+Pad '48' Round 0 60 R0 (2300 100);
+Change Drill 40;
+Pad '49' Round 0 60 R0 (2400 0);
+Change Drill 40;
+Pad '50' Round 0 60 R0 (2400 100);
+Layer 21;
+Wire 6 (-155 -55) (2555 -55);
+Wire 6 (2555 -55) (2555 155);
+Wire 6 (2555 155) (-155 155);
+Wire 6 (-155 155) (-155 -55);
+Wire 20 (10 -83) -180 (-10 -83);
+Wire 20 (-10 -83) -180 (10 -83);
+Change Size 50;
+Change Ratio 6;
+Text '>Value' SR0 (1132 25);
+Layer 51;
+Wire 6 (-150 -50) (2550 -50);
+Wire 6 (2550 -50) (2550 150);
+Wire 6 (2550 150) (-150 150);
+Wire 6 (-150 150) (-150 -50);
+Wire 0 (10 -35) -180 (-10 -35);
+Wire 0 (-10 -35) -180 (10 -35);
+Layer 25;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (1071 25);
+Layer 27;
+
+Edit 'CONN_50P_00C_1.sym';
+Layer 94;
+Pin '1' Pas None Middle R0 Pad 0 (0 0)
+Pin '2' Pas None Middle R0 Pad 0 (0 -100)
+Pin '3' Pas None Middle R0 Pad 0 (0 -200)
+Pin '4' Pas None Middle R0 Pad 0 (0 -300)
+Pin '5' Pas None Middle R0 Pad 0 (0 -400)
+Pin '6' Pas None Middle R0 Pad 0 (0 -500)
+Pin '7' Pas None Middle R0 Pad 0 (0 -600)
+Pin '8' Pas None Middle R0 Pad 0 (0 -700)
+Pin '9' Pas None Middle R0 Pad 0 (0 -800)
+Pin '10' Pas None Middle R0 Pad 0 (0 -900)
+Pin '11' Pas None Middle R0 Pad 0 (0 -1000)
+Pin '12' Pas None Middle R0 Pad 0 (0 -1100)
+Pin '13' Pas None Middle R0 Pad 0 (0 -1200)
+Pin '14' Pas None Middle R0 Pad 0 (0 -1300)
+Pin '15' Pas None Middle R0 Pad 0 (0 -1400)
+Pin '16' Pas None Middle R0 Pad 0 (0 -1500)
+Pin '17' Pas None Middle R0 Pad 0 (0 -1600)
+Pin '18' Pas None Middle R0 Pad 0 (0 -1700)
+Pin '19' Pas None Middle R0 Pad 0 (0 -1800)
+Pin '20' Pas None Middle R0 Pad 0 (0 -1900)
+Pin '21' Pas None Middle R0 Pad 0 (0 -2000)
+Pin '22' Pas None Middle R0 Pad 0 (0 -2100)
+Pin '23' Pas None Middle R0 Pad 0 (0 -2200)
+Pin '24' Pas None Middle R0 Pad 0 (0 -2300)
+Pin '25' Pas None Middle R0 Pad 0 (0 -2400)
+Pin '26' Pas None Middle R0 Pad 0 (0 -2500)
+Pin '27' Pas None Middle R0 Pad 0 (0 -2600)
+Pin '28' Pas None Middle R0 Pad 0 (0 -2700)
+Pin '29' Pas None Middle R0 Pad 0 (0 -2800)
+Pin '30' Pas None Middle R0 Pad 0 (0 -2900)
+Pin '31' Pas None Middle R0 Pad 0 (0 -3000)
+Pin '32' Pas None Middle R0 Pad 0 (0 -3100)
+Pin '33' Pas None Middle R0 Pad 0 (0 -3200)
+Pin '34' Pas None Middle R0 Pad 0 (0 -3300)
+Pin '35' Pas None Middle R0 Pad 0 (0 -3400)
+Pin '36' Pas None Middle R0 Pad 0 (0 -3500)
+Pin '37' Pas None Middle R0 Pad 0 (0 -3600)
+Pin '38' Pas None Middle R0 Pad 0 (0 -3700)
+Pin '39' Pas None Middle R0 Pad 0 (0 -3800)
+Pin '40' Pas None Middle R0 Pad 0 (0 -3900)
+Pin '41' Pas None Middle R0 Pad 0 (0 -4000)
+Pin '42' Pas None Middle R0 Pad 0 (0 -4100)
+Pin '43' Pas None Middle R0 Pad 0 (0 -4200)
+Pin '44' Pas None Middle R0 Pad 0 (0 -4300)
+Pin '45' Pas None Middle R0 Pad 0 (0 -4400)
+Pin '46' Pas None Middle R0 Pad 0 (0 -4500)
+Pin '47' Pas None Middle R0 Pad 0 (0 -4600)
+Pin '48' Pas None Middle R0 Pad 0 (0 -4700)
+Pin '49' Pas None Middle R0 Pad 0 (0 -4800)
+Pin '50' Pas None Middle R0 Pad 0 (0 -4900)
+Wire 6 (400 0) (200 0);
+Wire 6 (400 -100) (200 -100);
+Wire 6 (400 -200) (200 -200);
+Wire 6 (400 -300) (200 -300);
+Wire 6 (400 -400) (200 -400);
+Wire 6 (400 -500) (200 -500);
+Wire 6 (400 -600) (200 -600);
+Wire 6 (400 -700) (200 -700);
+Wire 6 (400 -800) (200 -800);
+Wire 6 (400 -900) (200 -900);
+Wire 6 (400 -1000) (200 -1000);
+Wire 6 (400 -1100) (200 -1100);
+Wire 6 (400 -1200) (200 -1200);
+Wire 6 (400 -1300) (200 -1300);
+Wire 6 (400 -1400) (200 -1400);
+Wire 6 (400 -1500) (200 -1500);
+Wire 6 (400 -1600) (200 -1600);
+Wire 6 (400 -1700) (200 -1700);
+Wire 6 (400 -1800) (200 -1800);
+Wire 6 (400 -1900) (200 -1900);
+Wire 6 (400 -2000) (200 -2000);
+Wire 6 (400 -2100) (200 -2100);
+Wire 6 (400 -2200) (200 -2200);
+Wire 6 (400 -2300) (200 -2300);
+Wire 6 (400 -2400) (200 -2400);
+Wire 6 (400 -2500) (200 -2500);
+Wire 6 (400 -2600) (200 -2600);
+Wire 6 (400 -2700) (200 -2700);
+Wire 6 (400 -2800) (200 -2800);
+Wire 6 (400 -2900) (200 -2900);
+Wire 6 (400 -3000) (200 -3000);
+Wire 6 (400 -3100) (200 -3100);
+Wire 6 (400 -3200) (200 -3200);
+Wire 6 (400 -3300) (200 -3300);
+Wire 6 (400 -3400) (200 -3400);
+Wire 6 (400 -3500) (200 -3500);
+Wire 6 (400 -3600) (200 -3600);
+Wire 6 (400 -3700) (200 -3700);
+Wire 6 (400 -3800) (200 -3800);
+Wire 6 (400 -3900) (200 -3900);
+Wire 6 (400 -4000) (200 -4000);
+Wire 6 (400 -4100) (200 -4100);
+Wire 6 (400 -4200) (200 -4200);
+Wire 6 (400 -4300) (200 -4300);
+Wire 6 (400 -4400) (200 -4400);
+Wire 6 (400 -4500) (200 -4500);
+Wire 6 (400 -4600) (200 -4600);
+Wire 6 (400 -4700) (200 -4700);
+Wire 6 (400 -4800) (200 -4800);
+Wire 6 (400 -4900) (200 -4900);
+Wire 6 (400 0) (350 33);
+Wire 6 (400 -100) (350 -67);
+Wire 6 (400 -200) (350 -167);
+Wire 6 (400 -300) (350 -267);
+Wire 6 (400 -400) (350 -367);
+Wire 6 (400 -500) (350 -467);
+Wire 6 (400 -600) (350 -567);
+Wire 6 (400 -700) (350 -667);
+Wire 6 (400 -800) (350 -767);
+Wire 6 (400 -900) (350 -867);
+Wire 6 (400 -1000) (350 -967);
+Wire 6 (400 -1100) (350 -1067);
+Wire 6 (400 -1200) (350 -1167);
+Wire 6 (400 -1300) (350 -1267);
+Wire 6 (400 -1400) (350 -1367);
+Wire 6 (400 -1500) (350 -1467);
+Wire 6 (400 -1600) (350 -1567);
+Wire 6 (400 -1700) (350 -1667);
+Wire 6 (400 -1800) (350 -1767);
+Wire 6 (400 -1900) (350 -1867);
+Wire 6 (400 -2000) (350 -1967);
+Wire 6 (400 -2100) (350 -2067);
+Wire 6 (400 -2200) (350 -2167);
+Wire 6 (400 -2300) (350 -2267);
+Wire 6 (400 -2400) (350 -2367);
+Wire 6 (400 -2500) (350 -2467);
+Wire 6 (400 -2600) (350 -2567);
+Wire 6 (400 -2700) (350 -2667);
+Wire 6 (400 -2800) (350 -2767);
+Wire 6 (400 -2900) (350 -2867);
+Wire 6 (400 -3000) (350 -2967);
+Wire 6 (400 -3100) (350 -3067);
+Wire 6 (400 -3200) (350 -3167);
+Wire 6 (400 -3300) (350 -3267);
+Wire 6 (400 -3400) (350 -3367);
+Wire 6 (400 -3500) (350 -3467);
+Wire 6 (400 -3600) (350 -3567);
+Wire 6 (400 -3700) (350 -3667);
+Wire 6 (400 -3800) (350 -3767);
+Wire 6 (400 -3900) (350 -3867);
+Wire 6 (400 -4000) (350 -3967);
+Wire 6 (400 -4100) (350 -4067);
+Wire 6 (400 -4200) (350 -4167);
+Wire 6 (400 -4300) (350 -4267);
+Wire 6 (400 -4400) (350 -4367);
+Wire 6 (400 -4500) (350 -4467);
+Wire 6 (400 -4600) (350 -4567);
+Wire 6 (400 -4700) (350 -4667);
+Wire 6 (400 -4800) (350 -4767);
+Wire 6 (400 -4900) (350 -4867);
+Wire 6 (400 0) (350 -33);
+Wire 6 (400 -100) (350 -133);
+Wire 6 (400 -200) (350 -233);
+Wire 6 (400 -300) (350 -333);
+Wire 6 (400 -400) (350 -433);
+Wire 6 (400 -500) (350 -533);
+Wire 6 (400 -600) (350 -633);
+Wire 6 (400 -700) (350 -733);
+Wire 6 (400 -800) (350 -833);
+Wire 6 (400 -900) (350 -933);
+Wire 6 (400 -1000) (350 -1033);
+Wire 6 (400 -1100) (350 -1133);
+Wire 6 (400 -1200) (350 -1233);
+Wire 6 (400 -1300) (350 -1333);
+Wire 6 (400 -1400) (350 -1433);
+Wire 6 (400 -1500) (350 -1533);
+Wire 6 (400 -1600) (350 -1633);
+Wire 6 (400 -1700) (350 -1733);
+Wire 6 (400 -1800) (350 -1833);
+Wire 6 (400 -1900) (350 -1933);
+Wire 6 (400 -2000) (350 -2033);
+Wire 6 (400 -2100) (350 -2133);
+Wire 6 (400 -2200) (350 -2233);
+Wire 6 (400 -2300) (350 -2333);
+Wire 6 (400 -2400) (350 -2433);
+Wire 6 (400 -2500) (350 -2533);
+Wire 6 (400 -2600) (350 -2633);
+Wire 6 (400 -2700) (350 -2733);
+Wire 6 (400 -2800) (350 -2833);
+Wire 6 (400 -2900) (350 -2933);
+Wire 6 (400 -3000) (350 -3033);
+Wire 6 (400 -3100) (350 -3133);
+Wire 6 (400 -3200) (350 -3233);
+Wire 6 (400 -3300) (350 -3333);
+Wire 6 (400 -3400) (350 -3433);
+Wire 6 (400 -3500) (350 -3533);
+Wire 6 (400 -3600) (350 -3633);
+Wire 6 (400 -3700) (350 -3733);
+Wire 6 (400 -3800) (350 -3833);
+Wire 6 (400 -3900) (350 -3933);
+Wire 6 (400 -4000) (350 -4033);
+Wire 6 (400 -4100) (350 -4133);
+Wire 6 (400 -4200) (350 -4233);
+Wire 6 (400 -4300) (350 -4333);
+Wire 6 (400 -4400) (350 -4433);
+Wire 6 (400 -4500) (350 -4533);
+Wire 6 (400 -4600) (350 -4633);
+Wire 6 (400 -4700) (350 -4733);
+Wire 6 (400 -4800) (350 -4833);
+Wire 6 (400 -4900) (350 -4933);
+Wire 6 (200 100) (200 -5000);
+Wire 6 (200 -5000) (500 -5000);
+Wire 6 (500 -5000) (500 100);
+Wire 6 (500 100) (200 100);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 6;
+Text '>Name' SR0 (164 209);
+
+Edit 'CONN_50P_00C_2.sym';
+Layer 94;
+Pin '1' Pas None Middle R0 Pad 0 (0 0)
+Pin '2' Pas None Middle R0 Pad 0 (0 -100)
+Pin '3' Pas None Middle R0 Pad 0 (0 -200)
+Pin '4' Pas None Middle R0 Pad 0 (0 -300)
+Pin '5' Pas None Middle R0 Pad 0 (0 -400)
+Pin '6' Pas None Middle R0 Pad 0 (0 -500)
+Pin '7' Pas None Middle R0 Pad 0 (0 -600)
+Pin '8' Pas None Middle R0 Pad 0 (0 -700)
+Pin '9' Pas None Middle R0 Pad 0 (0 -800)
+Pin '10' Pas None Middle R0 Pad 0 (0 -900)
+Pin '11' Pas None Middle R0 Pad 0 (0 -1000)
+Pin '12' Pas None Middle R0 Pad 0 (0 -1100)
+Pin '13' Pas None Middle R0 Pad 0 (0 -1200)
+Pin '14' Pas None Middle R0 Pad 0 (0 -1300)
+Pin '15' Pas None Middle R0 Pad 0 (0 -1400)
+Pin '16' Pas None Middle R0 Pad 0 (0 -1500)
+Pin '17' Pas None Middle R0 Pad 0 (0 -1600)
+Pin '18' Pas None Middle R0 Pad 0 (0 -1700)
+Pin '19' Pas None Middle R0 Pad 0 (0 -1800)
+Pin '20' Pas None Middle R0 Pad 0 (0 -1900)
+Pin '21' Pas None Middle R0 Pad 0 (0 -2000)
+Pin '22' Pas None Middle R0 Pad 0 (0 -2100)
+Pin '23' Pas None Middle R0 Pad 0 (0 -2200)
+Pin '24' Pas None Middle R0 Pad 0 (0 -2300)
+Pin '25' Pas None Middle R0 Pad 0 (0 -2400)
+Pin '26' Pas None Middle R0 Pad 0 (0 -2500)
+Pin '27' Pas None Middle R0 Pad 0 (0 -2600)
+Pin '28' Pas None Middle R0 Pad 0 (0 -2700)
+Pin '29' Pas None Middle R0 Pad 0 (0 -2800)
+Pin '30' Pas None Middle R0 Pad 0 (0 -2900)
+Pin '31' Pas None Middle R0 Pad 0 (0 -3000)
+Pin '32' Pas None Middle R0 Pad 0 (0 -3100)
+Pin '33' Pas None Middle R0 Pad 0 (0 -3200)
+Pin '34' Pas None Middle R0 Pad 0 (0 -3300)
+Pin '35' Pas None Middle R0 Pad 0 (0 -3400)
+Pin '36' Pas None Middle R0 Pad 0 (0 -3500)
+Pin '37' Pas None Middle R0 Pad 0 (0 -3600)
+Pin '38' Pas None Middle R0 Pad 0 (0 -3700)
+Pin '39' Pas None Middle R0 Pad 0 (0 -3800)
+Pin '40' Pas None Middle R0 Pad 0 (0 -3900)
+Pin '41' Pas None Middle R0 Pad 0 (0 -4000)
+Pin '42' Pas None Middle R0 Pad 0 (0 -4100)
+Pin '43' Pas None Middle R0 Pad 0 (0 -4200)
+Pin '44' Pas None Middle R0 Pad 0 (0 -4300)
+Pin '45' Pas None Middle R0 Pad 0 (0 -4400)
+Pin '46' Pas None Middle R0 Pad 0 (0 -4500)
+Pin '47' Pas None Middle R0 Pad 0 (0 -4600)
+Pin '48' Pas None Middle R0 Pad 0 (0 -4700)
+Pin '49' Pas None Middle R0 Pad 0 (0 -4800)
+Pin '50' Pas None Middle R0 Pad 0 (0 -4900)
+Wire 6 (300 0) (200 0);
+Wire 6 (300 -100) (200 -100);
+Wire 6 (300 -200) (200 -200);
+Wire 6 (300 -300) (200 -300);
+Wire 6 (300 -400) (200 -400);
+Wire 6 (300 -500) (200 -500);
+Wire 6 (300 -600) (200 -600);
+Wire 6 (300 -700) (200 -700);
+Wire 6 (300 -800) (200 -800);
+Wire 6 (300 -900) (200 -900);
+Wire 6 (300 -1000) (200 -1000);
+Wire 6 (300 -1100) (200 -1100);
+Wire 6 (300 -1200) (200 -1200);
+Wire 6 (300 -1300) (200 -1300);
+Wire 6 (300 -1400) (200 -1400);
+Wire 6 (300 -1500) (200 -1500);
+Wire 6 (300 -1600) (200 -1600);
+Wire 6 (300 -1700) (200 -1700);
+Wire 6 (300 -1800) (200 -1800);
+Wire 6 (300 -1900) (200 -1900);
+Wire 6 (300 -2000) (200 -2000);
+Wire 6 (300 -2100) (200 -2100);
+Wire 6 (300 -2200) (200 -2200);
+Wire 6 (300 -2300) (200 -2300);
+Wire 6 (300 -2400) (200 -2400);
+Wire 6 (300 -2500) (200 -2500);
+Wire 6 (300 -2600) (200 -2600);
+Wire 6 (300 -2700) (200 -2700);
+Wire 6 (300 -2800) (200 -2800);
+Wire 6 (300 -2900) (200 -2900);
+Wire 6 (300 -3000) (200 -3000);
+Wire 6 (300 -3100) (200 -3100);
+Wire 6 (300 -3200) (200 -3200);
+Wire 6 (300 -3300) (200 -3300);
+Wire 6 (300 -3400) (200 -3400);
+Wire 6 (300 -3500) (200 -3500);
+Wire 6 (300 -3600) (200 -3600);
+Wire 6 (300 -3700) (200 -3700);
+Wire 6 (300 -3800) (200 -3800);
+Wire 6 (300 -3900) (200 -3900);
+Wire 6 (300 -4000) (200 -4000);
+Wire 6 (300 -4100) (200 -4100);
+Wire 6 (300 -4200) (200 -4200);
+Wire 6 (300 -4300) (200 -4300);
+Wire 6 (300 -4400) (200 -4400);
+Wire 6 (300 -4500) (200 -4500);
+Wire 6 (300 -4600) (200 -4600);
+Wire 6 (300 -4700) (200 -4700);
+Wire 6 (300 -4800) (200 -4800);
+Wire 6 (300 -4900) (200 -4900);
+Wire 6 (300 0) (350 33);
+Wire 6 (300 -100) (350 -67);
+Wire 6 (300 -200) (350 -167);
+Wire 6 (300 -300) (350 -267);
+Wire 6 (300 -400) (350 -367);
+Wire 6 (300 -500) (350 -467);
+Wire 6 (300 -600) (350 -567);
+Wire 6 (300 -700) (350 -667);
+Wire 6 (300 -800) (350 -767);
+Wire 6 (300 -900) (350 -867);
+Wire 6 (300 -1000) (350 -967);
+Wire 6 (300 -1100) (350 -1067);
+Wire 6 (300 -1200) (350 -1167);
+Wire 6 (300 -1300) (350 -1267);
+Wire 6 (300 -1400) (350 -1367);
+Wire 6 (300 -1500) (350 -1467);
+Wire 6 (300 -1600) (350 -1567);
+Wire 6 (300 -1700) (350 -1667);
+Wire 6 (300 -1800) (350 -1767);
+Wire 6 (300 -1900) (350 -1867);
+Wire 6 (300 -2000) (350 -1967);
+Wire 6 (300 -2100) (350 -2067);
+Wire 6 (300 -2200) (350 -2167);
+Wire 6 (300 -2300) (350 -2267);
+Wire 6 (300 -2400) (350 -2367);
+Wire 6 (300 -2500) (350 -2467);
+Wire 6 (300 -2600) (350 -2567);
+Wire 6 (300 -2700) (350 -2667);
+Wire 6 (300 -2800) (350 -2767);
+Wire 6 (300 -2900) (350 -2867);
+Wire 6 (300 -3000) (350 -2967);
+Wire 6 (300 -3100) (350 -3067);
+Wire 6 (300 -3200) (350 -3167);
+Wire 6 (300 -3300) (350 -3267);
+Wire 6 (300 -3400) (350 -3367);
+Wire 6 (300 -3500) (350 -3467);
+Wire 6 (300 -3600) (350 -3567);
+Wire 6 (300 -3700) (350 -3667);
+Wire 6 (300 -3800) (350 -3767);
+Wire 6 (300 -3900) (350 -3867);
+Wire 6 (300 -4000) (350 -3967);
+Wire 6 (300 -4100) (350 -4067);
+Wire 6 (300 -4200) (350 -4167);
+Wire 6 (300 -4300) (350 -4267);
+Wire 6 (300 -4400) (350 -4367);
+Wire 6 (300 -4500) (350 -4467);
+Wire 6 (300 -4600) (350 -4567);
+Wire 6 (300 -4700) (350 -4667);
+Wire 6 (300 -4800) (350 -4767);
+Wire 6 (300 -4900) (350 -4867);
+Wire 6 (300 0) (350 -33);
+Wire 6 (300 -100) (350 -133);
+Wire 6 (300 -200) (350 -233);
+Wire 6 (300 -300) (350 -333);
+Wire 6 (300 -400) (350 -433);
+Wire 6 (300 -500) (350 -533);
+Wire 6 (300 -600) (350 -633);
+Wire 6 (300 -700) (350 -733);
+Wire 6 (300 -800) (350 -833);
+Wire 6 (300 -900) (350 -933);
+Wire 6 (300 -1000) (350 -1033);
+Wire 6 (300 -1100) (350 -1133);
+Wire 6 (300 -1200) (350 -1233);
+Wire 6 (300 -1300) (350 -1333);
+Wire 6 (300 -1400) (350 -1433);
+Wire 6 (300 -1500) (350 -1533);
+Wire 6 (300 -1600) (350 -1633);
+Wire 6 (300 -1700) (350 -1733);
+Wire 6 (300 -1800) (350 -1833);
+Wire 6 (300 -1900) (350 -1933);
+Wire 6 (300 -2000) (350 -2033);
+Wire 6 (300 -2100) (350 -2133);
+Wire 6 (300 -2200) (350 -2233);
+Wire 6 (300 -2300) (350 -2333);
+Wire 6 (300 -2400) (350 -2433);
+Wire 6 (300 -2500) (350 -2533);
+Wire 6 (300 -2600) (350 -2633);
+Wire 6 (300 -2700) (350 -2733);
+Wire 6 (300 -2800) (350 -2833);
+Wire 6 (300 -2900) (350 -2933);
+Wire 6 (300 -3000) (350 -3033);
+Wire 6 (300 -3100) (350 -3133);
+Wire 6 (300 -3200) (350 -3233);
+Wire 6 (300 -3300) (350 -3333);
+Wire 6 (300 -3400) (350 -3433);
+Wire 6 (300 -3500) (350 -3533);
+Wire 6 (300 -3600) (350 -3633);
+Wire 6 (300 -3700) (350 -3733);
+Wire 6 (300 -3800) (350 -3833);
+Wire 6 (300 -3900) (350 -3933);
+Wire 6 (300 -4000) (350 -4033);
+Wire 6 (300 -4100) (350 -4133);
+Wire 6 (300 -4200) (350 -4233);
+Wire 6 (300 -4300) (350 -4333);
+Wire 6 (300 -4400) (350 -4433);
+Wire 6 (300 -4500) (350 -4533);
+Wire 6 (300 -4600) (350 -4633);
+Wire 6 (300 -4700) (350 -4733);
+Wire 6 (300 -4800) (350 -4833);
+Wire 6 (300 -4900) (350 -4933);
+Wire 6 (200 100) (200 -5000);
+Wire 6 (200 -5000) (500 -5000);
+Wire 6 (500 -5000) (500 100);
+Wire 6 (500 100) (200 100);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 6;
+Text '>Name' SR0 (164 209);
+
+Edit 'CONN_50P_00C_3.sym';
+Layer 94;
+Pin '1' Pas None Middle R0 Pad 0 (0 0)
+Pin '2' Pas None Middle R0 Pad 0 (0 -100)
+Pin '3' Pas None Middle R0 Pad 0 (0 -200)
+Pin '4' Pas None Middle R0 Pad 0 (0 -300)
+Pin '5' Pas None Middle R0 Pad 0 (0 -400)
+Pin '6' Pas None Middle R0 Pad 0 (0 -500)
+Pin '7' Pas None Middle R0 Pad 0 (0 -600)
+Pin '8' Pas None Middle R0 Pad 0 (0 -700)
+Pin '9' Pas None Middle R0 Pad 0 (0 -800)
+Pin '10' Pas None Middle R0 Pad 0 (0 -900)
+Pin '11' Pas None Middle R0 Pad 0 (0 -1000)
+Pin '12' Pas None Middle R0 Pad 0 (0 -1100)
+Pin '13' Pas None Middle R0 Pad 0 (0 -1200)
+Pin '14' Pas None Middle R0 Pad 0 (0 -1300)
+Pin '15' Pas None Middle R0 Pad 0 (0 -1400)
+Pin '16' Pas None Middle R0 Pad 0 (0 -1500)
+Pin '17' Pas None Middle R0 Pad 0 (0 -1600)
+Pin '18' Pas None Middle R0 Pad 0 (0 -1700)
+Pin '19' Pas None Middle R0 Pad 0 (0 -1800)
+Pin '20' Pas None Middle R0 Pad 0 (0 -1900)
+Pin '21' Pas None Middle R0 Pad 0 (0 -2000)
+Pin '22' Pas None Middle R0 Pad 0 (0 -2100)
+Pin '23' Pas None Middle R0 Pad 0 (0 -2200)
+Pin '24' Pas None Middle R0 Pad 0 (0 -2300)
+Pin '25' Pas None Middle R0 Pad 0 (0 -2400)
+Pin '26' Pas None Middle R0 Pad 0 (0 -2500)
+Pin '27' Pas None Middle R0 Pad 0 (0 -2600)
+Pin '28' Pas None Middle R0 Pad 0 (0 -2700)
+Pin '29' Pas None Middle R0 Pad 0 (0 -2800)
+Pin '30' Pas None Middle R0 Pad 0 (0 -2900)
+Pin '31' Pas None Middle R0 Pad 0 (0 -3000)
+Pin '32' Pas None Middle R0 Pad 0 (0 -3100)
+Pin '33' Pas None Middle R0 Pad 0 (0 -3200)
+Pin '34' Pas None Middle R0 Pad 0 (0 -3300)
+Pin '35' Pas None Middle R0 Pad 0 (0 -3400)
+Pin '36' Pas None Middle R0 Pad 0 (0 -3500)
+Pin '37' Pas None Middle R0 Pad 0 (0 -3600)
+Pin '38' Pas None Middle R0 Pad 0 (0 -3700)
+Pin '39' Pas None Middle R0 Pad 0 (0 -3800)
+Pin '40' Pas None Middle R0 Pad 0 (0 -3900)
+Pin '41' Pas None Middle R0 Pad 0 (0 -4000)
+Pin '42' Pas None Middle R0 Pad 0 (0 -4100)
+Pin '43' Pas None Middle R0 Pad 0 (0 -4200)
+Pin '44' Pas None Middle R0 Pad 0 (0 -4300)
+Pin '45' Pas None Middle R0 Pad 0 (0 -4400)
+Pin '46' Pas None Middle R0 Pad 0 (0 -4500)
+Pin '47' Pas None Middle R0 Pad 0 (0 -4600)
+Pin '48' Pas None Middle R0 Pad 0 (0 -4700)
+Pin '49' Pas None Middle R0 Pad 0 (0 -4800)
+Pin '50' Pas None Middle R0 Pad 0 (0 -4900)
+Wire 6 (200 100) (200 -5000);
+Wire 6 (200 -5000) (500 -5000);
+Wire 6 (500 -5000) (500 100);
+Wire 6 (500 100) (200 100);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 6;
+Text '>Name' SR0 (164 209);
+
+Edit 'SBH11-PBPC-D25-ST-BK.dev';
+Prefix 'J';
+Description '';
+Value Off;
+Add CONN_50P_00C_1 'A' Next  0 (0 0);
+Package 'CONN_SBH11-PBPC-D25-ST-BK_SUL';
+Technology '';
+Attribute Vendor 'Sullins';
+Attribute Manufacturer_Part_Number 'SBH11-PBPC-D25-ST-BK';
+Attribute Built_By 'EMA_Cory';
+Attribute Copyright 'Copyright (C) 2018 Accelerated Designs. All rights reserved';
+Attribute SourceLibrary 'Sullins_2020-01-16';
+Connect 'A.1' '1';
+Connect 'A.2' '2';
+Connect 'A.3' '3';
+Connect 'A.4' '4';
+Connect 'A.5' '5';
+Connect 'A.6' '6';
+Connect 'A.7' '7';
+Connect 'A.8' '8';
+Connect 'A.9' '9';
+Connect 'A.10' '10';
+Connect 'A.11' '11';
+Connect 'A.12' '12';
+Connect 'A.13' '13';
+Connect 'A.14' '14';
+Connect 'A.15' '15';
+Connect 'A.16' '16';
+Connect 'A.17' '17';
+Connect 'A.18' '18';
+Connect 'A.19' '19';
+Connect 'A.20' '20';
+Connect 'A.21' '21';
+Connect 'A.22' '22';
+Connect 'A.23' '23';
+Connect 'A.24' '24';
+Connect 'A.25' '25';
+Connect 'A.26' '26';
+Connect 'A.27' '27';
+Connect 'A.28' '28';
+Connect 'A.29' '29';
+Connect 'A.30' '30';
+Connect 'A.31' '31';
+Connect 'A.32' '32';
+Connect 'A.33' '33';
+Connect 'A.34' '34';
+Connect 'A.35' '35';
+Connect 'A.36' '36';
+Connect 'A.37' '37';
+Connect 'A.38' '38';
+Connect 'A.39' '39';
+Connect 'A.40' '40';
+Connect 'A.41' '41';
+Connect 'A.42' '42';
+Connect 'A.43' '43';
+Connect 'A.44' '44';
+Connect 'A.45' '45';
+Connect 'A.46' '46';
+Connect 'A.47' '47';
+Connect 'A.48' '48';
+Connect 'A.49' '49';
+Connect 'A.50' '50';

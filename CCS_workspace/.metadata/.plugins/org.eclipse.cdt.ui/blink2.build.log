@@ -1,0 +1,8 @@
+
+**** Build of configuration Release for project blink2 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'blink2.out' is up to date.
+
+**** Build Finished ****

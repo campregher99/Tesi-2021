@@ -1,0 +1,28 @@
+void Motore1 (unsigned int impulsi, bool dir, int velocita, int Kaccelerazione){
+	int R1, R2, R3, Passi, dPassi, Passifiniti;
+	dPassi= floorf(impulsi/500);
+	while (Passi!=impulsi){
+		R1= floorf(1000000/(((float)Kaccelerazione*(float)Passi)+1000));
+		R2= floorf(1000000/(float)velocita);
+		R3= floorf(1000000/(-((float)Kaccelerazione*(float)(Passi-impulsi+2000)+1000)));
+		Passifiniti= Passi+dPassi;
+		
+		rtiSetPeriod(rtiREG1, rtiCOUNTER_BLOCK0, (Max(R1,R2,R3)+9));
+		while(Passi<Passifiniti){
+			rtiStartCounter(rtiREG1,rtiCOUNTER_BLOCK0);
+		}
+	}
+}
+int Max(int a, int b, int c){
+	if (a<b){
+		if (b<c){
+			return c;
+		}else{
+			return b;
+		}
+	} else if(a<c){
+		return c;
+	}else{
+		return a;
+	}
+}

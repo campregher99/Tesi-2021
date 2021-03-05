@@ -1,0 +1,88 @@
+# Created by Ultra Librarian Gold 8.3.286 Copyright © 1999-2018
+# Frank Frank, Accelerated Designs
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'RES_OY_OHM.pac';
+Change Drill 41;
+Pad '1' Square 0 61 R0 (0 0);
+Change Drill 41;
+Pad '2' Round 0 61 R180 (1130 0);
+Layer 21;
+Wire 6 (117 -93) (1013 -93);
+Wire 6 (1013 -93) (1013 93);
+Wire 6 (1013 93) (117 93);
+Wire 6 (117 93) (117 -93);
+Change Size 50;
+Change Ratio 6;
+Text '>Value' SR0 (497 -25);
+Layer 51;
+Wire 6 (0 0) (122 0);
+Wire 6 (1130 0) (1008 0);
+Wire 6 (122 -88) (1008 -88);
+Wire 6 (1008 -88) (1008 88);
+Wire 6 (1008 88) (122 88);
+Wire 6 (122 88) (122 -88);
+Layer 25;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (436 -25);
+Layer 27;
+
+Edit 'RES.sym';
+Layer 94;
+Pin '1' Pas None Short R0 Pin 1 (0 0)
+Pin '2' Pas None Short R180 Off 1 (500 0)
+Wire 8 (125 50) (175 -50);
+Wire 8 (175 -50) (225 50);
+Wire 8 (225 50) (275 -50);
+Wire 8 (275 -50) (325 50);
+Wire 8 (325 50) (375 -50);
+Wire 8 (100 0) (125 50);
+Wire 8 (375 -50) (400 0);
+Layer 97;
+Layer 96;
+Change Size 137;
+Change Ratio 10;
+Text '>Value' SR0 (-103 -218);
+Layer 95;
+Change Size 137;
+Change Ratio 10;
+Text '>Name' SR0 (-86 82);
+
+Edit 'RESV.sym';
+Layer 94;
+Pin '1' Pas None Short R270 Off 1 (0 500)
+Pin '2' Pas None Short R90 Off 1 (0 0)
+Wire 8 (0 100) (-50 125);
+Wire 8 (-50 125) (50 175);
+Wire 8 (50 175) (-50 225);
+Wire 8 (-50 225) (50 275);
+Wire 8 (-50 325) (50 375);
+Wire 8 (50 375) (0 400);
+Wire 8 (50 275) (-50 325);
+Layer 97;
+Layer 96;
+Change Size 137;
+Change Ratio 10;
+Text '>Value' SR0 (75 132);
+Layer 95;
+Change Size 137;
+Change Ratio 10;
+Text '>Name' SR0 (75 256);
+
+Edit 'OY104KE.dev';
+Prefix 'R';
+Description '';
+Value Off;
+Add RES 'A' Next  1 (0 0);
+Package 'RES_OY_OHM';
+Technology '';
+Attribute Vendor 'Ohmite';
+Attribute Manufacturer_Part_Number 'OY104KE';
+Attribute Built_By 'EMA_UL_Team';
+Attribute SourceLibrary 'Ohmite_2015_05_22';
+Connect 'A.1' '1';
+Connect 'A.2' '2';

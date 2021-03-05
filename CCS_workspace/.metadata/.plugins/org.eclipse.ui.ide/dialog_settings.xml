@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\CCS_workspace\TMS570LC43_Async_NHET1_PWM_NHET2_Monitoring"/>
+			<item value="D:\CCS_workspace\seriale"/>
+			<item value="D:\CCS_workspace\ADC"/>
+			<item value="D:\CCS_workspace\hercules_examples-master\Launchpad\570LS\570LC43\Project_0"/>
+			<item value="D:\CCS_workspace\Scara-V1.1"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,13 @@
+#define UART sciREG1
+#define EndCharachter "?"
+#define InitzialCharacter "!"
+
+void split (char *Stringa, char Carattere,  int *OffsetStringhe){
+    while(*Stringa!=EndCharachter){
+        while(*Stringa!=Carattere){
+            Stringa++;
+        }
+        *OffsetStringhe=Stringa;
+        OffsetStringhe++;
+    }
+}

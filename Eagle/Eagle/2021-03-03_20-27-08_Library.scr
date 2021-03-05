@@ -1,0 +1,205 @@
+# Created by Ultra Librarian Gold 8.3.286 Copyright © 1999-2018
+# Frank Frank, Accelerated Designs
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'DIP-16_STM.pac';
+Change Drill 30;
+Pad '1' Square 0 50 R0 (0 0);
+Change Drill 30;
+Pad '2' Round 0 50 R0 (0 -100);
+Change Drill 30;
+Pad '3' Round 0 50 R0 (0 -200);
+Change Drill 30;
+Pad '4' Round 0 50 R0 (0 -300);
+Change Drill 30;
+Pad '5' Round 0 50 R0 (0 -400);
+Change Drill 30;
+Pad '6' Round 0 50 R0 (0 -500);
+Change Drill 30;
+Pad '7' Round 0 50 R0 (0 -600);
+Change Drill 30;
+Pad '8' Round 0 50 R0 (0 -700);
+Change Drill 30;
+Pad '9' Round 0 50 R0 (300 -700);
+Change Drill 30;
+Pad '10' Round 0 50 R0 (300 -600);
+Change Drill 30;
+Pad '11' Round 0 50 R0 (300 -500);
+Change Drill 30;
+Pad '12' Round 0 50 R0 (300 -400);
+Change Drill 30;
+Pad '13' Round 0 50 R0 (300 -300);
+Change Drill 30;
+Pad '14' Round 0 50 R0 (300 -200);
+Change Drill 30;
+Pad '15' Round 0 50 R0 (300 -100);
+Change Drill 30;
+Pad '16' Round 0 50 R0 (300 0);
+Layer 21;
+Wire 6 (5 -748) (295 -748);
+Wire 6 (295 -748) (295 -738);
+Wire 6 (295 48) (5 48);
+Wire 6 (5 48) (5 38);
+Wire 6 (5 -38) (5 -62);
+Wire 6 (5 -138) (5 -162);
+Wire 6 (5 -238) (5 -262);
+Wire 6 (5 -338) (5 -362);
+Wire 6 (5 -438) (5 -462);
+Wire 6 (5 -538) (5 -562);
+Wire 6 (5 -638) (5 -662);
+Wire 6 (5 -738) (5 -748);
+Wire 6 (295 -662) (295 -638);
+Wire 6 (295 -562) (295 -538);
+Wire 6 (295 -462) (295 -438);
+Wire 6 (295 -362) (295 -338);
+Wire 6 (295 -262) (295 -238);
+Wire 6 (295 -162) (295 -138);
+Wire 6 (295 -62) (295 -38);
+Wire 6 (295 38) (295 48);
+Change Size 50;
+Change Ratio 6;
+Text '*' SR0 (-23 30);
+Change Size 50;
+Change Ratio 6;
+Text '>Value' SR0 (82 -375);
+Layer 51;
+Wire 6 (10 -15) (10 15);
+Wire 6 (10 15) (-15 15);
+Wire 6 (-15 15) (-15 -15);
+Wire 6 (-15 -15) (10 -15);
+Wire 6 (10 -115) (10 -85);
+Wire 6 (10 -85) (-15 -85);
+Wire 6 (-15 -85) (-15 -115);
+Wire 6 (-15 -115) (10 -115);
+Wire 6 (10 -215) (10 -185);
+Wire 6 (10 -185) (-15 -185);
+Wire 6 (-15 -185) (-15 -215);
+Wire 6 (-15 -215) (10 -215);
+Wire 6 (10 -315) (10 -285);
+Wire 6 (10 -285) (-15 -285);
+Wire 6 (-15 -285) (-15 -315);
+Wire 6 (-15 -315) (10 -315);
+Wire 6 (10 -415) (10 -385);
+Wire 6 (10 -385) (-15 -385);
+Wire 6 (-15 -385) (-15 -415);
+Wire 6 (-15 -415) (10 -415);
+Wire 6 (10 -515) (10 -485);
+Wire 6 (10 -485) (-15 -485);
+Wire 6 (-15 -485) (-15 -515);
+Wire 6 (-15 -515) (10 -515);
+Wire 6 (10 -615) (10 -585);
+Wire 6 (10 -585) (-15 -585);
+Wire 6 (-15 -585) (-15 -615);
+Wire 6 (-15 -615) (10 -615);
+Wire 6 (10 -715) (10 -685);
+Wire 6 (10 -685) (-15 -685);
+Wire 6 (-15 -685) (-15 -715);
+Wire 6 (-15 -715) (10 -715);
+Wire 6 (290 -685) (290 -715);
+Wire 6 (290 -715) (315 -715);
+Wire 6 (315 -715) (315 -685);
+Wire 6 (315 -685) (290 -685);
+Wire 6 (290 -585) (290 -615);
+Wire 6 (290 -615) (315 -615);
+Wire 6 (315 -615) (315 -585);
+Wire 6 (315 -585) (290 -585);
+Wire 6 (290 -485) (290 -515);
+Wire 6 (290 -515) (315 -515);
+Wire 6 (315 -515) (315 -485);
+Wire 6 (315 -485) (290 -485);
+Wire 6 (290 -385) (290 -415);
+Wire 6 (290 -415) (315 -415);
+Wire 6 (315 -415) (315 -385);
+Wire 6 (315 -385) (290 -385);
+Wire 6 (290 -285) (290 -315);
+Wire 6 (290 -315) (315 -315);
+Wire 6 (315 -315) (315 -285);
+Wire 6 (315 -285) (290 -285);
+Wire 6 (290 -185) (290 -215);
+Wire 6 (290 -215) (315 -215);
+Wire 6 (315 -215) (315 -185);
+Wire 6 (315 -185) (290 -185);
+Wire 6 (290 -85) (290 -115);
+Wire 6 (290 -115) (315 -115);
+Wire 6 (315 -115) (315 -85);
+Wire 6 (315 -85) (290 -85);
+Wire 6 (290 15) (290 -15);
+Wire 6 (290 -15) (315 -15);
+Wire 6 (315 -15) (315 15);
+Wire 6 (315 15) (290 15);
+Wire 6 (10 -744) (290 -744);
+Wire 6 (290 -744) (290 44);
+Wire 6 (290 44) (10 44);
+Wire 6 (10 44) (10 -744);
+Wire 6 (162 44) -180 (138 43);
+Change Size 50;
+Change Ratio 6;
+Text '*' SR0 (-3 -25);
+Layer 25;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (21 -375);
+Layer 27;
+
+Edit 'ULN2003A.sym';
+Layer 94;
+Pin 'IN1' In None Middle R0 Both 0 (100 0)
+Pin 'IN2' In None Middle R0 Both 0 (100 -100)
+Pin 'IN3' In None Middle R0 Both 0 (100 -200)
+Pin 'IN4' In None Middle R0 Both 0 (100 -300)
+Pin 'IN5' In None Middle R0 Both 0 (100 -400)
+Pin 'IN6' In None Middle R0 Both 0 (100 -500)
+Pin 'IN7' In None Middle R0 Both 0 (100 -600)
+Pin 'GND' Pas None Middle R0 Both 0 (100 -700)
+Pin 'COMMON' Pas None Middle R180 Both 0 (1500 -700)
+Pin 'OUT7' Out None Middle R180 Both 0 (1500 -600)
+Pin 'OUT6' Out None Middle R180 Both 0 (1500 -500)
+Pin 'OUT5' Out None Middle R180 Both 0 (1500 -400)
+Pin 'OUT4' Out None Middle R180 Both 0 (1500 -300)
+Pin 'OUT3' Out None Middle R180 Both 0 (1500 -200)
+Pin 'OUT2' Out None Middle R180 Both 0 (1500 -100)
+Pin 'OUT1' Out None Middle R180 Both 0 (1500 0)
+Wire 6 (300 200) (300 -900);
+Wire 6 (300 -900) (1300 -900);
+Wire 6 (1300 -900) (1300 200);
+Wire 6 (1300 200) (300 200);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 6;
+Text '>Name' SR0 (614 359);
+Layer 96;
+Change Size 82;
+Change Ratio 6;
+Text '>Value' SR0 (589 259);
+
+Edit 'ULN2003A.dev';
+Prefix 'U';
+Description '';
+Value Off;
+Add ULN2003A 'A' Next  0 (0 0);
+Package 'DIP-16_STM';
+Technology '';
+Attribute SourceLibrary 'Update_to_database_2020-12-04';
+Attribute Built_By 'EMA_UL_Team';
+Attribute Manufacturer_Part_Number 'ULN2003A';
+Attribute Vendor 'STMicroelectronics';
+Connect 'A.IN1' '1';
+Connect 'A.IN2' '2';
+Connect 'A.IN3' '3';
+Connect 'A.IN4' '4';
+Connect 'A.IN5' '5';
+Connect 'A.IN6' '6';
+Connect 'A.IN7' '7';
+Connect 'A.GND' '8';
+Connect 'A.COMMON' '9';
+Connect 'A.OUT7' '10';
+Connect 'A.OUT6' '11';
+Connect 'A.OUT5' '12';
+Connect 'A.OUT4' '13';
+Connect 'A.OUT3' '14';
+Connect 'A.OUT2' '15';
+Connect 'A.OUT1' '16';

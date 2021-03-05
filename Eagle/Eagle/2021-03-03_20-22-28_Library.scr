@@ -1,0 +1,138 @@
+# Created by Ultra Librarian Gold 8.3.286 Copyright © 1999-2018
+# Frank Frank, Accelerated Designs
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'RELAY_AGQ_PAN.pac';
+Change Drill 35;
+Pad '1' Round 0 55 R0 (0 0);
+Change Drill 35;
+Pad '2' Round 0 55 R0 (0 -126);
+Change Drill 35;
+Pad '3' Round 0 55 R0 (0 -213);
+Change Drill 35;
+Pad '4' Round 0 55 R0 (0 -300);
+Change Drill 35;
+Pad '5' Round 0 55 R180 (200 -300);
+Change Drill 35;
+Pad '6' Round 0 55 R180 (200 -213);
+Change Drill 35;
+Pad '7' Round 0 55 R180 (200 -126);
+Change Drill 35;
+Pad '8' Round 0 55 R0 (200 0);
+Layer 21;
+Wire 6 (-52 -375) (252 -375);
+Wire 6 (252 -375) (252 64);
+Wire 6 (252 64) (-52 64);
+Wire 6 (-52 64) (-52 -375);
+Change Size 50;
+Change Ratio 6;
+Text '*' SR0 (-23 126);
+Change Size 50;
+Change Ratio 6;
+Text '>Value' SR0 (32 -180);
+Layer 51;
+Wire 6 (-48 -370) (248 -370);
+Wire 6 (248 -370) (248 59);
+Wire 6 (248 59) (-48 59);
+Wire 6 (-48 59) (-48 -370);
+Wire 0 (28 0) -180 (28 0);
+Wire 0 (28 0) -180 (28 0);
+Wire 6 (112 59) -180 (88 59);
+Change Size 50;
+Change Ratio 6;
+Text '*' SR0 (-23 8);
+Layer 25;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (-29 -180);
+Layer 27;
+
+Edit 'RELAY5-1_SW2_C1.sym';
+Layer 94;
+Pin '4' Pas None Middle R180 Pad 0 (1700 -800)
+Pin '3_2' Pas None Middle R0 Pad 0 (100 -600)
+Pin '2' Pas None Middle R180 Pad 0 (1700 0)
+Pin '1' Pas None Middle R0 Pad 0 (100 0)
+Pin '5' Pas None Middle R180 Pad 0 (1700 -300)
+Pin '3' Pas None Middle R180 Pad 0 (1700 -1600)
+Pin '8' Pas None Middle R180 Pad 0 (1700 -1100)
+Pin '6' Pas None Middle R0 Pad 0 (100 -1400)
+Wire 6 (500 -600) (1400 -400);
+Wire 6 (500 -600) (300 -600);
+Wire 6 (1500 -800) (1300 -800);
+Wire 6 (1301 -303) (1501 -303);
+Wire 6 (1500 300) (300 300);
+Wire 6 (900 -75) (900 -25);
+Wire 6 (900 -100) (900 -150);
+Wire 6 (900 -175) (900 -225);
+Wire 6 (900 -250) (900 -300);
+Wire 6 (900 -325) (900 -375);
+Wire 6 (1300 -400) (1300 -300);
+Wire 6 (1300 -800) (1300 -700);
+Wire 6 (300 -1800) (1500 -1800);
+Wire 6 (300 300) (300 -1800);
+Wire 6 (1500 -1600) (1300 -1600);
+Wire 6 (1500 300) (1500 -1800);
+Wire 6 (1300 -1600) (1300 -1500);
+Wire 6 (1301 -1103) (1501 -1103);
+Wire 6 (1300 -1200) (1300 -1100);
+Wire 6 (500 -1400) (300 -1400);
+Wire 6 (500 -600) (300 -600);
+Wire 6 (500 -1400) (1400 -1200);
+Wire 6 (500 100) (500 0);
+Wire 6 (700 100) (700 0);
+Wire 6 (900 100) (900 0);
+Wire 6 (1100 100) (1100 0);
+Wire 6 (1300 100) (1300 0);
+Wire 6 (500 0) (300 0);
+Wire 6 (1300 0) (1500 0);
+Wire 6 (900 -400) (900 -450);
+Wire 6 (900 -475) (900 -500);
+Wire 6 (500 100) -180 (700 100);
+Wire 6 (700 100) -180 (900 100);
+Wire 6 (900 100) -180 (1100 100);
+Wire 6 (1100 100) -180 (1300 100);
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (1275 -350) (1325 -350) (1300 -400) (1275 -350);
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (1275 -750) (1325 -750) (1300 -700) (1275 -750);
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (1275 -1550) (1325 -1550) (1300 -1500) (1275 -1550);
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (1275 -1150) (1325 -1150) (1300 -1200) (1275 -1150);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 6;
+Text '>Name' SR0 (714 459);
+Layer 96;
+Change Size 82;
+Change Ratio 6;
+Text '>Value' SR0 (689 359);
+
+Edit 'AGQ20003.dev';
+Prefix 'U';
+Description '';
+Value Off;
+Add RELAY5-1_SW2_C1 'A' Next  0 (0 0);
+Package 'RELAY_AGQ_PAN';
+Technology '';
+Attribute Vendor 'Panasonic';
+Attribute Manufacturer_Part_Number 'AGQ20003';
+Attribute Built_By 'EMA_UL_Team';
+Attribute SourceLibrary 'Panasonic_2008-01-01';
+Connect 'A.1' '1';
+Connect 'A.5' '2';
+Connect 'A.3_2' '3';
+Connect 'A.4' '4';
+Connect 'A.3' '5';
+Connect 'A.6' '6';
+Connect 'A.8' '7';
+Connect 'A.2' '8';

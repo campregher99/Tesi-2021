@@ -1,0 +1,16 @@
+connections/org.eclipse.remote.serial.core.connectionType/2/serial.baudRate=6
+connections/org.eclipse.remote.serial.core.connectionType/2/serial.byteSize=3
+connections/org.eclipse.remote.serial.core.connectionType/2/serial.parity=0
+connections/org.eclipse.remote.serial.core.connectionType/2/serial.portName=COM4
+connections/org.eclipse.remote.serial.core.connectionType/2/serial.stopBits=1
+connections/org.eclipse.remote.serial.core.connectionType/3/serial.baudRate=6
+connections/org.eclipse.remote.serial.core.connectionType/3/serial.byteSize=3
+connections/org.eclipse.remote.serial.core.connectionType/3/serial.parity=0
+connections/org.eclipse.remote.serial.core.connectionType/3/serial.portName=COM5
+connections/org.eclipse.remote.serial.core.connectionType/3/serial.stopBits=1
+connections/org.eclipse.remote.serial.core.connectionType/hercules/serial.baudRate=6
+connections/org.eclipse.remote.serial.core.connectionType/hercules/serial.byteSize=3
+connections/org.eclipse.remote.serial.core.connectionType/hercules/serial.parity=0
+connections/org.eclipse.remote.serial.core.connectionType/hercules/serial.portName=COM3
+connections/org.eclipse.remote.serial.core.connectionType/hercules/serial.stopBits=1
+eclipse.preferences.version=1

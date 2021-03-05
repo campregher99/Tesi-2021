@@ -1,0 +1,69 @@
+void Motore1 (unsigned int *impulsi, bool dir, int velocita, int Kaccelerazione, int *EOT){
+    int R1, R2, R3, Passi, dPassi, Passifiniti;
+    dPassi= (int)(*impulsi/500);
+    R1= (int)(1000000/(((float)Kaccelerazione*(float)Passi)+1000)); 					// accelerazione
+    R2= (int)(1000000/(float)velocita); 												// V massima
+    R3= (int)(1000000/(-((float)Kaccelerazione*(float)(Passi-*impulsi+2000)+1000)));	// decelerazione
+    
+    rtiSetPeriod(rtiREG1, rtiCOUNTER_BLOCK0, (Max(R1,R2,R3)*9));
+    while (Passi!=*impulsi){
+    	if ((Passifiniti-Passi)==3){
+        	R1= (int)(1000000/(((float)Kaccelerazione*(float)Passi)+1000)); 					// accelerazione
+        	R2= (int)(1000000/(float)velocita); 												// V massima
+        	R3= (int)(1000000/(-((float)Kaccelerazione*(float)(Passi-*impulsi+2000)+1000)));	// decelerazione
+        }
+		if (Passi==Passifiniti){
+        	rtiSetPeriod(rtiREG1, rtiCOUNTER_BLOCK0, (Min(R1,R2,R3)+9));
+        	Passifiniti= Passi+dPassi;
+        	}
+        if(Passi<Passifiniti){
+            
+            if(*EOT==1){
+                *EOT=0;
+                if (dir){
+                	gioSetBit(gioPORTB,3,!gioGetBit(gioPORTB,3)); 	// avanti
+                }else{
+                	gioSetBit(gioPORTB,2,!gioGetBit(gioPORTB,2)); 	// indietro
+                }
+                Passi++;
+                
+            }
+        }
+    }
+}
+
+void Motore2 (unsigned int *impulsi, bool dir, int velocita, int Kaccelerazione, int *EOT){
+    int R1, R2, R3, Passi, dPassi, Passifiniti;
+     dPassi= (int)(*impulsi/500);
+    R1= (int)(1000000/(((float)Kaccelerazione*(float)Passi)+1000)); 					// accelerazione
+    R2= (int)(1000000/(float)velocita); 												// V massima
+    R3= (int)(1000000/((0-1)*((float)Kaccelerazione*(float)(Passi-*impulsi+2000)+1000)));	// decelerazione
+    
+    while (Passi!=*impulsi){
+    	if ((Passifiniti-Passi)==3){
+        	R1= (int)(1000000/(((float)Kaccelerazione*(float)Passi)+1000)); 					// accelerazione
+        	R2= (int)(1000000/(float)velocita); 												// V massima
+        	R3= (int)(1000000/(-((float)Kaccelerazione*(float)(Passi-*impulsi+2000)+1000)));	// decelerazione
+        	
+        }
+        if (Passi==Passifiniti){
+        	Passifiniti= Passi+dPassi;
+			rtiSetPeriod(rtiREG1, rtiCOUNTER_BLOCK0, (Min(R1,R2,R3)*9));
+        	rtiStartCounter(rtiREG1,rtiCOUNTER_BLOCK0);
+        }
+        if(Passi<Passifiniti){
+            
+            if(*EOT==1){
+                *EOT=0;
+                if (dir){
+                	gioSetBit(gioPORTA,0,!gioGetBit(gioPORTA,0)); // avanti
+                }else{
+                	gioSetBit(gioPORTA,1,!gioGetBit(gioPORTA,1)); // indietro
+                }
+                Passi++;
+            }
+        }
+    }
+}
+
+

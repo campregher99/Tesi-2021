@@ -1,0 +1,3 @@
+#define UART sciREG3
+#define EndCharachter ?
+#define InitzialCharacter !

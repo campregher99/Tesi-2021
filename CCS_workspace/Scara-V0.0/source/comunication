@@ -1,0 +1,47 @@
+#define UART sciREG3
+#define EndCharachter "?"
+#define InitzialCharacter "!"
+
+char * SetUpCom(void ){
+    sciInit();
+    ERROR=malloc(7);
+    sprintf(ERROR,"%cERROR%c", InitzialCharacter ,EndCharachter );
+    return ERROR;
+}
+
+bool Ricezione (int *Ricevuto){
+    int lunghezza;
+    if(sciReceiveByte(UART)==InitzialCharacter){
+            while(sciReceiveByte(UART)!=EndCharachter){
+            *Ricevuto=sciReceiveByte(UART);
+            Ricevuto++;
+            lunghezza++;
+            if (lunghezza>100){
+                return 1;
+                exit(0);
+            }
+        }
+        return 0;
+	exit(0);
+    }else{
+        return 1;
+	exit(0);
+    }
+}
+
+void split (char *Stringa, char Carattere,  int *OffsetStringhe){
+    while(*Stringa!=EndCharachter){
+        while(*Stringa!=Carattere){
+            Stringa++;
+        }
+        *OffsetStringhe=Stringa;
+        OffsetStringhe++;
+    }
+}
+
+void Spedizione (char *Stringa){
+	while(*Stringa!=EndCharachter){
+		sciSendByte(UART,*Stringa);
+		Stringa++;
+	}
+}

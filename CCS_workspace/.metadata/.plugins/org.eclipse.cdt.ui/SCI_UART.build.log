@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project SCI_UART ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SCI_UART.out' is up to date.
+
+**** Build Finished ****

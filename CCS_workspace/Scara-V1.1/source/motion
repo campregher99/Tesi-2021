@@ -1,0 +1,154 @@
+#define  M_PI    3.14159265358979323846  /* pi */
+#define L1 37
+#define L2 26
+struct punto {      //struttura punti
+  double x;
+  double y;
+};
+struct giunti {     //struttura spazio dei giunti
+  double A;
+  double B;
+  double Va;
+  double Vb;
+} Braccio;
+struct mat {      //struttura matrice jacobiana
+  double a;      
+  double b;
+  double c;
+  double d;
+} Jacob;
+void spostamento (struct  punto inizio, struct  punto finale, double Vmax, bool *EOT) {
+  double Vattuale, Dx, Dy, dy, dx;        //variabili per spostamento e velocità
+  int RipA=0, RipB=0, RipFA=0, RipFB=0, PassiA=0, PassiB=0, Pf = 20, *passi, v=0;      //volte periodi di clock da contare
+  bool dirA=0, dirB=0, SA=0, SB=0;
+  struct punto attuale = inizio;
+
+  Dx = finale.x - inizio.x;             //spostamento in X
+  dx = Dx / 1000;
+  Dy = finale.y - inizio.y;             //spostamento in Y
+  dy = Dy / 1000;
+  Braccio.B = acos((-inizio.x * inizio.x - inizio.y * inizio.y + L1 * L1 + L2 * L2) / (2 * L1 * L2));    //beta
+  Braccio.A = atan2(inizio.y, inizio.x) + acos((L1*L1+inizio.x * inizio.x + inizio.y * inizio.y-L2*L2)/(2*L1*(sqrt(inizio.x * inizio.x + inizio.y * inizio.y))));       //alfa
+  Jacob.a = (L2 * cos(Braccio.B + Braccio.A)) / ((L2 * cos(Braccio.B + Braccio.A)) * (-L1 * sin(Braccio.A) - L2 * sin(Braccio.B + Braccio.A)) - (L2 * sin(Braccio.B + Braccio.A)) * (-L1 * cos(Braccio.A) - L2 * cos(Braccio.B + Braccio.A)));
+  Jacob.b = (L2 * sin(Braccio.B + Braccio.A)) / ((L2 * cos(Braccio.B + Braccio.A)) * (-L1 * sin(Braccio.A) - L2 * sin(Braccio.B + Braccio.A)) - (L2 * sin(Braccio.B + Braccio.A)) * (-L1 * cos(Braccio.A) - L2 * cos(Braccio.B + Braccio.A)));
+  Jacob.c = (-L1 * cos(Braccio.A) - L2 * cos(Braccio.B + Braccio.A)) / ((L2 * cos(Braccio.B + Braccio.A)) * (-L1 * sin(Braccio.A) - L2 * sin(Braccio.B + Braccio.A)) - (L2 * sin(Braccio.B + Braccio.A)) * (-L1 * cos(Braccio.A) - L2 * cos(Braccio.B + Braccio.A)));
+  Jacob.d = (-L1 * sin(Braccio.A) - L2 * sin(Braccio.B + Braccio.A)) / ((L2 * cos(Braccio.B + Braccio.A)) * (-L1 * sin(Braccio.A) - L2 * sin(Braccio.B + Braccio.A)) - (L2 * sin(Braccio.B + Braccio.A)) * (-L1 * cos(Braccio.A) - L2 * cos(Braccio.B + Braccio.A)));
+  Vattuale = (Vmax / 2) * (cos((6.183429317 / 1000) * (sqrt(pow(attuale.x,2)+pow(attuale.y,2))) -0.04987799493) + 1);                                            //velocità del braccio
+  Braccio.Va = (int)(((50000000000 / ((Jacob.a + Jacob.b) * Vattuale * (cos(atan2(finale.y - inizio.y, finale.x - inizio.x)))))) / (2 * M_PI)); //velocità del braccio in alfa
+  if (Braccio.Va < 0) {
+    dirA = 0;
+    Braccio.Va = -Braccio.Va;
+  } else {
+    dirA = 1;
+  }
+  Braccio.Vb = (int)(((20000000000 / ((Jacob.c + Jacob.d) * Vattuale * (sin(atan2(finale.y - inizio.y, finale.x - inizio.x)))))) / (2 * M_PI)); //velocità del braccio in beta
+  if (Braccio.Vb < 0) {
+    dirB = 0;
+    Braccio.Vb = -Braccio.Vb;
+  } else {
+    dirB = 1;
+  }
+  if (Braccio.Va > Braccio.Vb) {
+    RipB = 1;
+    RipA = (int)(Braccio.Va / Braccio.Vb);
+    rtiSetPeriod(rtiREG1, rtiCOUNTER_BLOCK0, (Braccio.Vb * 9.375));
+  } else {
+    RipA = 1;
+    RipB = (int)(Braccio.Vb / Braccio.Va);
+    rtiSetPeriod(rtiREG1, rtiCOUNTER_BLOCK0, (Braccio.Va * 9.375));
+  }
+  rtiStartCounter(rtiREG1, rtiCOUNTER_BLOCK0);
+  while ((attuale.x-inizio.x) != Dx || (attuale.y-inizio.y) != Dy) {
+    if (*EOT == 1) {
+      *EOT = 0;
+      RipFA++;
+      RipFB++;
+    }
+    if (RipFA == RipA) {
+      if (dirA) {
+        gioSetBit(gioPORTB, 1, !gioGetBit(gioPORTB, 0));
+        if (SA)Braccio.A += (2 * M_PI / 100000);
+      } else {
+        gioSetBit(gioPORTB, 2, !gioGetBit(gioPORTB, 1));
+        if (SA)Braccio.A -= (2 * M_PI / 100000);
+      }
+      SA = !SA;
+      if (RipFA > RipB) {
+        RipFA = 0;
+      }
+    }
+    if (RipFB == RipB) {
+      if (dirB) {
+        gioSetBit(gioPORTB, 1, !gioGetBit(gioPORTB, 2));
+        if (SB)Braccio.B += (2 * M_PI / 40000);
+      } else {
+        gioSetBit(gioPORTB, 2, !gioGetBit(gioPORTB, 3));
+        if (SB)Braccio.B += (2 * M_PI / 40000);
+      }
+      SB = !SB;
+      if (RipFB > RipA) {
+        RipFB = 0;
+
+      }
+    }
+    v = (20 - Pf + *passi);
+    switch (v) {
+      case 1:
+        Jacob.a = (L2 * cos(Braccio.B + Braccio.A)) / ((L2 * cos(Braccio.B + Braccio.A)) * (-L1 * sin(Braccio.A) - L2 * sin(Braccio.B + Braccio.A)) - (L2 * sin(Braccio.B + Braccio.A)) * (-L1 * cos(Braccio.A) - L2 * cos(Braccio.B + Braccio.A)));
+        break;
+      case 3:
+        Jacob.b = (L2 * sin(Braccio.B + Braccio.A)) / ((L2 * cos(Braccio.B + Braccio.A)) * (-L1 * sin(Braccio.A) - L2 * sin(Braccio.B + Braccio.A)) - (L2 * sin(Braccio.B + Braccio.A)) * (-L1 * cos(Braccio.A) - L2 * cos(Braccio.B + Braccio.A)));
+        break;
+      case 5:
+        Jacob.c = (-L1 * cos(Braccio.A) - L2 * cos(Braccio.B + Braccio.A)) / ((L2 * cos(Braccio.B + Braccio.A)) * (-L1 * sin(Braccio.A) - L2 * sin(Braccio.B + Braccio.A)) - (L2 * sin(Braccio.B + Braccio.A)) * (-L1 * cos(Braccio.A) - L2 * cos(Braccio.B + Braccio.A)));
+        break;
+      case 7:
+        Jacob.d = (-L1 * sin(Braccio.A) - L2 * sin(Braccio.B + Braccio.A)) / ((L2 * cos(Braccio.B + Braccio.A)) * (-L1 * sin(Braccio.A) - L2 * sin(Braccio.B + Braccio.A)) - (L2 * sin(Braccio.B + Braccio.A)) * (-L1 * cos(Braccio.A) - L2 * cos(Braccio.B + Braccio.A)));
+        break;
+      case 9:
+        Vattuale = (Vmax / 2) * (cos(0.00628 * (sqrt(pow(attuale.x, 2) + pow(attuale.y, 2))) + 3.14) + 1);
+        break;
+      case 11:
+        Braccio.Va = (int)((50000000000 / ((Jacob.a + Jacob.b) * Vattuale * (cos(atan2(finale.y - inizio.y, finale.x - inizio.x))))) / (2 * M_PI));
+        break;
+      case 13:
+        Braccio.Vb = (int)((20000000000 / ((Jacob.c + Jacob.d) * Vattuale * (sin(atan2(finale.y - inizio.y, finale.x - inizio.x))))) / (2 * M_PI));
+        break;
+      case 15:
+        if (Braccio.Va < 0) {
+          dirA = 0;
+          Braccio.Va = -Braccio.Va;
+        } else {
+          dirA = 1;
+        }
+        break;
+      case 17:
+        if (Braccio.Vb < 0) {
+          dirB = 0;
+          Braccio.Vb = -Braccio.Vb;
+        } else {
+          dirB = 1;
+        }
+        break;
+      case 19:
+        attuale.x = L1 * cos(Braccio.A) + L2 * cos(Braccio.A + Braccio.B);
+        attuale.y = L1 * sin(Braccio.A) + L2 * sin(Braccio.A + Braccio.B);
+        Pf = passi + 20;
+        if (Braccio.Va > Braccio.Vb) {
+          RipB = 1;
+          passi = &PassiA;
+          Pf = PassiA + 20;
+          RipA = (int)(Braccio.Va / Braccio.Vb);
+          rtiSetPeriod(rtiREG1, rtiCOUNTER_BLOCK0, (Braccio.Vb * 9.375));
+        } else {
+          RipA = 1;
+          passi = &PassiB;
+          Pf = PassiB + 20;
+          RipB = (int)(Braccio.Vb / Braccio.Va);
+          rtiSetPeriod(rtiREG1, rtiCOUNTER_BLOCK0, (Braccio.Va * 9.375));
+        }
+        break;
+    }
+  }
+  rtiStopCounter(rtiREG1, rtiCOUNTER_BLOCK0);
+}

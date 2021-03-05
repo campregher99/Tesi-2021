@@ -1,0 +1,143 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; This example code is to be loaded to N2HET1 to generate a triangle waveform using varying
+; duty cycle ramping from 0% duty to a programmable maximum duty cycle and then ramp down 
+; to 0% again.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; PWM frequency to be generated
+PWM_PERIOD             .equ 3
+
+; The pin number that will output the PWM signal
+PWM_PIN_NUM            .equ 9
+
+; The initial maximum duty cycle (compare value) to be generated.
+INIT_COMPARE           .equ 1
+
+; delay amount to increment from one duty cycle to the next duty cycle.
+INCREMEMT_DELAY        .equ 0
+
+; delay amount to decrement from one duty cycle to the next duty cycle.
+DECREMEMT_DELAY        .equ 0
+
+; amount of increment 
+DUTY_INCREMEMT         .equ 0
+
+; amount of decrement
+DUTY_DECREMEMT         .equ 0
+
+; amount of increment 
+DUTY_INCREMEMT_HR      .equ 1
+
+; amount of decrement
+DUTY_DECREMEMT_HR      .equ 1
+
+; key to unlock N2HET 
+UNLOCK_KEY             .equ 0xA
+
+; The data field of the MOV32 instruction contains an initial value (0x5) that 
+; is not equal to the key to unlock the N2HET program. First the MOV32 
+; instruction moves the initial value toa temporaray register T
+L00   MOV32 { remote=DUMMY,type=IMTOREG,reg=T,data=0x5};
+
+; Compare the register T value with the key to unlock N2HET. The key to unlock 
+; is 0xA. If the key is not matched then go back to L00. The CPU is supposed 
+; to write the proper key (0xA) to unlock the N2HET
+L01   ECMP { next=L00,hr_lr=LOW,cond_addr=L02,pin=0,reg=T,data=UNLOCK_KEY};
+
+; Creating a virtual counter using CNT which will determines the period of 
+; the PWM to be generated. The initial small max count allows for quick
+; simulation which can later be changed by the host CPU. 
+L02   CNT { reg=A,irq=ON,max=PWM_PERIOD};
+
+; Use ECMP to determine the duty cycle of the PWM on the specified pin. The
+; pin field and the duty cycle are changeable by the CPU.
+L03   ECMP { hr_lr=HIGH,en_pin_action=ON,cond_addr=L04,pin=PWM_PIN_NUM,action=PULSELO,
+             reg=A,irq=OFF,data=0,hr_data=0};
+
+; Only when the CNT reaches the max count will the program go to the 
+; conditional address. We want to wait for one complete PWM waveform to be 
+; generated before changing the duty cycle. When CNT reaches the max
+; value it will set the Z flag.
+L04   BR { next=L00,cond_addr=L05,event=Z};
+
+; the data field in this ADD acts as a up/down flag. We want to create a 
+; triangle waveform. The PWM will first increase the duty cycle until it 
+; reaches the specified maximum duty cycle before it starts to decrease the 
+; duty. The up/down flag is used to create two different paths in the flow
+; to alternate before increasing duty cycle vs decreasing duty cycle. 
+L05   ADD { src1=ZERO,src2=ZERO,dest=NONE,data=0};
+
+; Move the up/down flag to a temp register T.
+L06   MOV32 { remote=L05,type=REMTOREG,reg=T};
+
+; Compare this up/down flag to 0. 0 means to increase the duty cycle and 1 
+; means to decrease the duty cycle. 
+L07   ECMP { next=L16,cond_addr=L08,pin=0,reg=T,data=0};
+
+; move the ECMP DF which contains the compare value for duty cycle creation
+; to register R 
+L08   MOV32 { remote=L03,type=REMTOREG,reg=R};
+ 
+; Subtract the current compare value from the max duty cycle stored in 
+; REM_DUTY. The result will be stored in register S.
+L09   SUB { src1=REM,src2=R,dest=S,remote=REM_DUTY,data=0};
+
+; If the substraction result is more than 0 then it means it has not 
+; reached the max duty cycle we will increase the duty cycle. If it is 
+; zero then we have reached the max duty cycle and we will change to 
+; up/down flag to down position.
+L10   BR { next=L14,cond_addr=L11,event=GT};
+
+; Insert delay before changing to the next duty cycle
+L11   DJZ { next=L00,cond_addr=L12,reg=NONE,data=INCREMEMT_DELAY};
+
+; Add specified amount to the existing compare value (duty cycle). This 
+; value is also changeable by CPU
+L12   ADD { src1=R,src2=IMM,dest=S,rdest=REM,remote=L03,data=DUTY_INCREMEMT,
+            hr_data=DUTY_INCREMEMT_HR};
+
+; Reset the increment delay to the specified amount.
+L13   MOV32 { next=L15,remote=L11,type=IMTOREG&REM,reg=NONE,data=INCREMEMT_DELAY};
+
+; Now change the up/down flag to down by moving a 1 to the up/down flag
+L14   MOV32 { remote=L05,type=IMTOREG&REM,reg=NONE,data=1};
+
+; Branch to the beginning
+L15   BR { next=L00,cond_addr=L00,event=NOCOND};
+
+; move the ECMP DF to register R which contains the current compare value
+; (duty cycle)
+L16   MOV32 { remote=L03,type=REMTOREG,reg=R}; 
+
+; Subtract the current duty cycle by the specified amount. This value is 
+; also changeable by CPU.
+L17   SUB { src1=R,src2=IMM,dest=S,rdest=NONE,data=DUTY_DECREMEMT,
+            hr_data=DUTY_DECREMEMT_HR};
+
+; As long as the subtraction result is greater than zero, we will keep 
+; decreasing the duty cyle or otherwise we will again change the up/down 
+; flag to up position. The destination register is A which contains the 
+; subtraction result.
+L18   BR { next=L19,cond_addr=L22,event=N};
+
+; Insert the delay before decreasing to the next duty cycle.
+L19   DJZ { next=L00,cond_addr=L20,reg=NONE,data=DECREMEMT_DELAY};
+
+; Move the subtraction result to the ECMP DF as the new duty cycle
+L20   MOV32 { next=L21,remote=L03,type=REGTOREM,reg=S};
+
+; Reset the decrement delay to the specified amount
+L21   MOV32 { next=L00,remote=L19,type=IMTOREG&REM,reg=NONE,data=DECREMEMT_DELAY};
+
+; Move the value 0 to the up/down flag so in the next LRP the program 
+; flow will execute the path to increase duty cycle.
+L22   MOV32 { remote=L05,type=IMTOREG&REM,reg=NONE,data=0};
+
+; Branch to beginning
+L23   BR { next=L00,cond_addr=L00,event=NOCOND};
+
+; REM_DUTY data field stores the maximum duty cycle the PWM to be generated. 
+; The host CPU can change this value.
+REM_DUTY   ECMP { next=REM_DUTY,cond_addr=REM_DUTY,pin=0,reg=A,data=INIT_COMPARE,hr_data=0};
+DUMMY   BR { next=DUMMY,cond_addr=DUMMY,event=NOCOND,irq=OFF};
+

@@ -1,0 +1,20 @@
+#define UART sciREG3
+#define EndCharachter ?
+#define InitzialCharacter !
+/*void Ricezione (int *Ricevuto){
+	if(sciReceiveByte(UART)==InitzialCharacter){
+		while(sciReceiveByte(UART)!=EndCharachter){
+			*Ricevuto=sciReceiveByte(UART);
+			Ricevuto++;
+		}
+	}
+}*/
+void split (char *Stringa, char Carattere,	int *OffsetStringhe){
+	while(*Stringa!=EndCharachter){
+		while(*Stringa!=Carattere){
+			Stringa++;
+		}
+		*OffsetStringhe=Stringa;
+		OffsetStringhe++;
+	}
+}
