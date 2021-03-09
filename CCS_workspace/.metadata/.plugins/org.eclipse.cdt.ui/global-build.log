@@ -4514,3 +4514,1143 @@ Finished building target: "ADC.out"
 gmake[1]: 'ADC.out' is up to date.
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project letturaInterruptHet ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_errata.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_errata.d_raw" --obj_directory="source"  "../source/HL_errata.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_errata.obj' failed
+"../source/HL_errata.c", line 48: fatal error #1965: cannot open source file "HL_errata.h"
+1 catastrophic error detected in the compilation of "../source/HL_errata.c".
+Compilation terminated.
+gmake: *** [source/HL_errata.obj] Error 1
+Building file: "../source/HL_epc.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_epc.d_raw" --obj_directory="source"  "../source/HL_epc.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_epc.obj' failed
+"../source/HL_epc.c", line 46: fatal error #1965: cannot open source file "HL_epc.h"
+1 catastrophic error detected in the compilation of "../source/HL_epc.c".
+Compilation terminated.
+gmake: *** [source/HL_epc.obj] Error 1
+Building file: "../source/HL_eqep.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_eqep.d_raw" --obj_directory="source"  "../source/HL_eqep.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_eqep.obj' failed
+"../source/HL_eqep.c", line 49: fatal error #1965: cannot open source file "HL_eqep.h"
+1 catastrophic error detected in the compilation of "../source/HL_eqep.c".
+Compilation terminated.
+gmake: *** [source/HL_eqep.obj] Error 1
+Building file: "../source/HL_errata_SSWF021_45.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_errata_SSWF021_45.d_raw" --obj_directory="source"  "../source/HL_errata_SSWF021_45.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_errata_SSWF021_45.obj' failed
+"../source/HL_errata_SSWF021_45.c", line 41: fatal error #1965: cannot open source file "HL_errata_SSWF021_45_defs.h"
+1 catastrophic error detected in the compilation of "../source/HL_errata_SSWF021_45.c".
+Compilation terminated.
+gmake: *** [source/HL_errata_SSWF021_45.obj] Error 1
+Building file: "../source/HL_esm.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_esm.d_raw" --obj_directory="source"  "../source/HL_esm.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_esm.obj' failed
+"../source/HL_esm.c", line 52: fatal error #1965: cannot open source file "HL_esm.h"
+1 catastrophic error detected in the compilation of "../source/HL_esm.c".
+Compilation terminated.
+gmake: *** [source/HL_esm.obj] Error 1
+Building file: "../source/HL_gio.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_gio.d_raw" --obj_directory="source"  "../source/HL_gio.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_gio.obj' failed
+"../source/HL_gio.c", line 46: fatal error #1965: cannot open source file "HL_gio.h"
+1 catastrophic error detected in the compilation of "../source/HL_gio.c".
+Compilation terminated.
+gmake: *** [source/HL_gio.obj] Error 1
+Building file: "../source/HL_nmpu.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_nmpu.d_raw" --obj_directory="source"  "../source/HL_nmpu.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_nmpu.obj' failed
+"../source/HL_nmpu.c", line 49: fatal error #1965: cannot open source file "HL_nmpu.h"
+1 catastrophic error detected in the compilation of "../source/HL_nmpu.c".
+Compilation terminated.
+gmake: *** [source/HL_nmpu.obj] Error 1
+Building file: "../source/HL_het.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_het.d_raw" --obj_directory="source"  "../source/HL_het.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_het.obj' failed
+"../source/HL_het.c", line 43: fatal error #1965: cannot open source file "HL_het.h"
+1 catastrophic error detected in the compilation of "../source/HL_het.c".
+Compilation terminated.
+gmake: *** [source/HL_het.obj] Error 1
+Building file: "../source/HL_notification.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_notification.d_raw" --obj_directory="source"  "../source/HL_notification.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_notification.obj' failed
+"../source/HL_notification.c", line 51: fatal error #1965: cannot open source file "HL_esm.h"
+1 catastrophic error detected in the compilation of "../source/HL_notification.c".
+Compilation terminated.
+gmake: *** [source/HL_notification.obj] Error 1
+Building file: "../source/HL_pinmux.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_pinmux.d_raw" --obj_directory="source"  "../source/HL_pinmux.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_pinmux.obj' failed
+"../source/HL_pinmux.c", line 45: fatal error #1965: cannot open source file "HL_pinmux.h"
+1 catastrophic error detected in the compilation of "../source/HL_pinmux.c".
+Compilation terminated.
+gmake: *** [source/HL_pinmux.obj] Error 1
+Building file: "../source/HL_rti.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_rti.d_raw" --obj_directory="source"  "../source/HL_rti.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_rti.obj' failed
+"../source/HL_rti.c", line 54: fatal error #1965: cannot open source file "HL_rti.h"
+1 catastrophic error detected in the compilation of "../source/HL_rti.c".
+Compilation terminated.
+gmake: *** [source/HL_rti.obj] Error 1
+Building file: "../source/HL_sci.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sci.d_raw" --obj_directory="source"  "../source/HL_sci.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_sci.obj' failed
+"../source/HL_sci.c", line 46: fatal error #1965: cannot open source file "HL_sci.h"
+1 catastrophic error detected in the compilation of "../source/HL_sci.c".
+Compilation terminated.
+gmake: *** [source/HL_sci.obj] Error 1
+Building file: "../source/HL_sys_dma.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_dma.d_raw" --obj_directory="source"  "../source/HL_sys_dma.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_sys_dma.obj' failed
+"../source/HL_sys_dma.c", line 49: fatal error #1965: cannot open source file "HL_sys_dma.h"
+1 catastrophic error detected in the compilation of "../source/HL_sys_dma.c".
+Compilation terminated.
+gmake: *** [source/HL_sys_dma.obj] Error 1
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_sys_main.obj' failed
+"../source/HL_sys_main.c", line 50: fatal error #1965: cannot open source file "HL_sys_common.h"
+1 catastrophic error detected in the compilation of "../source/HL_sys_main.c".
+Compilation terminated.
+gmake: *** [source/HL_sys_main.obj] Error 1
+Building file: "../source/HL_sys_pcr.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pcr.d_raw" --obj_directory="source"  "../source/HL_sys_pcr.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_sys_pcr.obj' failed
+"../source/HL_sys_pcr.c", line 48: fatal error #1965: cannot open source file "HL_sys_pcr.h"
+1 catastrophic error detected in the compilation of "../source/HL_sys_pcr.c".
+Compilation terminated.
+gmake: *** [source/HL_sys_pcr.obj] Error 1
+Building file: "../source/HL_sys_phantom.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_phantom.d_raw" --obj_directory="source"  "../source/HL_sys_phantom.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_sys_phantom.obj' failed
+"../source/HL_sys_phantom.c", line 45: fatal error #1965: cannot open source file "HL_sys_common.h"
+1 catastrophic error detected in the compilation of "../source/HL_sys_phantom.c".
+Compilation terminated.
+gmake: *** [source/HL_sys_phantom.obj] Error 1
+Building file: "../source/HL_sys_core.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_core.d_raw" --obj_directory="source"  "../source/HL_sys_core.asm"
+Finished building: "../source/HL_sys_core.asm"
+ 
+Building file: "../source/HL_sys_intvecs.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_intvecs.d_raw" --obj_directory="source"  "../source/HL_sys_intvecs.asm"
+Finished building: "../source/HL_sys_intvecs.asm"
+ 
+Building file: "../source/HL_sys_mpu.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_mpu.d_raw" --obj_directory="source"  "../source/HL_sys_mpu.asm"
+Finished building: "../source/HL_sys_mpu.asm"
+ 
+Building file: "../source/HL_sys_pmm.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pmm.d_raw" --obj_directory="source"  "../source/HL_sys_pmm.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_sys_pmm.obj' failed
+"../source/HL_sys_pmm.c", line 42: fatal error #1965: cannot open source file "HL_sys_pmm.h"
+1 catastrophic error detected in the compilation of "../source/HL_sys_pmm.c".
+Compilation terminated.
+gmake: *** [source/HL_sys_pmm.obj] Error 1
+Building file: "../source/HL_sys_startup.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_startup.d_raw" --obj_directory="source"  "../source/HL_sys_startup.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_sys_startup.obj' failed
+"../source/HL_sys_startup.c", line 57: fatal error #1965: cannot open source file "HL_sys_common.h"
+1 catastrophic error detected in the compilation of "../source/HL_sys_startup.c".
+Compilation terminated.
+gmake: *** [source/HL_sys_startup.obj] Error 1
+Building file: "../source/HL_sys_pmu.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pmu.d_raw" --obj_directory="source"  "../source/HL_sys_pmu.asm"
+Finished building: "../source/HL_sys_pmu.asm"
+ 
+Building file: "../source/HL_sys_vim.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_vim.d_raw" --obj_directory="source"  "../source/HL_sys_vim.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_sys_vim.obj' failed
+"../source/HL_sys_vim.c", line 44: fatal error #1965: cannot open source file "HL_sys_vim.h"
+1 catastrophic error detected in the compilation of "../source/HL_sys_vim.c".
+Compilation terminated.
+gmake: *** [source/HL_sys_vim.obj] Error 1
+Building file: "../source/HL_system.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_system.d_raw" --obj_directory="source"  "../source/HL_system.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_system.obj' failed
+"../source/HL_system.c", line 53: fatal error #1965: cannot open source file "HL_system.h"
+1 catastrophic error detected in the compilation of "../source/HL_system.c".
+Compilation terminated.
+gmake: *** [source/HL_system.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project letturaInterruptHet ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_errata.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_errata.d_raw" --obj_directory="source"  "../source/HL_errata.c"
+Finished building: "../source/HL_errata.c"
+ 
+Building file: "../source/HL_epc.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_epc.d_raw" --obj_directory="source"  "../source/HL_epc.c"
+Finished building: "../source/HL_epc.c"
+ 
+Building file: "../source/HL_errata_SSWF021_45.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_errata_SSWF021_45.d_raw" --obj_directory="source"  "../source/HL_errata_SSWF021_45.c"
+Finished building: "../source/HL_errata_SSWF021_45.c"
+ 
+Building file: "../source/HL_eqep.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_eqep.d_raw" --obj_directory="source"  "../source/HL_eqep.c"
+Finished building: "../source/HL_eqep.c"
+ 
+Building file: "../source/HL_gio.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_gio.d_raw" --obj_directory="source"  "../source/HL_gio.c"
+Finished building: "../source/HL_gio.c"
+ 
+Building file: "../source/HL_esm.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_esm.d_raw" --obj_directory="source"  "../source/HL_esm.c"
+Finished building: "../source/HL_esm.c"
+ 
+Building file: "../source/HL_nmpu.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_nmpu.d_raw" --obj_directory="source"  "../source/HL_nmpu.c"
+Finished building: "../source/HL_nmpu.c"
+ 
+Building file: "../source/HL_het.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_het.d_raw" --obj_directory="source"  "../source/HL_het.c"
+Finished building: "../source/HL_het.c"
+ 
+Building file: "../source/HL_notification.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_notification.d_raw" --obj_directory="source"  "../source/HL_notification.c"
+Finished building: "../source/HL_notification.c"
+ 
+Building file: "../source/HL_pinmux.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_pinmux.d_raw" --obj_directory="source"  "../source/HL_pinmux.c"
+Finished building: "../source/HL_pinmux.c"
+ 
+Building file: "../source/HL_rti.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_rti.d_raw" --obj_directory="source"  "../source/HL_rti.c"
+Finished building: "../source/HL_rti.c"
+ 
+Building file: "../source/HL_sys_core.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_core.d_raw" --obj_directory="source"  "../source/HL_sys_core.asm"
+Finished building: "../source/HL_sys_core.asm"
+ 
+Building file: "../source/HL_sys_intvecs.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_intvecs.d_raw" --obj_directory="source"  "../source/HL_sys_intvecs.asm"
+Finished building: "../source/HL_sys_intvecs.asm"
+ 
+Building file: "../source/HL_sci.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sci.d_raw" --obj_directory="source"  "../source/HL_sci.c"
+Finished building: "../source/HL_sci.c"
+ 
+Building file: "../source/HL_sys_mpu.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_mpu.d_raw" --obj_directory="source"  "../source/HL_sys_mpu.asm"
+Finished building: "../source/HL_sys_mpu.asm"
+ 
+Building file: "../source/HL_sys_dma.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_dma.d_raw" --obj_directory="source"  "../source/HL_sys_dma.c"
+Finished building: "../source/HL_sys_dma.c"
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"../source/HL_sys_main.c", line 73: warning #225-D: function "_enable_IRQ_interrupt_" declared implicitly
+"../source/HL_sys_main.c", line 80: warning #112-D: statement is unreachable
+Finished building: "../source/HL_sys_main.c"
+ 
+Building file: "../source/HL_sys_pcr.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pcr.d_raw" --obj_directory="source"  "../source/HL_sys_pcr.c"
+Finished building: "../source/HL_sys_pcr.c"
+ 
+Building file: "../source/HL_sys_pmu.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pmu.d_raw" --obj_directory="source"  "../source/HL_sys_pmu.asm"
+Finished building: "../source/HL_sys_pmu.asm"
+ 
+Building file: "../source/HL_sys_phantom.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_phantom.d_raw" --obj_directory="source"  "../source/HL_sys_phantom.c"
+Finished building: "../source/HL_sys_phantom.c"
+ 
+Building file: "../source/HL_sys_pmm.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pmm.d_raw" --obj_directory="source"  "../source/HL_sys_pmm.c"
+Finished building: "../source/HL_sys_pmm.c"
+ 
+Building file: "../source/HL_sys_startup.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_startup.d_raw" --obj_directory="source"  "../source/HL_sys_startup.c"
+Finished building: "../source/HL_sys_startup.c"
+ 
+Building file: "../source/HL_system.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_system.d_raw" --obj_directory="source"  "../source/HL_system.c"
+Finished building: "../source/HL_system.c"
+ 
+Building file: "../source/HL_sys_vim.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_vim.d_raw" --obj_directory="source"  "../source/HL_sys_vim.c"
+Finished building: "../source/HL_sys_vim.c"
+ 
+Building target: "letturaInterruptHet.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"letturaInterruptHet.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="letturaInterruptHet_linkInfo.xml" --rom_model -o "letturaInterruptHet.out" "./source/HL_epc.obj" "./source/HL_eqep.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "letturaInterruptHet.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project letturaInterruptHet ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"../source/HL_sys_main.c", line 73: warning #225-D: function "_enable_IRQ_interrupt_" declared implicitly
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "letturaInterruptHet.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"letturaInterruptHet.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="letturaInterruptHet_linkInfo.xml" --rom_model -o "letturaInterruptHet.out" "./source/HL_epc.obj" "./source/HL_eqep.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "letturaInterruptHet.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project letturaInterruptHet ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'letturaInterruptHet.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project letturaInterruptHet ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"../source/HL_sys_main.c", line 73: warning #225-D: function "_enable_IRQ_interrupt_" declared implicitly
+"../source/HL_sys_main.c", line 78: warning #169-D: argument of type "hetBASE_t *" is incompatible with parameter of type "hetRAMBASE_t *"
+"../source/HL_sys_main.c", line 75: warning #552-D: variable "c" was set but never used
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "letturaInterruptHet.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"letturaInterruptHet.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="letturaInterruptHet_linkInfo.xml" --rom_model -o "letturaInterruptHet.out" "./source/HL_epc.obj" "./source/HL_eqep.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "letturaInterruptHet.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project letturaInterruptHet ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"../source/HL_sys_main.c", line 73: warning #225-D: function "_enable_IRQ_interrupt_" declared implicitly
+"../source/HL_sys_main.c", line 75: warning #552-D: variable "c" was set but never used
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "letturaInterruptHet.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"letturaInterruptHet.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="letturaInterruptHet_linkInfo.xml" --rom_model -o "letturaInterruptHet.out" "./source/HL_epc.obj" "./source/HL_eqep.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "letturaInterruptHet.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project letturaInterruptHet ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'letturaInterruptHet.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project letturaInterruptHet ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_errata_SSWF021_45.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_errata_SSWF021_45.d_raw" --obj_directory="source"  "../source/HL_errata_SSWF021_45.c"
+Finished building: "../source/HL_errata_SSWF021_45.c"
+ 
+Building file: "../source/HL_errata.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_errata.d_raw" --obj_directory="source"  "../source/HL_errata.c"
+Finished building: "../source/HL_errata.c"
+ 
+Building file: "../source/HL_epc.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_epc.d_raw" --obj_directory="source"  "../source/HL_epc.c"
+Finished building: "../source/HL_epc.c"
+ 
+Building file: "../source/HL_eqep.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_eqep.d_raw" --obj_directory="source"  "../source/HL_eqep.c"
+Finished building: "../source/HL_eqep.c"
+ 
+Building file: "../source/HL_gio.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_gio.d_raw" --obj_directory="source"  "../source/HL_gio.c"
+Finished building: "../source/HL_gio.c"
+ 
+Building file: "../source/HL_esm.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_esm.d_raw" --obj_directory="source"  "../source/HL_esm.c"
+Finished building: "../source/HL_esm.c"
+ 
+Building file: "../source/HL_nmpu.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_nmpu.d_raw" --obj_directory="source"  "../source/HL_nmpu.c"
+Finished building: "../source/HL_nmpu.c"
+ 
+Building file: "../source/HL_het.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_het.d_raw" --obj_directory="source"  "../source/HL_het.c"
+Finished building: "../source/HL_het.c"
+ 
+Building file: "../source/HL_notification.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_notification.d_raw" --obj_directory="source"  "../source/HL_notification.c"
+Finished building: "../source/HL_notification.c"
+ 
+Building file: "../source/HL_pinmux.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_pinmux.d_raw" --obj_directory="source"  "../source/HL_pinmux.c"
+Finished building: "../source/HL_pinmux.c"
+ 
+Building file: "../source/HL_rti.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_rti.d_raw" --obj_directory="source"  "../source/HL_rti.c"
+Finished building: "../source/HL_rti.c"
+ 
+Building file: "../source/HL_sci.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sci.d_raw" --obj_directory="source"  "../source/HL_sci.c"
+Finished building: "../source/HL_sci.c"
+ 
+Building file: "../source/HL_sys_core.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_core.d_raw" --obj_directory="source"  "../source/HL_sys_core.asm"
+Finished building: "../source/HL_sys_core.asm"
+ 
+Building file: "../source/HL_sys_intvecs.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_intvecs.d_raw" --obj_directory="source"  "../source/HL_sys_intvecs.asm"
+Finished building: "../source/HL_sys_intvecs.asm"
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"../source/HL_sys_main.c", line 73: warning #225-D: function "_enable_IRQ_interrupt_" declared implicitly
+"../source/HL_sys_main.c", line 82: warning #112-D: statement is unreachable
+"../source/HL_sys_main.c", line 75: warning #552-D: variable "c" was set but never used
+Finished building: "../source/HL_sys_main.c"
+ 
+Building file: "../source/HL_sys_mpu.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_mpu.d_raw" --obj_directory="source"  "../source/HL_sys_mpu.asm"
+Finished building: "../source/HL_sys_mpu.asm"
+ 
+Building file: "../source/HL_sys_dma.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_dma.d_raw" --obj_directory="source"  "../source/HL_sys_dma.c"
+Finished building: "../source/HL_sys_dma.c"
+ 
+Building file: "../source/HL_sys_pmu.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pmu.d_raw" --obj_directory="source"  "../source/HL_sys_pmu.asm"
+Finished building: "../source/HL_sys_pmu.asm"
+ 
+Building file: "../source/HL_sys_phantom.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_phantom.d_raw" --obj_directory="source"  "../source/HL_sys_phantom.c"
+Finished building: "../source/HL_sys_phantom.c"
+ 
+Building file: "../source/HL_sys_pcr.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pcr.d_raw" --obj_directory="source"  "../source/HL_sys_pcr.c"
+Finished building: "../source/HL_sys_pcr.c"
+ 
+Building file: "../source/HL_sys_pmm.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pmm.d_raw" --obj_directory="source"  "../source/HL_sys_pmm.c"
+Finished building: "../source/HL_sys_pmm.c"
+ 
+Building file: "../source/HL_sys_startup.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_startup.d_raw" --obj_directory="source"  "../source/HL_sys_startup.c"
+Finished building: "../source/HL_sys_startup.c"
+ 
+Building file: "../source/HL_sys_vim.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_vim.d_raw" --obj_directory="source"  "../source/HL_sys_vim.c"
+Finished building: "../source/HL_sys_vim.c"
+ 
+Building file: "../source/HL_system.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_system.d_raw" --obj_directory="source"  "../source/HL_system.c"
+Finished building: "../source/HL_system.c"
+ 
+Building target: "letturaInterruptHet.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"letturaInterruptHet.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="letturaInterruptHet_linkInfo.xml" --rom_model -o "letturaInterruptHet.out" "./source/HL_epc.obj" "./source/HL_eqep.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "letturaInterruptHet.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project letturaInterruptHet ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'letturaInterruptHet.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project letturaInterruptHet ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet" --include_path="D:/desktop/Tesi-2021/CCS_workspace/letturaInterruptHet/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"../source/HL_sys_main.c", line 73: warning #225-D: function "_enable_IRQ_interrupt_" declared implicitly
+"../source/HL_sys_main.c", line 82: warning #112-D: statement is unreachable
+"../source/HL_sys_main.c", line 75: warning #552-D: variable "c" was set but never used
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "letturaInterruptHet.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"letturaInterruptHet.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="letturaInterruptHet_linkInfo.xml" --rom_model -o "letturaInterruptHet.out" "./source/HL_epc.obj" "./source/HL_eqep.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "letturaInterruptHet.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project letturaInterruptHet ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'letturaInterruptHet.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_errata_SSWF021_45.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_errata_SSWF021_45.d_raw" --obj_directory="source"  "../source/HL_errata_SSWF021_45.c"
+Finished building: "../source/HL_errata_SSWF021_45.c"
+ 
+Building file: "../source/HL_errata.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_errata.d_raw" --obj_directory="source"  "../source/HL_errata.c"
+Finished building: "../source/HL_errata.c"
+ 
+Building file: "../source/HL_esm.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_esm.d_raw" --obj_directory="source"  "../source/HL_esm.c"
+Finished building: "../source/HL_esm.c"
+ 
+Building file: "../source/HL_epc.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_epc.d_raw" --obj_directory="source"  "../source/HL_epc.c"
+Finished building: "../source/HL_epc.c"
+ 
+Building file: "../source/HL_nmpu.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_nmpu.d_raw" --obj_directory="source"  "../source/HL_nmpu.c"
+Finished building: "../source/HL_nmpu.c"
+ 
+Building file: "../source/HL_notification.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_notification.d_raw" --obj_directory="source"  "../source/HL_notification.c"
+Finished building: "../source/HL_notification.c"
+ 
+Building file: "../source/HL_het.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_het.d_raw" --obj_directory="source"  "../source/HL_het.c"
+Finished building: "../source/HL_het.c"
+ 
+Building file: "../source/HL_pinmux.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_pinmux.d_raw" --obj_directory="source"  "../source/HL_pinmux.c"
+Finished building: "../source/HL_pinmux.c"
+ 
+Building file: "../source/HL_sys_core.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_core.d_raw" --obj_directory="source"  "../source/HL_sys_core.asm"
+Finished building: "../source/HL_sys_core.asm"
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_sys_main.obj' failed
+"../source/HL_sys_main.c", line 69: warning #225-D: function "hetInit" declared implicitly
+"../source/HL_sys_main.c", line 70: warning #225-D: function "pwmStart" declared implicitly
+"../source/HL_sys_main.c", line 70: error #20: identifier "hetRAM1" is undefined
+"../source/HL_sys_main.c", line 70: error #20: identifier "pwm0" is undefined
+"../source/HL_sys_main.c", line 74: warning #112-D: statement is unreachable
+2 errors detected in the compilation of "../source/HL_sys_main.c".
+gmake: *** [source/HL_sys_main.obj] Error 1
+Building file: "../source/HL_sys_intvecs.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_intvecs.d_raw" --obj_directory="source"  "../source/HL_sys_intvecs.asm"
+Finished building: "../source/HL_sys_intvecs.asm"
+ 
+Building file: "../source/HL_sys_mpu.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_mpu.d_raw" --obj_directory="source"  "../source/HL_sys_mpu.asm"
+Finished building: "../source/HL_sys_mpu.asm"
+ 
+Building file: "../source/HL_sys_dma.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_dma.d_raw" --obj_directory="source"  "../source/HL_sys_dma.c"
+Finished building: "../source/HL_sys_dma.c"
+ 
+Building file: "../source/HL_sys_phantom.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_phantom.d_raw" --obj_directory="source"  "../source/HL_sys_phantom.c"
+Finished building: "../source/HL_sys_phantom.c"
+ 
+Building file: "../source/HL_sys_pmu.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pmu.d_raw" --obj_directory="source"  "../source/HL_sys_pmu.asm"
+Finished building: "../source/HL_sys_pmu.asm"
+ 
+Building file: "../source/HL_sys_pcr.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pcr.d_raw" --obj_directory="source"  "../source/HL_sys_pcr.c"
+Finished building: "../source/HL_sys_pcr.c"
+ 
+Building file: "../source/HL_sys_pmm.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pmm.d_raw" --obj_directory="source"  "../source/HL_sys_pmm.c"
+Finished building: "../source/HL_sys_pmm.c"
+ 
+Building file: "../source/HL_sys_startup.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_startup.d_raw" --obj_directory="source"  "../source/HL_sys_startup.c"
+Finished building: "../source/HL_sys_startup.c"
+ 
+Building file: "../source/HL_sys_vim.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_vim.d_raw" --obj_directory="source"  "../source/HL_sys_vim.c"
+Finished building: "../source/HL_sys_vim.c"
+ 
+Building file: "../source/HL_system.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_system.d_raw" --obj_directory="source"  "../source/HL_system.c"
+Finished building: "../source/HL_system.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"../source/HL_sys_main.c", line 75: warning #112-D: statement is unreachable
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'het1_4_500k_50p100.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_sys_main.obj' failed
+"../source/HL_sys_main.c", line 75: error #29: expected an expression
+"../source/HL_sys_main.c", line 76: error #66: expected a ";"
+"../source/HL_sys_main.c", line 72: warning #552-D: variable "c" was set but never used
+2 errors detected in the compilation of "../source/HL_sys_main.c".
+gmake: *** [source/HL_sys_main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'het1_4_500k_50p100.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'het1_4_500k_50p100.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'het1_4_500k_50p100.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'het1_4_500k_50p100.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'het1_4_500k_50p100.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'het1_4_500k_50p100.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'het1_4_500k_50p100.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'het1_4_500k_50p100.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'het1_4_500k_50p100.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'het1_4_500k_50p100.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'het1_4_500k_50p100.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100" --include_path="D:/desktop/Tesi-2021/CCS_workspace/het1_4_500k_50p100/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "het1_4_500k_50p100.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"het1_4_500k_50p100.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="het1_4_500k_50p100_linkInfo.xml" --rom_model -o "het1_4_500k_50p100.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_het.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "het1_4_500k_50p100.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project het1_4_500k_50p100 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'het1_4_500k_50p100.out' is up to date.
+
+**** Build Finished ****
