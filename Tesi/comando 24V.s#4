@@ -1080,6 +1080,44 @@ type 0204, grid 7.5 mm</description>
 <text x="-7.62" y="-16.51" size="1.27" layer="27">&gt;VALUE</text>
 <pad name="3" x="0" y="-10.16" drill="1" shape="long"/>
 </package>
+<package name="61202021621">
+<description>WR-BHD 2.54mm Male Box Header 20 Pins</description>
+<wire x1="-16.53" y1="4.55" x2="16.53" y2="4.55" width="0.127" layer="21"/>
+<wire x1="16.53" y1="4.55" x2="16.53" y2="-4.55" width="0.127" layer="21"/>
+<wire x1="16.53" y1="-4.55" x2="-16.53" y2="-4.55" width="0.127" layer="21"/>
+<wire x1="-16.53" y1="-4.55" x2="-16.53" y2="4.55" width="0.127" layer="21"/>
+<text x="-13.335" y="-1.905" size="1.27" layer="51">1</text>
+<text x="12.86" y="0.535" size="1.27" layer="51">20</text>
+<text x="-3.175" y="6.35" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-13.335" y="-1.905" size="1.27" layer="21">1</text>
+<polygon width="0.127" layer="39">
+<vertex x="-16.78" y="4.8"/>
+<vertex x="16.78" y="4.8"/>
+<vertex x="16.78" y="-4.8"/>
+<vertex x="-16.78" y="-4.8"/>
+</polygon>
+<pad name="2" x="-11.43" y="1.27" drill="1.1"/>
+<pad name="1" x="-11.43" y="-1.27" drill="1.1"/>
+<pad name="4" x="-8.89" y="1.27" drill="1.1"/>
+<pad name="3" x="-8.89" y="-1.27" drill="1.1"/>
+<pad name="6" x="-6.35" y="1.27" drill="1.1"/>
+<pad name="5" x="-6.35" y="-1.27" drill="1.1"/>
+<pad name="7" x="-3.81" y="-1.27" drill="1.1"/>
+<pad name="8" x="-3.81" y="1.27" drill="1.1"/>
+<pad name="9" x="-1.27" y="-1.27" drill="1.1"/>
+<pad name="10" x="-1.27" y="1.27" drill="1.1"/>
+<pad name="11" x="1.27" y="-1.27" drill="1.1"/>
+<pad name="12" x="1.27" y="1.27" drill="1.1"/>
+<pad name="13" x="3.81" y="-1.27" drill="1.1"/>
+<pad name="14" x="3.81" y="1.27" drill="1.1"/>
+<pad name="15" x="6.35" y="-1.27" drill="1.1"/>
+<pad name="16" x="6.35" y="1.27" drill="1.1"/>
+<pad name="17" x="8.89" y="-1.27" drill="1.1"/>
+<pad name="18" x="8.89" y="1.27" drill="1.1"/>
+<pad name="19" x="11.43" y="-1.27" drill="1.1"/>
+<pad name="20" x="11.43" y="1.27" drill="1.1"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="0204/7" urn="urn:adsk.eagle:package:23498/2" type="model">
@@ -1438,6 +1476,34 @@ type 0204, grid 7.5 mm</description>
 <text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="3" x="-5.08" y="-7.62" visible="pad" length="middle"/>
+</symbol>
+<symbol name="10X10">
+<wire x1="-22.86" y1="5.08" x2="-22.86" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-5.08" x2="27.94" y2="5.08" width="0.254" layer="94"/>
+<wire x1="27.94" y1="5.08" x2="-22.86" y2="5.08" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-5.08" x2="-22.86" y2="-5.08" width="0.254" layer="94"/>
+<text x="-35.052" y="0.762" size="1.778" layer="95">&gt;NAME</text>
+<text x="-35.814" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-20.32" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="2" x="-20.32" y="10.16" visible="pad" length="middle" direction="pas" rot="R270"/>
+<pin name="3" x="-15.24" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="4" x="-15.24" y="10.16" visible="pad" length="middle" direction="pas" rot="R270"/>
+<pin name="5" x="-10.16" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="6" x="-10.16" y="10.16" visible="pad" length="middle" direction="pas" rot="R270"/>
+<pin name="7" x="-5.08" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="8" x="-5.08" y="10.16" visible="pad" length="middle" direction="pas" rot="R270"/>
+<pin name="10" x="0" y="10.16" visible="pad" length="middle" direction="pas" rot="R270"/>
+<pin name="9" x="0" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="12" x="5.08" y="10.16" visible="pad" length="middle" direction="pas" rot="R270"/>
+<pin name="11" x="5.08" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="14" x="10.16" y="10.16" visible="pad" length="middle" direction="pas" rot="R270"/>
+<pin name="13" x="10.16" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="15" x="15.24" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="16" x="15.24" y="10.16" visible="pad" length="middle" direction="pas" rot="R270"/>
+<pin name="17" x="20.32" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="18" x="20.32" y="10.16" visible="pad" length="middle" direction="pas" rot="R270"/>
+<pin name="19" x="25.4" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="20" x="25.4" y="10.16" visible="pad" length="middle" direction="pas" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1813,6 +1879,53 @@ type 0204, grid 7.5 mm</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="61202021621" prefix="J">
+<description>&lt;b&gt; WR-BHD 2.54mm Male Box Header, 20 Pins&lt;/b&gt;=&gt;Code : Con_WTB_BHD_2.54_Male_THT_WS_61202021621
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/thumbs2/eican/thb_Con_WTB_BHD_2.54_Male_THT_WS_6120xx21621_pf2.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/thumbs2/eican/thb_Con_WTB_BHD_2.54_Male_THT_WS_6120xx21621_pf2.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/612_0xx_216_21"&gt;http://katalog.we-online.de/en/em/612_0xx_216_21&lt;/a&gt;&lt;p&gt;
+Created 2014-06-04, Karrer Zheng&lt;br&gt;
+2014 (C) Würth Elektronik </description>
+<gates>
+<gate name="G$1" symbol="10X10" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="61202021621">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value=" Connector Header Through Hole 20 position 0.100 (2.54mm) "/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="732-2096-ND"/>
+<attribute name="MF" value="Würth Elektronik"/>
+<attribute name="MP" value="61202021621"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/61202021621/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1900,6 +2013,11 @@ type 0204, grid 7.5 mm</description>
 <part name="MOT1" library="TFML-125-01-S-D" deviceset="TFML-125-01-S-D" device=""/>
 <part name="PROXYM_M1" library="SCARA" deviceset="CON_3F" device=""/>
 <part name="PROXYM_M2" library="SCARA" deviceset="CON_3F" device=""/>
+<part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
+<part name="J1" library="SCARA" deviceset="61202021621" device=""/>
+<part name="J2" library="SCARA" deviceset="61202021621" device=""/>
+<part name="J3" library="SCARA" deviceset="61202021621" device=""/>
+<part name="J4" library="SCARA" deviceset="61202021621" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4456,6 +4574,33 @@ type 0204, grid 7.5 mm</description>
 <label x="203.2" y="71.12" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+<instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
+</instance>
+<instance part="J1" gate="G$1" x="63.5" y="124.46" smashed="yes" rot="R270">
+<attribute name="NAME" x="62.738" y="148.082" size="1.778" layer="95"/>
+</instance>
+<instance part="J2" gate="G$1" x="191.77" y="125.73" smashed="yes" rot="R270">
+<attribute name="NAME" x="189.738" y="149.352" size="1.778" layer="95"/>
+</instance>
+<instance part="J3" gate="G$1" x="62.23" y="44.45" smashed="yes" rot="R270">
+<attribute name="NAME" x="60.198" y="68.072" size="1.778" layer="95"/>
+</instance>
+<instance part="J4" gate="G$1" x="190.5" y="57.15" smashed="yes" rot="R270">
+<attribute name="NAME" x="189.738" y="80.772" size="1.778" layer="95"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>

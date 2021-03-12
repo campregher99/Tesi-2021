@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -1758,29 +1758,29 @@ type 0204, grid 7.5 mm</description>
 <part name="GPO4_24V" library="SCARA" deviceset="AGQ20003" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R1" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
+<part name="R1" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="200R"/>
 <part name="U$1" library="SCARA" deviceset="LED_TONDO" device=""/>
-<part name="R2" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
+<part name="R2" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="200R"/>
 <part name="U$2" library="SCARA" deviceset="LED_TONDO" device=""/>
-<part name="R3" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
+<part name="R3" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="200R"/>
 <part name="U$3" library="SCARA" deviceset="LED_TONDO" device=""/>
-<part name="R4" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
+<part name="R4" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="200R"/>
 <part name="U$4" library="SCARA" deviceset="LED_TONDO" device=""/>
-<part name="R6" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
+<part name="R6" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="200R"/>
 <part name="U$5" library="SCARA" deviceset="LED_TONDO" device=""/>
-<part name="R7" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
+<part name="R7" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="200R"/>
 <part name="U$6" library="SCARA" deviceset="LED_TONDO" device=""/>
-<part name="R8" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
+<part name="R8" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="200R"/>
 <part name="U$7" library="SCARA" deviceset="LED_TONDO" device=""/>
-<part name="R9" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
+<part name="R9" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="200R"/>
 <part name="U$8" library="SCARA" deviceset="LED_TONDO" device=""/>
-<part name="R10" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
+<part name="R10" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="200R"/>
 <part name="U$9" library="SCARA" deviceset="LED_TONDO" device=""/>
-<part name="R11" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
+<part name="R11" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="200R"/>
 <part name="U$10" library="SCARA" deviceset="LED_TONDO" device=""/>
-<part name="R12" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
+<part name="R12" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="200R"/>
 <part name="U$11" library="SCARA" deviceset="LED_TONDO" device=""/>
-<part name="R13" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
+<part name="R13" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="200R"/>
 <part name="U$12" library="SCARA" deviceset="LED_TONDO" device=""/>
 <part name="U$13" library="SCARA" deviceset="C0U12F" device=""/>
 <part name="U$14" library="SCARA" deviceset="MB6M-E3/45" device=""/>
@@ -1789,7 +1789,7 @@ type 0204, grid 7.5 mm</description>
 <part name="AC_SUP" library="SCARA" deviceset="B2B-XH-A(LF)(SN)" device=""/>
 <part name="J1" library="SCARA" deviceset="61201021621" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
-<part name="R14" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
+<part name="R14" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="47k"/>
 <part name="R15" library="SCARA" deviceset="64WR5KLF" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>

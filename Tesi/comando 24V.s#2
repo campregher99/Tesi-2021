@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -2378,10 +2378,8 @@ Created 2014-06-04, Karrer Zheng&lt;br&gt;
 <part name="U3" library="SCARA" deviceset="TMP37FT9Z" device=""/>
 <part name="FRAME5" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="J1" library="SCARA" deviceset="61202021621" device=""/>
-<part name="J2" library="SCARA" deviceset="61202021621" device=""/>
-<part name="J3" library="SCARA" deviceset="61202021621" device=""/>
-<part name="J4" library="SCARA" deviceset="61202021621" device=""/>
+<part name="J1/J3" library="SCARA" deviceset="61202021621" device=""/>
+<part name="J2/J4" library="SCARA" deviceset="61202021621" device=""/>
 <part name="IC9" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LM324" device="N" package3d_urn="urn:adsk.eagle:package:16407/2"/>
 <part name="R16" library="SCARA" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="47k"/>
 <part name="R17" library="SCARA" deviceset="64WR5KLF" device="" value="TEMP_ADJ"/>
@@ -4906,17 +4904,11 @@ Created 2014-06-04, Karrer Zheng&lt;br&gt;
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="J1" gate="G$1" x="63.5" y="124.46" smashed="yes" rot="R270">
+<instance part="J1/J3" gate="G$1" x="63.5" y="124.46" smashed="yes" rot="R270">
 <attribute name="NAME" x="62.738" y="148.082" size="1.778" layer="95"/>
 </instance>
-<instance part="J2" gate="G$1" x="191.77" y="125.73" smashed="yes" rot="R270">
+<instance part="J2/J4" gate="G$1" x="191.77" y="125.73" smashed="yes" rot="R270">
 <attribute name="NAME" x="189.738" y="149.352" size="1.778" layer="95"/>
-</instance>
-<instance part="J3" gate="G$1" x="62.23" y="44.45" smashed="yes" rot="R270">
-<attribute name="NAME" x="60.198" y="68.072" size="1.778" layer="95"/>
-</instance>
-<instance part="J4" gate="G$1" x="190.5" y="57.15" smashed="yes" rot="R270">
-<attribute name="NAME" x="189.738" y="80.772" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
