@@ -1,0 +1,117 @@
+# Created by Ultra Librarian Gold 8.3.286 Copyright © 1999-2018
+# Frank Frank, Accelerated Designs
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'PDIP6-646BX_ONS.pac';
+Change Drill 30;
+Pad '1' Round 0 50 R0 (0 0);
+Change Drill 30;
+Pad '2' Round 0 50 R0 (0 -100);
+Change Drill 30;
+Pad '3' Round 0 50 R0 (0 -200);
+Change Drill 30;
+Pad '4' Round 0 50 R0 (300 -200);
+Change Drill 30;
+Pad '5' Round 0 50 R0 (300 -100);
+Change Drill 30;
+Pad '6' Round 0 50 R0 (300 0);
+Layer 21;
+Wire 6 (15 -280) (285 -280);
+Wire 6 (285 -280) (285 -235);
+Wire 6 (285 80) (15 80);
+Wire 6 (15 80) (15 35);
+Wire 6 (15 -35) (15 -65);
+Wire 6 (15 -135) (15 -165);
+Wire 6 (15 -235) (15 -280);
+Wire 6 (285 -165) (285 -135);
+Wire 6 (285 -65) (285 -35);
+Wire 6 (285 35) (285 80);
+Change Size 50;
+Change Ratio 6;
+Text '*' SR0 (-23 30);
+Change Size 50;
+Change Ratio 6;
+Text '>Value' SR0 (82 -125);
+Layer 51;
+Wire 6 (20 -15) (20 15);
+Wire 6 (20 15) (-15 15);
+Wire 6 (-15 15) (-15 -15);
+Wire 6 (-15 -15) (20 -15);
+Wire 6 (20 -115) (20 -85);
+Wire 6 (20 -85) (-15 -85);
+Wire 6 (-15 -85) (-15 -115);
+Wire 6 (-15 -115) (20 -115);
+Wire 6 (20 -215) (20 -185);
+Wire 6 (20 -185) (-15 -185);
+Wire 6 (-15 -185) (-15 -215);
+Wire 6 (-15 -215) (20 -215);
+Wire 6 (280 -185) (280 -215);
+Wire 6 (280 -215) (315 -215);
+Wire 6 (315 -215) (315 -185);
+Wire 6 (315 -185) (280 -185);
+Wire 6 (280 -85) (280 -115);
+Wire 6 (280 -115) (315 -115);
+Wire 6 (315 -115) (315 -85);
+Wire 6 (315 -85) (280 -85);
+Wire 6 (280 15) (280 -15);
+Wire 6 (280 -15) (315 -15);
+Wire 6 (315 -15) (315 15);
+Wire 6 (315 15) (280 15);
+Wire 6 (20 -275) (280 -275);
+Wire 6 (280 -275) (280 75);
+Wire 6 (280 75) (20 75);
+Wire 6 (20 75) (20 -275);
+Wire 6 (162 75) -180 (138 75);
+Change Size 50;
+Change Ratio 6;
+Text '*' SR0 (7 -25);
+Layer 25;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (21 -125);
+Layer 27;
+
+Edit 'H11L1M.sym';
+Layer 94;
+Pin 'ANODE' Pas None Middle R0 Both 0 (100 0)
+Pin 'CATHODE' Pas None Middle R0 Both 0 (100 -100)
+Pin 'NC' NC None Middle R0 Both 0 (100 -200)
+Pin 'VO' Pas None Middle R180 Both 0 (1700 -200)
+Pin 'GND' Pas None Middle R180 Both 0 (1700 -100)
+Pin 'VCC' Pwr None Middle R180 Both 0 (1700 0)
+Wire 6 (300 200) (300 -400);
+Wire 6 (300 -400) (1500 -400);
+Wire 6 (1500 -400) (1500 200);
+Wire 6 (1500 200) (300 200);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 6;
+Text '>Name' SR0 (714 359);
+Layer 96;
+Change Size 82;
+Change Ratio 6;
+Text '>Value' SR0 (689 259);
+
+Edit 'H11L1M.dev';
+Prefix 'U';
+Description '';
+Value Off;
+Add H11L1M 'A' Next  0 (0 0);
+Package 'PDIP6-646BX_ONS';
+Technology '';
+Attribute Datasheet 'https://www.onsemi.com/pub/Collateral/H11L3M-D.PDF';
+Attribute Built_By 'EMA_Justin';
+Attribute Copyright 'Copyright (C) 2018 Accelerated Designs. All rights reserved';
+Attribute Vendor 'ON Semiconductor';
+Attribute Manufacturer_Part_Number 'H11L1M';
+Attribute SourceLibrary 'ON_Semiconductor_2020-01-13';
+Connect 'A.ANODE' '1';
+Connect 'A.CATHODE' '2';
+Connect 'A.NC' '3';
+Connect 'A.VO' '4';
+Connect 'A.GND' '5';
+Connect 'A.VCC' '6';
