@@ -1108,6 +1108,20 @@ DIN A4, landscape with location and doc. field</description>
 <text x="0.1778" y="-0.635" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="0.5334" y="-3.175" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
+<package name="UM-B_NCH">
+<pad name="1" x="0" y="0" drill="0.7112" diameter="1.2192" shape="square"/>
+<pad name="2" x="1.4986" y="0" drill="0.7112" diameter="1.2192" rot="R180"/>
+<wire x1="-2.794" y1="0" x2="-1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="-2.1336" y1="0.635" x2="-2.1336" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.8956" y1="0" x2="-1.3716" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-1.3716" y1="0" x2="2.8956" y2="0" width="0.1524" layer="21" curve="-180"/>
+<text x="-2.2606" y="-4.445" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
+<wire x1="-2.794" y1="0" x2="-1.524" y2="0" width="0.1524" layer="51"/>
+<wire x1="-2.1336" y1="0.635" x2="-2.1336" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="2.7432" y1="0" x2="-1.27" y2="0" width="0" layer="51" curve="-180"/>
+<wire x1="-1.27" y1="0" x2="2.7432" y2="0" width="0" layer="51" curve="-180"/>
+<text x="-2.5146" y="3.175" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="DIL14" urn="urn:adsk.eagle:package:16407/2" type="model">
@@ -1717,6 +1731,18 @@ DIN A4, landscape with location and doc. field</description>
 <text x="18.1356" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
 <text x="17.5006" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
 </symbol>
+<symbol name="CAPH">
+<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="0" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="3.4798" y1="-1.905" x2="3.4798" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="4.1148" y1="-1.905" x2="4.1148" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="4.1148" y1="0" x2="5.08" y2="0" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.4798" y2="0" width="0.2032" layer="94"/>
+<text x="-5.1562" y="-5.5372" size="3.4798" layer="96" ratio="10" rot="SR0">&gt;Value</text>
+<text x="-4.0894" y="2.0828" size="3.4798" layer="95" ratio="10" rot="SR0">&gt;Name</text>
+<wire x1="1.524" y1="-0.508" x2="1.524" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-1.27" x2="2.286" y2="-1.27" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ULN2003A" prefix="U">
@@ -2268,6 +2294,27 @@ Created 2014-06-04, Karrer Zheng&lt;br&gt;
 <attribute name="MANUFACTURER_PART_NUMBER" value="H11L1M" constant="no"/>
 <attribute name="SOURCELIBRARY" value="ON_Semiconductor_2020-01-13" constant="no"/>
 <attribute name="VENDOR" value="ON Semiconductor" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UMF1V010MDD1TP" prefix="C">
+<gates>
+<gate name="A" symbol="CAPH" x="0" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="UM-B_NCH">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BUILT_BY" value="EMA_UL_Team" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="UMF1V010MDD1TP" constant="no"/>
+<attribute name="SOURCELIBRARY" value="Nichicon_2014-12-31" constant="no"/>
+<attribute name="VENDOR" value="Nichicon" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6953,6 +7000,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="J7" library="SCARA" deviceset="61201021621" device=""/>
 <part name="J8" library="SCARA" deviceset="61202021621" device=""/>
 <part name="U8" library="SCARA" deviceset="H11L1M" device=""/>
+<part name="C1" library="SCARA" deviceset="UMF1V010MDD1TP" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8021,6 +8069,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="105.1814" y="107.95" size="1.6764" layer="95" rot="R90"/>
 <attribute name="VALUE" x="109.982" y="107.95" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="C1" gate="A" x="128.27" y="113.03" smashed="yes" rot="R270">
+<attribute name="NAME" x="131.6228" y="112.0394" size="1.778" layer="95" ratio="10" rot="SR270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8059,6 +8110,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="106.68" y1="88.9" x2="106.68" y2="87.63" width="0.1524" layer="91"/>
 <label x="106.68" y="87.63" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="C1" gate="A" pin="2"/>
+<wire x1="128.27" y1="105.41" x2="128.27" y2="102.87" width="0.1524" layer="91"/>
+<label x="128.27" y="102.87" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="220V_PROBE" class="0">
 <segment>
@@ -8067,14 +8123,14 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="27.94" y="92.71" size="1.6764" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="AC_IN2" class="0">
+<net name="AC_IN2" class="1">
 <segment>
 <pinref part="U$14" gate="A" pin="AC2"/>
 <wire x1="59.69" y1="113.03" x2="59.69" y2="110.49" width="0.1524" layer="91"/>
 <label x="59.69" y="110.49" size="1.6764" layer="95"/>
 </segment>
 </net>
-<net name="AC_IN1" class="0">
+<net name="AC_IN1" class="1">
 <segment>
 <pinref part="U$14" gate="A" pin="AC1"/>
 <wire x1="59.69" y1="128.27" x2="59.69" y2="130.81" width="0.1524" layer="91"/>
@@ -8116,6 +8172,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="R29" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="116.84" x2="106.68" y2="118.11" width="0.1524" layer="91"/>
 <label x="106.68" y="118.11" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C1" gate="A" pin="1"/>
+<wire x1="128.27" y1="113.03" x2="128.27" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="128.27" y1="114.3" x2="128.27" y2="115.57" width="0.1524" layer="91"/>
+<label x="128.27" y="115.57" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="1">
@@ -8207,7 +8269,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="AC_IN1" class="0">
+<net name="AC_IN1" class="1">
 <segment>
 <pinref part="AC_SUP" gate="A" pin="1"/>
 <wire x1="19.05" y1="161.29" x2="16.51" y2="161.29" width="0.1524" layer="91"/>
@@ -8215,7 +8277,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="19.05" y="161.29"/>
 </segment>
 </net>
-<net name="AC_IN2" class="0">
+<net name="AC_IN2" class="1">
 <segment>
 <pinref part="AC_SUP" gate="A" pin="2"/>
 <wire x1="19.05" y1="158.75" x2="16.51" y2="158.75" width="0.1524" layer="91"/>
