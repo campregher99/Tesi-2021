@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-04-08T18:48:26Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "comando 24V"
+        },
+        "Owner": "Francesco Campregher <campregher99@gmail.com>",
+        "Size": {
+            "X": 226.06,
+            "Y": 133.858
+        }
+    }
+}

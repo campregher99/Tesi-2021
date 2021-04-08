@@ -4,12 +4,12 @@
         "name": "Francesco Campregher"
     },
     "description": {
-        "EN": "Questo è il mio modello per il CAM job."
+        "EN": "EAGLE default 2 layer CAM job."
     },
     "output_type": "directory",
     "outputs": [
         {
-            "filename_prefix": "GERBER",
+            "filename_prefix": "CAMOutputs/GerberFiles",
             "format_specifier": {
                 "decimal": 4,
                 "integer": 3
@@ -38,7 +38,7 @@
                         17,
                         18
                     ],
-                    "name": "lato superiore",
+                    "name": "Top Copper",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -63,7 +63,8 @@
                         17,
                         18
                     ],
-                    "name": "Lato inferiore",
+                    "milling": false,
+                    "name": "Bottom Copper",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -97,17 +98,37 @@
                     },
                     "board_outline": false,
                     "config": {
-                        "file_function": "Legend",
+                        "file_function": "Soldermask",
                         "index": 1,
                         "layer_type": "top"
                     },
-                    "filename_format": "%PREFIX/silkscreen_top.gbr",
+                    "filename_format": "%PREFIX/soldermask_top.gbr",
                     "layers": [
-                        21,
-                        25
+                        29
                     ],
-                    "milling": false,
-                    "name": "Silkscreen Top",
+                    "name": "Soldermask Top",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "file_function": "Soldermask",
+                        "index": 1,
+                        "layer_type": "bottom"
+                    },
+                    "filename_format": "%PREFIX/soldermask_bottom.gbr",
+                    "layers": [
+                        30
+                    ],
+                    "name": "Soldermask Bottom",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -123,15 +144,15 @@
                     "config": {
                         "file_function": "Legend",
                         "index": 1,
-                        "layer_type": "bottom"
+                        "layer_type": "top"
                     },
-                    "filename_format": "%PREFIX/silkscreen_bottom.gbr",
+                    "filename_format": "%PREFIX/silkscreen_top.gbr",
                     "layers": [
-                        22,
-                        26
+                        21,
+                        25
                     ],
                     "milling": false,
-                    "name": "Silkscreen Bottom",
+                    "name": "Silkscreen Top",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 }
@@ -139,7 +160,7 @@
             "version": "RS274X"
         },
         {
-            "filename_prefix": "GERBER",
+            "filename_prefix": "CAMOutputs/DrillFiles",
             "format_specifier": {
                 "decimal": 3,
                 "integer": 3
@@ -147,21 +168,51 @@
             "output_type": "drill",
             "outputs": [
                 {
-                    "advanced_options": {
-                        "mirror": false,
-                        "offset_x": 0,
-                        "offset_y": 0,
-                        "rotate": false,
-                        "upside_down": false
+                    "drills": {
+                        "NPTH": false,
+                        "PTH": true,
+                        "VIA": false
                     },
-                    "filename_format": "%DRILLPREFIX/drill_%FROM_%TO.xln",
-                    "name": "Auto Drill",
-                    "type": "autodrills"
+                    "filename_format": "%DRILLPREFIX/drills_pad_%FROM_%TO.xln",
+                    "layers": {
+                        "from": 1,
+                        "to": 16
+                    },
+                    "name": "pad",
+                    "type": "excellon"
+                },
+                {
+                    "drills": {
+                        "NPTH": false,
+                        "PTH": false,
+                        "VIA": true
+                    },
+                    "filename_format": "%DRILLPREFIX/drills_vias_%FROM_%TO.xln",
+                    "layers": {
+                        "from": 1,
+                        "to": 16
+                    },
+                    "name": "vias",
+                    "type": "excellon"
+                },
+                {
+                    "drills": {
+                        "NPTH": true,
+                        "PTH": false,
+                        "VIA": false
+                    },
+                    "filename_format": "%DRILLPREFIX/drills_hole_%FROM_%TO.xln",
+                    "layers": {
+                        "from": 1,
+                        "to": 16
+                    },
+                    "name": "hole",
+                    "type": "excellon"
                 }
             ]
         },
         {
-            "filename_prefix": "GERBER",
+            "filename_prefix": "CAMOutputs/Assembly",
             "output_type": "assembly",
             "outputs": [
                 {
@@ -169,19 +220,25 @@
                     "list_attribute": true,
                     "list_type": "values",
                     "name": "Bill of Material",
-                    "output_format": "csv",
+                    "output_format": "txt",
                     "type": "bom"
+                },
+                {
+                    "filename_format": "%ASSEMBLYPREFIX/PnP_%N_%BOARDSIDE",
+                    "name": "Pick and Place",
+                    "output_format": "txt",
+                    "type": "pick_and_place"
                 }
             ]
         },
         {
-            "filename_prefix": "Gerber",
+            "filename_prefix": "CAMOutputs/DrawingFiles",
             "output_type": "drawing",
             "outputs": [
             ]
         }
     ],
-    "timestamp": "2021-04-06T16:08:08",
+    "timestamp": "2021-04-08T20:31:02",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "9.2.0"
