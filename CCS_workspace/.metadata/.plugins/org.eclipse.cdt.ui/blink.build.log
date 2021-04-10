@@ -6,13 +6,13 @@
 Building file: "../source/HL_sys_main.c"
 Invoking: Arm Compiler
 "C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/blink" --include_path="D:/desktop/Tesi-2021/CCS_workspace/blink/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
  
->> Compilation failure
-source/subdir_rules.mk:9: recipe for target 'source/HL_sys_main.obj' failed
-"../source/HL_sys_main.c", line 51: fatal error #1965: cannot open source file "malloc.h"
-1 catastrophic error detected in the compilation of "../source/HL_sys_main.c".
-Compilation terminated.
-gmake: *** [source/HL_sys_main.obj] Error 1
-gmake: Target 'all' not remade because of errors.
+Building target: "blink.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"blink.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="blink_linkInfo.xml" --rom_model -o "blink.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "blink.out"
+ 
 
 **** Build Finished ****

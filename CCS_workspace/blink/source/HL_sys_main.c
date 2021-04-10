@@ -47,8 +47,7 @@
 /* USER CODE END */
 
 /* Include Files */
-
-#include <malloc.h>
+#include <stdlib.h>
 #include "HL_sys_common.h"
 #include "HL_system.h"
 
@@ -76,6 +75,7 @@ uint32 noti;
 void main(void)
 {
 /* USER CODE BEGIN (3) */
+    int *c = (int*) malloc(sizeof(int)*3);
 
     /* Initialize RTI driver */
     rtiInit();
