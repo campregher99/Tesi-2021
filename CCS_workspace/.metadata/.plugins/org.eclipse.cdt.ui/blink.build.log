@@ -3,6 +3,16 @@
 
 "C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
  
-gmake[1]: 'blink.out' is up to date.
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/blink" --include_path="D:/desktop/Tesi-2021/CCS_workspace/blink/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_sys_main.obj' failed
+"../source/HL_sys_main.c", line 51: fatal error #1965: cannot open source file "malloc.h"
+1 catastrophic error detected in the compilation of "../source/HL_sys_main.c".
+Compilation terminated.
+gmake: *** [source/HL_sys_main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
 
 **** Build Finished ****

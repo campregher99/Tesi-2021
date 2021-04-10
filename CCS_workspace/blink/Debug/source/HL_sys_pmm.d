@@ -1,10 +1,10 @@
 # FIXED
 
 source/HL_sys_pmm.obj: ../source/HL_sys_pmm.c
-source/HL_sys_pmm.obj: D:/CCS_workspace/blink/include/HL_sys_pmm.h
-source/HL_sys_pmm.obj: D:/CCS_workspace/blink/include/HL_reg_pmm.h
-source/HL_sys_pmm.obj: D:/CCS_workspace/blink/include/HL_sys_common.h
-source/HL_sys_pmm.obj: D:/CCS_workspace/blink/include/HL_hal_stdtypes.h
+source/HL_sys_pmm.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_sys_pmm.h
+source/HL_sys_pmm.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_reg_pmm.h
+source/HL_sys_pmm.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_sys_common.h
+source/HL_sys_pmm.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_hal_stdtypes.h
 source/HL_sys_pmm.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdint.h
 source/HL_sys_pmm.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/_ti_config.h
 source/HL_sys_pmm.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/linkage.h
@@ -18,10 +18,10 @@ source/HL_sys_pmm.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/in
 source/HL_sys_pmm.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdbool.h
 
 ../source/HL_sys_pmm.c: 
-D:/CCS_workspace/blink/include/HL_sys_pmm.h: 
-D:/CCS_workspace/blink/include/HL_reg_pmm.h: 
-D:/CCS_workspace/blink/include/HL_sys_common.h: 
-D:/CCS_workspace/blink/include/HL_hal_stdtypes.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_sys_pmm.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_reg_pmm.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_sys_common.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_hal_stdtypes.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdint.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/_ti_config.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/linkage.h: 

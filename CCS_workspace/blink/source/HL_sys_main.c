@@ -48,6 +48,7 @@
 
 /* Include Files */
 
+#include <malloc.h>
 #include "HL_sys_common.h"
 #include "HL_system.h"
 

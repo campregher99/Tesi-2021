@@ -1,10 +1,10 @@
 # FIXED
 
 source/HL_pinmux.obj: ../source/HL_pinmux.c
-source/HL_pinmux.obj: D:/CCS_workspace/blink/include/HL_pinmux.h
-source/HL_pinmux.obj: D:/CCS_workspace/blink/include/HL_reg_pinmux.h
-source/HL_pinmux.obj: D:/CCS_workspace/blink/include/HL_sys_common.h
-source/HL_pinmux.obj: D:/CCS_workspace/blink/include/HL_hal_stdtypes.h
+source/HL_pinmux.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_pinmux.h
+source/HL_pinmux.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_reg_pinmux.h
+source/HL_pinmux.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_sys_common.h
+source/HL_pinmux.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_hal_stdtypes.h
 source/HL_pinmux.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdint.h
 source/HL_pinmux.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/_ti_config.h
 source/HL_pinmux.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/linkage.h
@@ -18,10 +18,10 @@ source/HL_pinmux.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/inc
 source/HL_pinmux.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdbool.h
 
 ../source/HL_pinmux.c: 
-D:/CCS_workspace/blink/include/HL_pinmux.h: 
-D:/CCS_workspace/blink/include/HL_reg_pinmux.h: 
-D:/CCS_workspace/blink/include/HL_sys_common.h: 
-D:/CCS_workspace/blink/include/HL_hal_stdtypes.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_pinmux.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_reg_pinmux.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_sys_common.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_hal_stdtypes.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdint.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/_ti_config.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/linkage.h: 

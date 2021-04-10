@@ -1,10 +1,10 @@
 # FIXED
 
 source/HL_notification.obj: ../source/HL_notification.c
-source/HL_notification.obj: D:/CCS_workspace/blink/include/HL_esm.h
-source/HL_notification.obj: D:/CCS_workspace/blink/include/HL_reg_esm.h
-source/HL_notification.obj: D:/CCS_workspace/blink/include/HL_sys_common.h
-source/HL_notification.obj: D:/CCS_workspace/blink/include/HL_hal_stdtypes.h
+source/HL_notification.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_esm.h
+source/HL_notification.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_reg_esm.h
+source/HL_notification.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_sys_common.h
+source/HL_notification.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_hal_stdtypes.h
 source/HL_notification.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdint.h
 source/HL_notification.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/_ti_config.h
 source/HL_notification.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/linkage.h
@@ -16,20 +16,20 @@ source/HL_notification.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.L
 source/HL_notification.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/machine/_stdint.h
 source/HL_notification.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/sys/_stdint.h
 source/HL_notification.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdbool.h
-source/HL_notification.obj: D:/CCS_workspace/blink/include/HL_gio.h
-source/HL_notification.obj: D:/CCS_workspace/blink/include/HL_reg_gio.h
-source/HL_notification.obj: D:/CCS_workspace/blink/include/HL_rti.h
-source/HL_notification.obj: D:/CCS_workspace/blink/include/HL_reg_rti.h
-source/HL_notification.obj: D:/CCS_workspace/blink/include/HL_epc.h
-source/HL_notification.obj: D:/CCS_workspace/blink/include/HL_reg_epc.h
-source/HL_notification.obj: D:/CCS_workspace/blink/include/HL_sys_dma.h
-source/HL_notification.obj: D:/CCS_workspace/blink/include/HL_reg_dma.h
+source/HL_notification.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_gio.h
+source/HL_notification.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_reg_gio.h
+source/HL_notification.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_rti.h
+source/HL_notification.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_reg_rti.h
+source/HL_notification.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_epc.h
+source/HL_notification.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_reg_epc.h
+source/HL_notification.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_sys_dma.h
+source/HL_notification.obj: D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_reg_dma.h
 
 ../source/HL_notification.c: 
-D:/CCS_workspace/blink/include/HL_esm.h: 
-D:/CCS_workspace/blink/include/HL_reg_esm.h: 
-D:/CCS_workspace/blink/include/HL_sys_common.h: 
-D:/CCS_workspace/blink/include/HL_hal_stdtypes.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_esm.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_reg_esm.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_sys_common.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_hal_stdtypes.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdint.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/_ti_config.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/linkage.h: 
@@ -41,11 +41,11 @@ C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/machine/_types.h:
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/machine/_stdint.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/sys/_stdint.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdbool.h: 
-D:/CCS_workspace/blink/include/HL_gio.h: 
-D:/CCS_workspace/blink/include/HL_reg_gio.h: 
-D:/CCS_workspace/blink/include/HL_rti.h: 
-D:/CCS_workspace/blink/include/HL_reg_rti.h: 
-D:/CCS_workspace/blink/include/HL_epc.h: 
-D:/CCS_workspace/blink/include/HL_reg_epc.h: 
-D:/CCS_workspace/blink/include/HL_sys_dma.h: 
-D:/CCS_workspace/blink/include/HL_reg_dma.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_gio.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_reg_gio.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_rti.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_reg_rti.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_epc.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_reg_epc.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_sys_dma.h: 
+D:/desktop/Tesi-2021/CCS_workspace/blink/include/HL_reg_dma.h: 
