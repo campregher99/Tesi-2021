@@ -11,3 +11,11 @@ typedef struct
 	int velocity;
 	unsigned int time;
 }Comand;
+
+bool prova(int c, int* d = 0)
+{
+	if(d==0)
+		return false;
+	*d=c;
+	return true;
+}

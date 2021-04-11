@@ -1,36 +1,6 @@
-#include <math.h>
-#include <stdbool.h>
-#define LINEAR_MOV 11
-#define CIRC_OR_MOV 12
-#define CIRC_AOR_MOV 13
-#define UNRELATED 14
-#define JOINT 15
-#define PROG 16
-#define GRIPPER 17
-#define CH_STOP '!'
-#define NUL 92
-#define PAUSE 93
-#define IF 94
-typedef struct
-{
-	double x;
-	double y;
-	double z;
-}Point;
+#include "Library.h"
 
-typedef struct
-{
-	char type;
-	Point point;
-	long int parameter;
-}Command;
-
-bool readMovment(char* _string, Command* _command, int* _index);
-bool readCondition(char* _string, Command* _command, int* _index);
-bool readSetting(char* _string, Command* _command, int* _index);
-int stringToNumber(char* _string, unsigned int* _index);
-
-Command* parser(const char* _message,int* _index)
+Command* parser(const char* _message)
 {
 	static int step = 0, i = 0;
 	static Command* new;
@@ -213,8 +183,6 @@ Command* parser(const char* _message,int* _index)
 		else
 		{
 			step = 0;
-			if(_index!=-1)
-				*_index+=i;
 			return new;
 		}
 		break;
