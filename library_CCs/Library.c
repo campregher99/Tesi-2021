@@ -5,6 +5,7 @@ Command* parser(const char* _message)
 	static int step = 0, i = 0;
 	static Command* new;
 	char* holdInput = _message + i;
+	bool isLast=false;
 	switch (step)
 	{
 		case 0:
@@ -20,9 +21,10 @@ Command* parser(const char* _message)
 			step = 3;
 			break;
 		}
+		i++;
 		break;
 		case 1:
-		switch (stringToNumber(holdInput,&i))
+		switch ((int)stringToNumber(holdInput,&i))
 		{
 			case 1:
 			step = 4;
@@ -48,7 +50,7 @@ Command* parser(const char* _message)
 		}
 		break;
 		case 2:
-		switch (stringToNumber(holdInput,&i))
+		switch ((int)stringToNumber(holdInput,&i))
 		{
 			case 0:
 			step = 11;
@@ -62,7 +64,7 @@ Command* parser(const char* _message)
 		}
 		break;
 		case 3:
-		switch (stringToNumber(holdInput,&i))
+		switch ((int)stringToNumber(holdInput,&i))
 		{
 			case 1:
 			step = 14;
@@ -77,7 +79,7 @@ Command* parser(const char* _message)
 			step = -1;
 			break;
 		}
-		step = 15;
+		isLast=true;
 		break;
 		case 5:
 		new = (Command*)malloc(sizeof(Command));
@@ -87,7 +89,7 @@ Command* parser(const char* _message)
 			step = -1;
 			break;
 		}
-		step = 15;
+		isLast=true;
 		break;
 		case 6:
 		new = (Command*)malloc(sizeof(Command));
@@ -97,7 +99,7 @@ Command* parser(const char* _message)
 			step = -1;
 			break;
 		}
-		step = 15;
+		isLast=true;
 		break;
 		case 7:
 		new = (Command*)malloc(sizeof(Command));
@@ -107,7 +109,7 @@ Command* parser(const char* _message)
 			step = -1;
 			break;
 		}
-		step = 15;
+		isLast=true;
 		break;
 		case 8:
 		new = (Command*)malloc(sizeof(Command));
@@ -117,7 +119,7 @@ Command* parser(const char* _message)
 			step = -1;
 			break;
 		}
-		step = 15;
+		isLast=true;
 		break;
 		case 9:
 		new = (Command*)malloc(sizeof(Command));
@@ -127,7 +129,7 @@ Command* parser(const char* _message)
 			step = -1;
 			break;
 		}
-		step = 15;
+		isLast=true;
 		break;
 		case 10:
 		new = (Command*)malloc(sizeof(Command));
@@ -137,7 +139,7 @@ Command* parser(const char* _message)
 			step = -1;
 			break;
 		}
-		step = 15;
+		isLast=true;
 		break;
 		case 11:
 		new = (Command*)malloc(sizeof(Command));
@@ -152,7 +154,7 @@ Command* parser(const char* _message)
 			step = -1;
 			break;
 		}
-		step = 15;
+		isLast=true;
 		break;
 		case 13:
 		new = (Command*)malloc(sizeof(Command));
@@ -162,7 +164,7 @@ Command* parser(const char* _message)
 			step = -1;
 			break;
 		}
-		step = 15;
+		isLast=true;
 		break;
 		case 14:
 		new = (Command*)malloc(sizeof(Command));
@@ -172,19 +174,7 @@ Command* parser(const char* _message)
 			step = -1;
 			break;
 		}
-		step = 15;
-		break;
-		case 15:
-		if(*holdInput!=CH_STOP)
-		{
-			step = -1;
-			break;
-		}
-		else
-		{
-			step = 0;
-			return new;
-		}
+		isLast=true;
 		break;
 		default: //in caso di errore
 		new = (Command*)malloc(sizeof(Command));
@@ -193,9 +183,23 @@ Command* parser(const char* _message)
 		return new;
 		break;
 	}
-	i++;
-	new = (Command*)malloc(sizeof(Command));
-	new->type=1;
+	if(isLast)
+    {
+	if(*(_message+i)!=CH_STOP)
+		{
+			step = -1;
+			new = (Command*)malloc(sizeof(Command));
+            new->type=1;
+		}
+		else
+		{
+			step = 0;
+			return new;
+		}
+    }else{
+        new = (Command*)malloc(sizeof(Command));
+        new->type=1;
+    }
 }
 
 bool readMovment(char* _string, Command* _command, int* _index)
@@ -206,15 +210,15 @@ bool readMovment(char* _string, Command* _command, int* _index)
 		case 'X':
 		c++;
 		_command->point.x=stringToNumber(_string+c,&c);
-		if(*_string!='Y')
+		if(*(_string+c)!='Y')
 			return false;
 		c++;
 		_command->point.y=stringToNumber(_string+c,&c);
-		if(*_string!='Z')
+		if(*(_string+c)!='Z')
 			return false;
 		c++;
 		_command->point.z=stringToNumber(_string+c,&c);
-		if(*_string!='V')
+		if(*(_string+c)!='V')
 			return false;
 		c++;
 		_command->parameter=stringToNumber(_string+c,&c);
@@ -222,15 +226,15 @@ bool readMovment(char* _string, Command* _command, int* _index)
 		case '1':
 		c++;
 		_command->point.x=stringToNumber(_string+c,&c);
-		if(*_string!='2')
+		if(*(_string+c)!='2')
 			return false;
 		c++;
 		_command->point.y=stringToNumber(_string+c,&c);
-		if(*_string!='3')
+		if(*(_string+c)!='3')
 			return false;
 		c++;
 		_command->point.z=stringToNumber(_string+c,&c);
-		if(*_string!='V')
+		if(*(_string+c)!='V')
 			return false;
 		c++;
 		_command->parameter=stringToNumber(_string+c,&c);
@@ -289,16 +293,34 @@ bool readSetting(char* _string, Command* _command, int* _index)
 	return true;
 }
 
-int stringToNumber(char* _string, unsigned int* _index)
+double stringToNumber(char* _string, unsigned int* _index)
 {
-	int i = 0, number = 0;
-	while(*(_string+i)>47&&*(_string+i)<58)
+	int i = 0;
+	double number = 0;
+	char* str=_string;
+	while(*(str+i)>47&&*(_string+i)<58)
 	{
 		i++;
 	}
-	for(int c=0; c<i;c++)
+	for(int c=1; c<=i;c++)
 	{
-		number+=pow(10,i-c)*(int)(*(_string+c)-48);
+		number+=pow(10,i-c)*(int)(*(str+c-1)-48);
+	}
+	str+=i;
+	if(*str=='.')
+	{
+		str++;
+		i++;
+		int f =0;
+		while(*(str+f)>47&&*(str+f)<58)
+		{
+			i++;
+			f++;
+		}
+		for(int c=1; c<=f;c++)
+		{
+			number+=pow(10,-c)*(int)(*(str+c-1)-48);
+		}
 	}
 	*_index+=i;
 	return number;

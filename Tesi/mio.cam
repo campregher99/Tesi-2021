@@ -63,7 +63,6 @@
                         17,
                         18
                     ],
-                    "milling": false,
                     "name": "Bottom Copper",
                     "polarity": "positive",
                     "type": "gerber_layer"
@@ -142,6 +141,50 @@
                     },
                     "board_outline": false,
                     "config": {
+                        "file_function": "Paste",
+                        "layer_type": "top"
+                    },
+                    "filename_format": "%PREFIX/solderpaste_top.gbr",
+                    "layers": [
+                        31
+                    ],
+                    "milling": false,
+                    "name": "Solderpaste Top",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "file_function": "Paste",
+                        "layer_type": "bottom"
+                    },
+                    "filename_format": "%PREFIX/solderpaste_bottom.gbr",
+                    "layers": [
+                        32
+                    ],
+                    "milling": false,
+                    "name": "Solderpaste Bottom",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
                         "file_function": "Legend",
                         "index": 1,
                         "layer_type": "top"
@@ -153,6 +196,30 @@
                     ],
                     "milling": false,
                     "name": "Silkscreen Top",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "file_function": "Legend",
+                        "index": 1,
+                        "layer_type": "bottom"
+                    },
+                    "filename_format": "%PREFIX/silkscreen_bottom.gbr",
+                    "layers": [
+                        22,
+                        26
+                    ],
+                    "milling": false,
+                    "name": "Silkscreen Bottom",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 }
@@ -170,20 +237,6 @@
                 {
                     "drills": {
                         "NPTH": false,
-                        "PTH": true,
-                        "VIA": false
-                    },
-                    "filename_format": "%DRILLPREFIX/drills_pad_%FROM_%TO.xln",
-                    "layers": {
-                        "from": 1,
-                        "to": 16
-                    },
-                    "name": "pad",
-                    "type": "excellon"
-                },
-                {
-                    "drills": {
-                        "NPTH": false,
                         "PTH": false,
                         "VIA": true
                     },
@@ -193,6 +246,20 @@
                         "to": 16
                     },
                     "name": "vias",
+                    "type": "excellon"
+                },
+                {
+                    "drills": {
+                        "NPTH": false,
+                        "PTH": true,
+                        "VIA": false
+                    },
+                    "filename_format": "%DRILLPREFIX/drills_pad_%FROM_%TO.xln",
+                    "layers": {
+                        "from": 1,
+                        "to": 16
+                    },
+                    "name": "pad",
                     "type": "excellon"
                 },
                 {
@@ -238,7 +305,7 @@
             ]
         }
     ],
-    "timestamp": "2021-04-08T20:31:02",
+    "timestamp": "2021-04-13T11:53:21",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "9.2.0"

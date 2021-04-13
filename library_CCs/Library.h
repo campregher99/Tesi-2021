@@ -2,6 +2,7 @@
 #define LIBRARY_H
 #include <math.h>
 #include <stdbool.h>
+#include "Cinematica.h"
 #define LINEAR_MOV 11
 #define CIRC_OR_MOV 12
 #define CIRC_AOR_MOV 13
