@@ -1,8 +1,11 @@
 #ifndef LIBRARY_H
 #define LIBRARY_H
-#include <math.h>
-#include <stdbool.h>
+#include "math.h"
+#include "stdlib.h"
 #include "Cinematica.h"
+#include "HL_sci.h"
+#define ERROR 0
+#define CONTINUE 1
 #define LINEAR_MOV 11
 #define CIRC_OR_MOV 12
 #define CIRC_AOR_MOV 13
@@ -14,6 +17,12 @@
 #define NUL 92
 #define PAUSE 93
 #define IF 94
+
+#define ERROR_LENGTH 3
+char errorMessage[]={"Er!"};
+
+#define OK_LENGTH 3
+char okMessage[]={"Ok!"};
 
 typedef struct
 {

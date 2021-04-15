@@ -178,7 +178,7 @@ Command* parser(const char* _message)
 		break;
 		default: //in caso di errore
 		new = (Command*)malloc(sizeof(Command));
-		new->type=0;
+		new->type=ERROR;
 		step =0;
 		return new;
 		break;
@@ -189,17 +189,17 @@ Command* parser(const char* _message)
 		{
 			step = -1;
 			new = (Command*)malloc(sizeof(Command));
-            new->type=1;
+            new->type=CONTINUE;
 		}
 		else
 		{
 			step = 0;
-			return new;
 		}
     }else{
         new = (Command*)malloc(sizeof(Command));
-        new->type=1;
+        new->type=CONTINUE;
     }
+    return new;
 }
 
 bool readMovment(char* _string, Command* _command, int* _index)
@@ -324,4 +324,60 @@ double stringToNumber(char* _string, unsigned int* _index)
 	}
 	*_index+=i;
 	return number;
+}
+
+
+bool reader(Queue* _commands)
+{
+	static char message[32];
+	static bool isRead=false,isParsed=false;
+	static Command* command;
+	static int index=0;
+	if(sciIsRxReady(sciREG1)&&!isRead&&isParsed)
+	{
+		message[index]=(char)sciReceiveByte(sciREG1);
+		if(message[index]=='!')
+		{
+			index=0;
+			isReady=true;
+		}
+		else if(index==31)
+		{
+			index=0;
+			isRead=true;
+			message[0]=0;
+		}
+
+		index++;
+	}
+	else if(isRead&&isParsed)
+	{
+		command=parser(message);
+		switch((int)command->type)
+		{
+			case ERROR:
+			free(command);
+			isRead=false;
+			sciSend(sciREG1, ERROR_LENGTH, errorMessage);
+			break;
+			case CONTINUE:
+			break;
+			default:
+			sciSend(sciREG1, OK_LENGTH, okMessage);
+			isParsed=true;
+			isRead=false;
+			break;
+		}
+	}else if(isParsed)
+	{
+		if(pushQueue(_commands,command)
+		{
+			isParsed=false;
+		}
+	}
+}
+
+bool pushQueue(Queue* _queue, int* _ptr)
+{
+
 }

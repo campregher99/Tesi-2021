@@ -1,5 +1,7 @@
 #include <math.h>
 #include <stdbool.h>
+#define ERROR 0
+#define CONTINUE 1
 #define LINEAR_MOV 11
 #define CIRC_OR_MOV 12
 #define CIRC_AOR_MOV 13
@@ -24,6 +26,9 @@ typedef struct
 	Point point;
 	long int parameter;
 }Command;
+
+int c = 10;
+char errorMessage[]={"Er!"};
 
 bool readMovment(char* _string, Command* _command, int* _index);
 bool readCondition(char* _string, Command* _command, int* _index);
@@ -208,7 +213,7 @@ Command* parser(const char* _message)
 		break;
 		default: //in caso di errore
 		new = (Command*)malloc(sizeof(Command));
-		new->type=0;
+		new->type=ERROR;
 		step =0;
 		return new;
 		break;
@@ -219,17 +224,17 @@ Command* parser(const char* _message)
 		{
 			step = -1;
 			new = (Command*)malloc(sizeof(Command));
-            new->type=1;
+            new->type=CONTINUE;
 		}
 		else
 		{
 			step = 0;
-			return new;
 		}
     }else{
         new = (Command*)malloc(sizeof(Command));
-        new->type=1;
+        new->type=CONTINUE;
     }
+    return new;
 }
 
 bool readMovment(char* _string, Command* _command, int* _index)
