@@ -8,13 +8,21 @@
     End Function
 
     Public Function pointTransport(_point As PointC, _length As Double, _phase As Double) As PointC
-        If Math.Abs(_phase) = 90 Then
+        If Math.Abs(_phase) = degToRad(90) Then
             Return New PointC(_point.getX, _point.getY + _length * Math.Sin(_phase))
-        ElseIf _phase = 0 Or _phase = 180 Then
-
+        ElseIf _phase = 0 Or _phase = degToRad(180) Then
+            Return New PointC(_point.getX + Math.Cos(_phase) * _length, _point.getY)
         Else
-            'da finire
+            Return New PointC(_point.getX + Math.Cos(_phase) * _length, _point.getY + _length * Math.Sin(_phase))
         End If
         Return New PointC(_point.getX + _length * Math.Cos(_phase), _point.getY + _length * Math.Sin(_phase))
+    End Function
+
+    Public Function degToRad(_angle As Double)
+        Return _angle * Math.PI / 180
+    End Function
+
+    Public Function radToDeg(_angle As Double)
+        Return _angle * 180 / Math.PI
     End Function
 End Module

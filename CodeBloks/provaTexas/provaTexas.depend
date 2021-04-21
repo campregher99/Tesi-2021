@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1618503802 source:d:\desktop\tesi-2021\codebloks\provatexas\main.c
+1618503962 source:d:\desktop\tesi-2021\codebloks\provatexas\main.c
 	<stdio.h>
 	<stdlib.h>
 	"prova.h"
 
-1618503802 d:\desktop\tesi-2021\codebloks\provatexas\prova.h
+1618638732 d:\desktop\tesi-2021\codebloks\provatexas\prova.h
 	<math.h>
 	<stdbool.h>
 

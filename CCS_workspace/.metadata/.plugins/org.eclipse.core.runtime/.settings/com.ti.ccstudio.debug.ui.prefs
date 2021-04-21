@@ -1,4 +1,6 @@
 MODULES_MRU_PATH=D\:\\CCS_workspace\\seriale\\Release\\seriale.out\#THREAD_IDS\#Texas Instruments XDS110 USB Debug Probe/CortexR5
 MODULES_MRU_PATH.1=D\:\\CCS_workspace\\seriale\\Debug\\seriale.out\#THREAD_IDS\#Texas Instruments XDS110 USB Debug Probe/CortexR5
 eclipse.preferences.version=1
+symbolAutoCompleteHistory<seperator>org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser<seperator>Texas\ Instruments\ XDS110\ USB\ Debug\ Probe\\CortexR5=0x000061AC,0
+symbolAutoCompleteHistory<seperator>org.eclipse.cdt.dsf.debug.ui.disassembly.view<seperator>Texas\ Instruments\ XDS110\ USB\ Debug\ Probe\\CortexR5=0x000061AC
 useAnnotationsPrefPage=true

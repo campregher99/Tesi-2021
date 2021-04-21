@@ -4,8 +4,8 @@
     Friend minSpeed As Integer
     Friend length1 As Integer
     Friend length2 As Integer
-    Friend alpha As New Angles()
-    Friend beta As New Angles()
+    Friend alpha As New MotorAngles()
+    Friend beta As New MotorAngles()
 
 
 
@@ -30,11 +30,11 @@
         Return length2
     End Function
 
-    Public Function getAlpha() As Angles
+    Public Function getAlpha() As MotorAngles
         Return alpha
     End Function
 
-    Public Function getBeta() As Angles
+    Public Function getBeta() As MotorAngles
         Return beta
     End Function
 

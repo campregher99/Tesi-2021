@@ -32,7 +32,8 @@ C_SRCS += \
 ../source/HL_sys_pmm.c \
 ../source/HL_sys_startup.c \
 ../source/HL_sys_vim.c \
-../source/HL_system.c 
+../source/HL_system.c \
+../source/Library.c 
 
 C_DEPS += \
 ./source/HL_epc.d \
@@ -52,7 +53,8 @@ C_DEPS += \
 ./source/HL_sys_pmm.d \
 ./source/HL_sys_startup.d \
 ./source/HL_sys_vim.d \
-./source/HL_system.d 
+./source/HL_system.d \
+./source/Library.d 
 
 OBJS += \
 ./source/HL_epc.obj \
@@ -76,7 +78,8 @@ OBJS += \
 ./source/HL_sys_pmu.obj \
 ./source/HL_sys_startup.obj \
 ./source/HL_sys_vim.obj \
-./source/HL_system.obj 
+./source/HL_system.obj \
+./source/Library.obj 
 
 ASM_DEPS += \
 ./source/HL_sys_core.d \
@@ -106,7 +109,8 @@ OBJS__QUOTED += \
 "source\HL_sys_pmu.obj" \
 "source\HL_sys_startup.obj" \
 "source\HL_sys_vim.obj" \
-"source\HL_system.obj" 
+"source\HL_system.obj" \
+"source\Library.obj" 
 
 C_DEPS__QUOTED += \
 "source\HL_epc.d" \
@@ -126,7 +130,8 @@ C_DEPS__QUOTED += \
 "source\HL_sys_pmm.d" \
 "source\HL_sys_startup.d" \
 "source\HL_sys_vim.d" \
-"source\HL_system.d" 
+"source\HL_system.d" \
+"source\Library.d" 
 
 ASM_DEPS__QUOTED += \
 "source\HL_sys_core.d" \
@@ -152,7 +157,8 @@ C_SRCS__QUOTED += \
 "../source/HL_sys_pmm.c" \
 "../source/HL_sys_startup.c" \
 "../source/HL_sys_vim.c" \
-"../source/HL_system.c" 
+"../source/HL_system.c" \
+"../source/Library.c" 
 
 ASM_SRCS__QUOTED += \
 "../source/HL_sys_core.asm" \

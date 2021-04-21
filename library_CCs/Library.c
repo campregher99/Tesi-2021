@@ -379,5 +379,31 @@ bool reader(Queue* _commands)
 
 bool pushQueue(Queue* _queue, int* _ptr)
 {
+	if(_queue->index==_queue->size-1)
+		return false;
+	_queue->index++;
+	_queue->elements[_queue->index]=_ptr;
+	return true;
+}
 
+int* popQueue(Queue* _queue)
+{
+	if(_queue->index==-1)
+		return -1;
+	int* first;
+	first=_queue->elements[0];
+	_queue->index--;
+	for(int i = 0; i<_queue->index; i++)
+	{
+		_queue->elements[i]=_queue->elements[i+1];
+	}
+	return first;
+}
+
+bool queueInitzializer(Queue* _queue, unsigned int _size, unsigned int _sizeOf)
+{
+	_queue->size=_size;
+	_queue->index=-1;
+	_quue->elements= malloc(_sizeOf*_size);
+	return true;
 }

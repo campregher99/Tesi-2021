@@ -1,10 +1,10 @@
 # FIXED
 
 source/HL_sys_pcr.obj: ../source/HL_sys_pcr.c
-source/HL_sys_pcr.obj: D:/CCS_workspace/SCI_UART/include/HL_sys_pcr.h
-source/HL_sys_pcr.obj: D:/CCS_workspace/SCI_UART/include/HL_reg_pcr.h
-source/HL_sys_pcr.obj: D:/CCS_workspace/SCI_UART/include/HL_sys_common.h
-source/HL_sys_pcr.obj: D:/CCS_workspace/SCI_UART/include/HL_hal_stdtypes.h
+source/HL_sys_pcr.obj: D:/desktop/Tesi-2021/CCS_workspace/SCI_UART/include/HL_sys_pcr.h
+source/HL_sys_pcr.obj: D:/desktop/Tesi-2021/CCS_workspace/SCI_UART/include/HL_reg_pcr.h
+source/HL_sys_pcr.obj: D:/desktop/Tesi-2021/CCS_workspace/SCI_UART/include/HL_sys_common.h
+source/HL_sys_pcr.obj: D:/desktop/Tesi-2021/CCS_workspace/SCI_UART/include/HL_hal_stdtypes.h
 source/HL_sys_pcr.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdint.h
 source/HL_sys_pcr.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/_ti_config.h
 source/HL_sys_pcr.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/linkage.h
@@ -18,10 +18,10 @@ source/HL_sys_pcr.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/in
 source/HL_sys_pcr.obj: C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdbool.h
 
 ../source/HL_sys_pcr.c: 
-D:/CCS_workspace/SCI_UART/include/HL_sys_pcr.h: 
-D:/CCS_workspace/SCI_UART/include/HL_reg_pcr.h: 
-D:/CCS_workspace/SCI_UART/include/HL_sys_common.h: 
-D:/CCS_workspace/SCI_UART/include/HL_hal_stdtypes.h: 
+D:/desktop/Tesi-2021/CCS_workspace/SCI_UART/include/HL_sys_pcr.h: 
+D:/desktop/Tesi-2021/CCS_workspace/SCI_UART/include/HL_reg_pcr.h: 
+D:/desktop/Tesi-2021/CCS_workspace/SCI_UART/include/HL_sys_common.h: 
+D:/desktop/Tesi-2021/CCS_workspace/SCI_UART/include/HL_hal_stdtypes.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/stdint.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/_ti_config.h: 
 C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include/linkage.h: 

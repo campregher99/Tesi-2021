@@ -26,13 +26,6 @@ char okMessage[]={"Ok!"};
 
 typedef struct
 {
-	double x;
-	double y;
-	double z;
-}Point;
-
-typedef struct
-{
 	char type;
 	Point point;
 	long int parameter;
@@ -41,12 +34,13 @@ typedef struct
 typedef struct 
 {
 	unsigned int size;
+	int index;
 	int* elements;
 }Queue;
 
 
-Comand* parser(char* _message);
-bool reader(char* _message, Command* _command);
+Command* parser(char* _message);
+bool reader(Queue* _commands);
 bool pushQueue(Queue* _queue, int* _ptr);
 int* popQueue(Queue* _queue);
 void interpreter(Command* _commands, Queue* _period1, Queue* _period2, Queue* _period3);
@@ -54,4 +48,5 @@ int stringToNumber(char* _string, unsigned int* _index);
 bool readMovment(char* _string, Command* _command, int* _index);
 bool readCondition(char* _string, Command* _command, int* _index);
 bool readSetting(char* _string, Command* _command, int* _index);
+bool queueInitzializer(Queue* _queue, unsigned int _size, unsigned int _sizeOf);
 #endif

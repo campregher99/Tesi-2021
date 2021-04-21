@@ -43,7 +43,8 @@
 
 
 /* USER CODE BEGIN (0) */
-#include "HL_sci.h"
+#define MALLOC_DEBUG
+#include "Library.h"
 #include "HL_gio.h"
 /* USER CODE END */
 
@@ -73,25 +74,28 @@ int main(void)
     gioInit();
     gioSetDirection(gioPORTB,0B11000000);
     sciSendByte(UART,'c');
-    bool n=false;
+
+    Queue commands;
+    queueInitializer(&commands,10,sizeof(int));
     while(1){
-    if(!gioGetBit(gioPORTB,4)&&!n){
+    /*if(!gioGetBit(gioPORTB,4)&&!n){
         n=true;
         gioSetBit(gioPORTB,7,1);
         sciSend(UART,5,(unsigned char *)"ciao\n");
     }else if(gioGetBit(gioPORTB,4)){
         n=false;
         gioSetBit(gioPORTB,7,0);
-    }
-
+    }*/
+        reader(&commands);
 
 
     }
 /* USER CODE END */
 
-    return 0;
+
 }
 
 
 /* USER CODE BEGIN (4) */
+
 /* USER CODE END */

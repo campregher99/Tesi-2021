@@ -43,7 +43,7 @@
         If _isNew Then
             point.copy(firstPoint)
         End If
-        Dim alpha As New Angles
+        Dim alpha As New MotorAngles
         Cinematica.calcAngles(point, True)
         alpha.copy(GlobalVar.getAlpha())
         alpha.setMainAngle(alpha.getMainAngle + alpha.getDAngle)
@@ -70,7 +70,7 @@
         If _isNew Then
             point.copy(firstPoint)
         End If
-        Dim beta As New Angles
+        Dim beta As New MotorAngles
         Cinematica.calcAngles(point, False)
         beta.copy(GlobalVar.getBeta())
         beta.setMainAngle(beta.getMainAngle + beta.getDAngle)

@@ -4,6 +4,11 @@
 
 int main()
 {
+    Command commands[10];
+    Queue ciccio;
+    ciccio.elements=commands;
+    ciccio.size=10;
+    ciccio.index=-1;
     Command* prova;
     char messaggio[]={"M2X12.2Y22.223Z0V22!"};
     do{
