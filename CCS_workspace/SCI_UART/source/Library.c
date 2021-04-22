@@ -20,6 +20,9 @@ Command* parser(char* _message)
 			case 'S':
 			step = 3;
 			break;
+			default:
+			step = -1;
+			break;
 		}
 		i++;
 		break;
@@ -47,6 +50,9 @@ Command* parser(char* _message)
 			case 7:
 			step = 10;
 			break;
+			default:
+			step = -1;
+			break;
 		}
 		break;
 		case 2:
@@ -60,6 +66,9 @@ Command* parser(char* _message)
 			break;
 			case 2:
 			step = 13;
+			break;
+			default:
+			step = -1;
 			break;
 		}
 		break;
@@ -349,7 +358,7 @@ bool reader(Queue* _commands)
 
 		index++;
 	}
-	else if(isRead&&isParsed)
+	else if(isRead&&!isParsed)
 	{
 		command=parser(message);
 		switch((int)command->type)

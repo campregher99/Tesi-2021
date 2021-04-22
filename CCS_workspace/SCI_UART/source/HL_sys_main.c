@@ -43,7 +43,6 @@
 
 
 /* USER CODE BEGIN (0) */
-#define MALLOC_DEBUG
 #include "Library.h"
 #include "HL_gio.h"
 /* USER CODE END */

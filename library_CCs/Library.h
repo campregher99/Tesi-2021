@@ -2,7 +2,6 @@
 #define LIBRARY_H
 #include "math.h"
 #include "stdlib.h"
-#include "Cinematica.h"
 #include "HL_sci.h"
 #define ERROR 0
 #define CONTINUE 1
@@ -19,10 +18,17 @@
 #define IF 94
 
 #define ERROR_LENGTH 3
-char errorMessage[]={"Er!"};
+
 
 #define OK_LENGTH 3
-char okMessage[]={"Ok!"};
+
+
+typedef struct
+{
+    double x;
+    double y;
+    double z;
+}Point;
 
 typedef struct
 {
@@ -33,7 +39,7 @@ typedef struct
 
 typedef struct 
 {
-	unsigned int size;
+	size_t size;
 	int index;
 	int* elements;
 }Queue;
@@ -44,9 +50,9 @@ bool reader(Queue* _commands);
 bool pushQueue(Queue* _queue, int* _ptr);
 int* popQueue(Queue* _queue);
 void interpreter(Command* _commands, Queue* _period1, Queue* _period2, Queue* _period3);
-int stringToNumber(char* _string, unsigned int* _index);
+double stringToNumber(char* _string, unsigned int* _index);
 bool readMovment(char* _string, Command* _command, int* _index);
 bool readCondition(char* _string, Command* _command, int* _index);
 bool readSetting(char* _string, Command* _command, int* _index);
-bool queueInitzializer(Queue* _queue, unsigned int _size, unsigned int _sizeOf);
+bool queueInitializer(Queue* _queue, unsigned int _size, unsigned int _sizeOf);
 #endif

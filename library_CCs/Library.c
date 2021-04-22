@@ -1,6 +1,6 @@
 #include "Library.h"
 
-Command* parser(const char* _message)
+Command* parser(char* _message)
 {
 	static int step = 0, i = 0;
 	static Command* new;
@@ -20,11 +20,14 @@ Command* parser(const char* _message)
 			case 'S':
 			step = 3;
 			break;
+			default:
+			step = -1;
+			break;
 		}
 		i++;
 		break;
 		case 1:
-		switch ((int)stringToNumber(holdInput,&i))
+		switch ((unsigned int)stringToNumber(holdInput,&i))
 		{
 			case 1:
 			step = 4;
@@ -47,10 +50,13 @@ Command* parser(const char* _message)
 			case 7:
 			step = 10;
 			break;
+			default:
+			step = -1;
+			break;
 		}
 		break;
 		case 2:
-		switch ((int)stringToNumber(holdInput,&i))
+		switch ((unsigned int)stringToNumber(holdInput,&i))
 		{
 			case 0:
 			step = 11;
@@ -61,10 +67,13 @@ Command* parser(const char* _message)
 			case 2:
 			step = 13;
 			break;
+			default:
+			step = -1;
+			break;
 		}
 		break;
 		case 3:
-		switch ((int)stringToNumber(holdInput,&i))
+		switch ((unsigned int)stringToNumber(holdInput,&i))
 		{
 			case 1:
 			step = 14;
@@ -181,7 +190,6 @@ Command* parser(const char* _message)
 		new->type=ERROR;
 		step =0;
 		return new;
-		break;
 	}
 	if(isLast)
     {
@@ -249,7 +257,6 @@ bool readMovment(char* _string, Command* _command, int* _index)
 		break;
 		default:
 		return false;
-		break;
 	}
 	*_index+=c;
 	return true;
@@ -270,7 +277,6 @@ bool readCondition(char* _string, Command* _command, int* _index)
 		break;
 		default:
 		return false;
-		break;
 	}
 	*_index+=c;
 	return true;
@@ -287,7 +293,6 @@ bool readSetting(char* _string, Command* _command, int* _index)
 		break;
 		default:
 		return false;
-		break;
 	}
 	*_index+=c;
 	return true;
@@ -302,7 +307,8 @@ double stringToNumber(char* _string, unsigned int* _index)
 	{
 		i++;
 	}
-	for(int c=1; c<=i;c++)
+	int c;
+	for(c = 1; c<=i; c++)
 	{
 		number+=pow(10,i-c)*(int)(*(str+c-1)-48);
 	}
@@ -317,7 +323,8 @@ double stringToNumber(char* _string, unsigned int* _index)
 			i++;
 			f++;
 		}
-		for(int c=1; c<=f;c++)
+		int c;
+		for(c=1; c<=f;c++)
 		{
 			number+=pow(10,-c)*(int)(*(str+c-1)-48);
 		}
@@ -329,17 +336,18 @@ double stringToNumber(char* _string, unsigned int* _index)
 
 bool reader(Queue* _commands)
 {
-	static char message[32];
-	static bool isRead=false,isParsed=false;
+    char ErrorMessage[]={"Er!"};
+    char okMessage[]={"Ok!"};
+	static uint32 message[32];
 	static Command* command;
-	static int index=0;
-	if(sciIsRxReady(sciREG1)&&!isRead&&isParsed)
+	static int index, isRead, isParsed;
+	if(sciIsRxReady(sciREG1)&&!isRead&&!isParsed)
 	{
-		message[index]=(char)sciReceiveByte(sciREG1);
+		message[index]=sciReceiveByte(sciREG1);
 		if(message[index]=='!')
 		{
 			index=0;
-			isReady=true;
+			isRead=true;
 		}
 		else if(index==31)
 		{
@@ -350,7 +358,7 @@ bool reader(Queue* _commands)
 
 		index++;
 	}
-	else if(isRead&&isParsed)
+	else if(isRead&&!isParsed)
 	{
 		command=parser(message);
 		switch((int)command->type)
@@ -358,19 +366,19 @@ bool reader(Queue* _commands)
 			case ERROR:
 			free(command);
 			isRead=false;
-			sciSend(sciREG1, ERROR_LENGTH, errorMessage);
+			sciSend(sciREG1, ERROR_LENGTH, (uint8*)ErrorMessage);
 			break;
 			case CONTINUE:
 			break;
 			default:
-			sciSend(sciREG1, OK_LENGTH, okMessage);
+			sciSend(sciREG1, OK_LENGTH, (uint8*)okMessage);
 			isParsed=true;
 			isRead=false;
 			break;
 		}
 	}else if(isParsed)
 	{
-		if(pushQueue(_commands,command)
+		if(pushQueue(_commands,command))
 		{
 			isParsed=false;
 		}
@@ -393,17 +401,18 @@ int* popQueue(Queue* _queue)
 	int* first;
 	first=_queue->elements[0];
 	_queue->index--;
-	for(int i = 0; i<_queue->index; i++)
+	int i;
+	for(i = 0; i<_queue->index; i++)
 	{
 		_queue->elements[i]=_queue->elements[i+1];
 	}
 	return first;
 }
 
-bool queueInitzializer(Queue* _queue, unsigned int _size, unsigned int _sizeOf)
+inline bool queueInitializer(Queue* _queue, unsigned int _size, unsigned int _sizeOf)
 {
 	_queue->size=_size;
 	_queue->index=-1;
-	_quue->elements= malloc(_sizeOf*_size);
+	_queue->elements= (int*)malloc(40);
 	return true;
 }
