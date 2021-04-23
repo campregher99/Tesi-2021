@@ -3,6 +3,7 @@
 #include "math.h"
 #include "stdlib.h"
 #include "HL_sci.h"
+#include "provaExtern.h"
 #define ERROR 0
 #define CONTINUE 1
 #define LINEAR_MOV 11

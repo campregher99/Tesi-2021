@@ -17484,3 +17484,288 @@ Finished building target: "ProvaParser.out"
 gmake[1]: 'ProvaParser.out' is up to date.
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/provaExtern.h", line 4: warning #1-D: last line of file ends without a newline
+"../source/HL_sys_main.c", line 88: warning #515-D: a value of type "int" cannot be assigned to an entity of type "Command *"
+"../source/HL_sys_main.c", line 82: warning #552-D: variable "c1" was set but never used
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "ProvaParser.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"ProvaParser.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ProvaParser_linkInfo.xml" --rom_model -o "ProvaParser.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "./source/Library.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined first referenced        
+  symbol       in file             
+ --------- ----------------        
+ bello     ./source/HL_sys_main.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "ProvaParser.out" not built
+ 
+>> Compilation failure
+makefile:163: recipe for target 'ProvaParser.out' failed
+gmake[1]: *** [ProvaParser.out] Error 1
+makefile:159: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/provaExtern.h", line 4: warning #1-D: last line of file ends without a newline
+"../source/HL_sys_main.c", line 89: warning #515-D: a value of type "int" cannot be assigned to an entity of type "Command *"
+"../source/HL_sys_main.c", line 83: warning #552-D: variable "c1" was set but never used
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "ProvaParser.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"ProvaParser.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ProvaParser_linkInfo.xml" --rom_model -o "ProvaParser.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "./source/Library.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "ProvaParser.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"../source/HL_sys_main.c", line 89: warning #515-D: a value of type "int" cannot be assigned to an entity of type "Command *"
+"../source/HL_sys_main.c", line 83: warning #552-D: variable "c1" was set but never used
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "ProvaParser.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"ProvaParser.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ProvaParser_linkInfo.xml" --rom_model -o "ProvaParser.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "./source/Library.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "ProvaParser.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/Library.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/Library.d_raw" --obj_directory="source"  "../source/Library.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/Library.obj' failed
+"../source/Library.c", line 30: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 59: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 76: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 220: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 224: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 228: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 232: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 236: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 240: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 244: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 248: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 252: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 256: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 272: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 276: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 292: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 339: error #20: identifier "bello" is undefined
+"../source/Library.c", line 366: warning #179-D: variable "c" was declared but never referenced
+"../source/Library.c", line 385: warning #169-D: argument of type "Command *" is incompatible with parameter of type "int *"
+"../source/Library.c", line 399: warning #515-D: a value of type "int *" cannot be assigned to an entity of type "int"
+"../source/Library.c", line 406: warning #121-D: return value type does not match the function type
+"../source/Library.c", line 406: warning #154-D: conversion of nonzero integer to pointer
+"../source/Library.c", line 408: warning #515-D: a value of type "int" cannot be assigned to an entity of type "int *"
+1 error detected in the compilation of "../source/Library.c".
+gmake: *** [source/Library.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"../source/HL_sys_main.c", line 89: warning #515-D: a value of type "int" cannot be assigned to an entity of type "Command *"
+"../source/HL_sys_main.c", line 83: warning #552-D: variable "c1" was set but never used
+Finished building: "../source/HL_sys_main.c"
+ 
+Building file: "../source/Library.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/Library.d_raw" --obj_directory="source"  "../source/Library.c"
+"../source/Library.c", line 30: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 59: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 76: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 220: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 224: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 228: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 232: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 236: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 240: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 244: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 248: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 252: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 256: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 272: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 276: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 292: warning #169-D: argument of type "int *" is incompatible with parameter of type "unsigned int *"
+"../source/Library.c", line 366: warning #179-D: variable "c" was declared but never referenced
+"../source/Library.c", line 385: warning #169-D: argument of type "Command *" is incompatible with parameter of type "int *"
+"../source/Library.c", line 399: warning #515-D: a value of type "int *" cannot be assigned to an entity of type "int"
+"../source/Library.c", line 406: warning #121-D: return value type does not match the function type
+"../source/Library.c", line 406: warning #154-D: conversion of nonzero integer to pointer
+"../source/Library.c", line 408: warning #515-D: a value of type "int" cannot be assigned to an entity of type "int *"
+Finished building: "../source/Library.c"
+ 
+Building target: "ProvaParser.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"ProvaParser.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ProvaParser_linkInfo.xml" --rom_model -o "ProvaParser.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "./source/Library.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "ProvaParser.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'ProvaParser.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/provaInline.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/provaInline.d_raw" --obj_directory="source"  "../source/provaInline.c"
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/provaInline.h", line 5: warning #1-D: last line of file ends without a newline
+"../source/provaInline.c", line 6: warning #1-D: last line of file ends without a newline
+Finished building: "../source/provaInline.c"
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/provaInline.h", line 5: warning #1-D: last line of file ends without a newline
+"../source/HL_sys_main.c", line 90: warning #515-D: a value of type "int" cannot be assigned to an entity of type "Command *"
+"../source/HL_sys_main.c", line 84: warning #552-D: variable "c1" was set but never used
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "ProvaParser.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"ProvaParser.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ProvaParser_linkInfo.xml" --rom_model -o "ProvaParser.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "./source/Library.obj" "./source/provaInline.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "ProvaParser.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/provaInline.h", line 5: warning #1-D: last line of file ends without a newline
+"../source/HL_sys_main.c", line 92: warning #515-D: a value of type "int" cannot be assigned to an entity of type "Command *"
+"../source/HL_sys_main.c", line 84: warning #552-D: variable "c1" was set but never used
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "ProvaParser.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"ProvaParser.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ProvaParser_linkInfo.xml" --rom_model -o "ProvaParser.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "./source/Library.obj" "./source/provaInline.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "ProvaParser.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'ProvaParser.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/provaInline.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/provaInline.d_raw" --obj_directory="source"  "../source/provaInline.c"
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/provaInline.h", line 5: warning #1-D: last line of file ends without a newline
+Finished building: "../source/provaInline.c"
+ 
+Building target: "ProvaParser.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"ProvaParser.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ProvaParser_linkInfo.xml" --rom_model -o "ProvaParser.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "./source/Library.obj" "./source/provaInline.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "ProvaParser.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'ProvaParser.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/provaInline.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/provaInline.d_raw" --obj_directory="source"  "../source/provaInline.c"
+Finished building: "../source/provaInline.c"
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"../source/HL_sys_main.c", line 92: warning #515-D: a value of type "int" cannot be assigned to an entity of type "Command *"
+"../source/HL_sys_main.c", line 84: warning #552-D: variable "c1" was set but never used
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "ProvaParser.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"ProvaParser.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ProvaParser_linkInfo.xml" --rom_model -o "ProvaParser.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "./source/Library.obj" "./source/provaInline.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "ProvaParser.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'ProvaParser.out' is up to date.
+
+**** Build Finished ****

@@ -336,6 +336,7 @@ double stringToNumber(char* _string, unsigned int* _index)
 
 bool reader(Queue* _commands)
 {
+    bello++;
     char ErrorMessage[]={"Er!"};
     char okMessage[]={"Ok!"};
 	static char message[32];

@@ -47,6 +47,8 @@
 #include "Library.h"
 #include "HL_sys_vim.h"
 #include "math.h"
+#include "provaExtern.h"
+#include "provaInline.h"
 /* USER CODE END */
 
 /* Include Files */
@@ -68,6 +70,7 @@ bool isArrived;
 */
 
 /* USER CODE BEGIN (2) */
+int bello;
 /* USER CODE END */
 
 int main(void)
@@ -76,10 +79,12 @@ int main(void)
     sciInit();
 
     sciSendByte(sciREG1,'c');
-
+    bello = 10;
     Queue commands;
     Command *c1;
     queueInitializer(&commands,10,sizeof(Command));
+
+    float c = sum(10,22.5);
     while(1)
     {
         if(reader(&commands))
