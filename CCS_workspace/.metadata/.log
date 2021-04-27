@@ -10551,3 +10551,59 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstud
 
 !ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-04-23 10:05:33.972
 !MESSAGE CCS HTTP adapter started! [ccs.port:50948] - Open 'http://localhost:50948/ide' in web browser to see listing of available APIs...
+!SESSION 2021-04-23 13:53:26.359 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=it_IT
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-04-23 13:53:36.984
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-04-23 13:53:37.118
+!MESSAGE debugServerDir=C:/ti/ccs1020/ccs/ccs_base/DebugServer
+
+!ENTRY org.eclipse.core.net 4 0 2021-04-23 13:54:33.946
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error 'Handle non valido.
+' #6.
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-04-23 13:54:34.531
+!MESSAGE CCS IDE session started!
+	CCS build: 10.2.0.00009
+	CCS location: C:/ti/ccs1020/ccs
+	Workspace location: D:/desktop/Tesi-2021/CCS_workspace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-04-23 13:54:35.470
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-04-23 13:54:35.646
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-04-23 13:54:35.818
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-04-23 13:54:36.023
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-04-23 13:54:36.184
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-04-23 13:54:36.429
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-04-23 13:54:36.679
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-04-23 13:54:36.919
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-04-23 13:54:37.142
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-04-23 13:54:37.548
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-04-23 13:54:37.961
+!MESSAGE CCS HTTP adapter started! [ccs.port:50519] - Open 'http://localhost:50519/ide' in web browser to see listing of available APIs...

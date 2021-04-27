@@ -5,7 +5,7 @@
 #include "math.h"
 #include "GlobalVar.h"
 
-bool calcAngles(const Point _point, float* _alpha, float* _beta);
+bool calcAngles(const Point _point, bool _isAlpha);
 Point calcJoint1(float _alpha);
 float calcJointSpeed(Velocity _velocity, Point _point, bool _isAlpha);
 MotorAngle calcAlpha(MotorAngle _beta, Line _targetLine, Point _previousPoint, Point _lastPoint, bool _isAlpha);

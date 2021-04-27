@@ -40,7 +40,7 @@ float calcJointSpeed(Velocity _velocity, Point _point, bool _isAlpha)
 	}
 	else
 	{
-		q2=pointV2.y - pointV2.x*tan(beta.secondAngle+M_PI_2);
+		q2=pointV2.y - pointV2.x*tan(beta.mainAngle+M_PI_2);
 		point12.x=q2/(tan(beta.secondAngle+M_PI_2)-tan(beta.mainAngle+M_PI_2));
 		point12.y=tan(beta.secondAngle+M_PI_2)*point12.x;
 		omega=pointDistance(point12,pointV2)/length2;
