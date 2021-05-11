@@ -84,7 +84,7 @@ int main(void)
     Command *c1;
     queueInitializer(&commands,10,sizeof(Command));
 
-    float c = sum(10,22.5);
+
     while(1)
     {
         if(reader(&commands))

@@ -1,44 +1,33 @@
 #ifndef GLOBALVAR_H
-#define GLOBALVAR_H 
+#define GLOBALVAR_H
 
 #include "Geometry.h"
 
-typedef struct 
+typedef struct
 {
-	float mainAngle;
-	float secondAngle;
-	float dAngle;
-}MotorAngle;
+  float mainAngle;
+  float secondAngle;
+  float dAngle;
+} MotorAngle;
 
-typedef struct 
+typedef struct
 {
-	unsigned int period;
-	bool isPeriod;
-}Period;
+  unsigned int period;
+  bool isPeriod;
+  bool isEnd;
+} Period;
 
-typedef struct 
+typedef struct
 {
-	Line line1;
-	Line line2;
-	Line line3;
-	Point2D point1;
-	Point2D point2;
-	Point2D point3;
-	Point2D point4;
-	float distance;
-}Trapezoidal;
+  Point firstPoint;
+  Point lastPoint;
+  Line targetLine;
+  Cicloidale cicloidale;
+  Trapezoidal trapezoidal;
+  bool isTrapezoidal;
+} ParameterLinearMovment;
 
-typedef struct 
-{
-	Point firstPoint;
-	Point lastPoint;
-	Line targetLine;
-	Cicloidale cicloidale;
-	Trapezoidal trapezoidal;
-	bool isTrapezoidal;
-}ParameterLinearMovment;
-
-extern int length1,length2;
+extern int length1, length2, tolerance;
 extern MotorAngle alpha, beta;
 extern Point origin;
 extern ParameterLinearMovment settingsLinMov;

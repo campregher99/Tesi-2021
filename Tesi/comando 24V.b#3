@@ -2006,29 +2006,24 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="BRAKE" pad="2"/>
 <polygon width="0.1524" layer="1" spacing="1.016">
-<vertex x="-24.5872" y="140.716"/>
-<vertex x="189.9666" y="140.716"/>
-<vertex x="191.6684" y="139.0142"/>
-<vertex x="195.3006" y="135.382"/>
-<vertex x="195.3006" y="89.789"/>
-<vertex x="198.0946" y="86.995"/>
-<vertex x="231.0892" y="86.995"/>
-<vertex x="246.1768" y="71.9074"/>
-<vertex x="246.1768" y="-37.211"/>
-<vertex x="-21.7932" y="-37.211"/>
-<vertex x="-24.0284" y="-34.9758"/>
+<vertex x="195.961" y="133.3754"/>
+<vertex x="196.1388" y="133.1976"/>
+<vertex x="196.1388" y="90.5256"/>
+<vertex x="196.342" y="90.3224"/>
 </polygon>
 <polygon width="0.1524" layer="16" spacing="1.016">
-<vertex x="-0.68335" y="140.843"/>
-<vertex x="194.056" y="140.843"/>
-<vertex x="195.0466" y="141.8336"/>
-<vertex x="195.0466" y="90.2208"/>
-<vertex x="198.12" y="87.1474"/>
-<vertex x="231.4956" y="87.1474"/>
-<vertex x="231.7242" y="87.376"/>
-<vertex x="231.7242" y="-5.207"/>
-<vertex x="236.474" y="-9.9568"/>
-<vertex x="-4.271378125" y="-9.9568"/>
+<vertex x="0.508" y="133.5786"/>
+<vertex x="195.9356" y="133.5786"/>
+<vertex x="196.1896" y="133.3246"/>
+<vertex x="196.1896" y="90.5002"/>
+<vertex x="200.2282" y="86.4616"/>
+<vertex x="225.6282" y="86.4616"/>
+<vertex x="225.6282" y="0.4572"/>
+<vertex x="225.7044" y="0.381"/>
+<vertex x="0.5842" y="0.381"/>
+<vertex x="0.4572" y="0.508"/>
+<vertex x="0.4572" y="133.3246"/>
+<vertex x="0.5842" y="133.4516"/>
 </polygon>
 </signal>
 <signal name="OUT_5V_M1_CW_INIB">

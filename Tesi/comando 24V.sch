@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -2285,7 +2285,7 @@ Created 2014-06-04, Karrer Zheng&lt;br&gt;
 <part name="U3" library="SCARA" deviceset="TMP37FT9Z" device=""/>
 <part name="FRAME5" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="R16" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="47k"/>
+<part name="R16" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="22K"/>
 <part name="R17" library="SCARA" deviceset="64WR5KLF" device="" value="TEMP_ADJ"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -2293,7 +2293,7 @@ Created 2014-06-04, Karrer Zheng&lt;br&gt;
 <part name="U4" library="SCARA" deviceset="SN74LS244N" device=""/>
 <part name="EN_IN_ENC" library="SCARA" deviceset="STRIP_3" device=""/>
 <part name="IC5" library="SCARA" deviceset="LM324" device="N" package3d_urn="urn:adsk.eagle:package:16407/2"/>
-<part name="R18" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="47k"/>
+<part name="R18" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="22K"/>
 <part name="R19" library="SCARA" deviceset="64WR5KLF" device="" value="VS_3V3_ADJ"/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -2321,7 +2321,7 @@ Created 2014-06-04, Karrer Zheng&lt;br&gt;
 <part name="J_LAMPADE" library="SCARA" deviceset="61201021621" device=""/>
 <part name="IC7" library="SCARA" deviceset="LM324" device="N" package3d_urn="urn:adsk.eagle:package:16407/2"/>
 <part name="IC11" library="SCARA" deviceset="LM324" device="N" package3d_urn="urn:adsk.eagle:package:16407/2"/>
-<part name="R14" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="47k"/>
+<part name="R14" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="22K"/>
 <part name="R15" library="SCARA" deviceset="64WR5KLF" device="" value="VS_5v_ADJ"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -2329,16 +2329,16 @@ Created 2014-06-04, Karrer Zheng&lt;br&gt;
 <part name="OUT_ARD_8-11_5V-24V" library="SCARA" deviceset="STRIP_3" device=""/>
 <part name="EN_M2_ENC_PHZ" library="SCARA" deviceset="STRIP_2" device=""/>
 <part name="EN_M1_ENC_PHZ" library="SCARA" deviceset="STRIP_2" device=""/>
-<part name="R20" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4k7"/>
-<part name="R21" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4k7"/>
-<part name="R22" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4k7"/>
-<part name="R23" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4k7"/>
-<part name="R24" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4k7"/>
+<part name="R20" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="3K"/>
+<part name="R21" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="3K"/>
+<part name="R22" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="3K"/>
+<part name="R23" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="3K"/>
+<part name="R24" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="3K"/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="IC12" library="SCARA" deviceset="LM324" device="N" package3d_urn="urn:adsk.eagle:package:16407/2"/>
 <part name="IC13" library="SCARA" deviceset="LM324" device="N" package3d_urn="urn:adsk.eagle:package:16407/2"/>
 <part name="IC14" library="SCARA" deviceset="LM324" device="N" package3d_urn="urn:adsk.eagle:package:16407/2"/>
-<part name="R25" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="47k"/>
+<part name="R25" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="22K"/>
 <part name="R26" library="SCARA" deviceset="64WR5KLF" device="" value="VS_ARD_ADJ"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -2347,7 +2347,7 @@ Created 2014-06-04, Karrer Zheng&lt;br&gt;
 <part name="IC15" library="SCARA" deviceset="LM324" device="N" package3d_urn="urn:adsk.eagle:package:16407/2"/>
 <part name="IC16" library="SCARA" deviceset="LM324" device="N" package3d_urn="urn:adsk.eagle:package:16407/2"/>
 <part name="IC17" library="SCARA" deviceset="LM324" device="N" package3d_urn="urn:adsk.eagle:package:16407/2"/>
-<part name="R27" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="47k"/>
+<part name="R27" library="SCARA" deviceset="R-EU_207/10" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="22K"/>
 <part name="R28" library="SCARA" deviceset="64WR5KLF" device="" value="VS_EDGE_ADJ"/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>

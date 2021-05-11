@@ -6,9 +6,9 @@
 #include "GlobalVar.h"
 
 bool calcAngles(const Point _point, bool _isAlpha);
-Point calcJoint1(float _alpha);
+bool calcJoint1(float _alpha, Point2D* _point);
 float calcJointSpeed(Velocity _velocity, Point _point, bool _isAlpha);
-MotorAngle calcAlpha(MotorAngle _beta, Line _targetLine, Point _previousPoint, Point _lastPoint, bool _isAlpha);
-MotorAngle calcBeta(MotorAngle _alpha, Line _targetLine, Point _previousPoint, Point _lastPoint, bool _isAlpha);
-Point calcPoint(float _alpha, float _beta);
+MotorAngle calcAlpha(float _beta, Line _targetLine, Point _previousPoint, Point _lastPoint, bool _isAlpha);
+MotorAngle calcBeta(float _alpha, Line _targetLine, Point _previousPoint, Point _lastPoint, bool _isAlpha);
+bool calcPoint(float _alpha, float _beta, Point* _point);
 #endif

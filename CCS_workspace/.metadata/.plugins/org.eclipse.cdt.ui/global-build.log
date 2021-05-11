@@ -17769,3 +17769,137 @@ Finished building target: "ProvaParser.out"
 gmake[1]: 'ProvaParser.out' is up to date.
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/ProvaOverload.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/ProvaOverload.d_raw" --obj_directory="source"  "../source/ProvaOverload.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/ProvaOverload.obj' failed
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 3: error #20: identifier "bool" is undefined
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 4: error #20: identifier "bool" is undefined
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 4: error #148: declaration is incompatible with "<error-type> copy(int, int *)" (declared at line 3)
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 5: warning #1-D: last line of file ends without a newline
+"../source/ProvaOverload.c", line 3: error #20: identifier "bool" is undefined
+"../source/ProvaOverload.c", line 3: error #148: declaration is incompatible with "<error-type> copy(float, float *)" (declared at line 4 of "D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h")
+"../source/ProvaOverload.c", line 6: error #20: identifier "true" is undefined
+"../source/ProvaOverload.c", line 9: error #20: identifier "bool" is undefined
+"../source/ProvaOverload.c", line 9: error #249: function "copy" has already been defined
+"../source/ProvaOverload.c", line 12: error #20: identifier "true" is undefined
+"../source/ProvaOverload.c", line 13: warning #1-D: last line of file ends without a newline
+9 errors detected in the compilation of "../source/ProvaOverload.c".
+gmake: *** [source/ProvaOverload.obj] Error 1
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_sys_main.obj' failed
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 4: error #148: declaration is incompatible with "bool copy(int, int *)" (declared at line 3)
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 5: warning #1-D: last line of file ends without a newline
+"../source/HL_sys_main.c", line 89: error #102: "c" has already been declared in the current scope
+"../source/HL_sys_main.c", line 94: warning #515-D: a value of type "int" cannot be assigned to an entity of type "Command *"
+"../source/HL_sys_main.c", line 85: warning #552-D: variable "c1" was set but never used
+"../source/HL_sys_main.c", line 87: warning #179-D: variable "a" was declared but never referenced
+"../source/HL_sys_main.c", line 87: warning #179-D: variable "b" was declared but never referenced
+"../source/HL_sys_main.c", line 88: warning #179-D: variable "c" was declared but never referenced
+"../source/HL_sys_main.c", line 88: warning #179-D: variable "d" was declared but never referenced
+2 errors detected in the compilation of "../source/HL_sys_main.c".
+gmake: *** [source/HL_sys_main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/HL_sys_main.obj' failed
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 4: error #148: declaration is incompatible with "bool copy(int, int *)" (declared at line 3)
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 5: warning #1-D: last line of file ends without a newline
+"../source/HL_sys_main.c", line 94: warning #515-D: a value of type "int" cannot be assigned to an entity of type "Command *"
+"../source/HL_sys_main.c", line 85: warning #552-D: variable "c1" was set but never used
+"../source/HL_sys_main.c", line 87: warning #179-D: variable "a" was declared but never referenced
+"../source/HL_sys_main.c", line 87: warning #179-D: variable "b" was declared but never referenced
+"../source/HL_sys_main.c", line 88: warning #179-D: variable "c" was declared but never referenced
+"../source/HL_sys_main.c", line 88: warning #179-D: variable "d" was declared but never referenced
+1 error detected in the compilation of "../source/HL_sys_main.c".
+gmake: *** [source/HL_sys_main.obj] Error 1
+Building file: "../source/ProvaOverload.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/ProvaOverload.d_raw" --obj_directory="source"  "../source/ProvaOverload.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/ProvaOverload.obj' failed
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 3: error #20: identifier "bool" is undefined
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 4: error #20: identifier "bool" is undefined
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 4: error #148: declaration is incompatible with "<error-type> copy(int, int *)" (declared at line 3)
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 5: warning #1-D: last line of file ends without a newline
+"../source/ProvaOverload.c", line 3: error #20: identifier "bool" is undefined
+"../source/ProvaOverload.c", line 3: error #148: declaration is incompatible with "<error-type> copy(float, float *)" (declared at line 4 of "D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h")
+"../source/ProvaOverload.c", line 6: error #20: identifier "true" is undefined
+"../source/ProvaOverload.c", line 9: error #20: identifier "bool" is undefined
+"../source/ProvaOverload.c", line 9: error #249: function "copy" has already been defined
+"../source/ProvaOverload.c", line 12: error #20: identifier "true" is undefined
+"../source/ProvaOverload.c", line 13: warning #1-D: last line of file ends without a newline
+9 errors detected in the compilation of "../source/ProvaOverload.c".
+gmake: *** [source/ProvaOverload.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/ProvaOverload.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/ProvaOverload.d_raw" --obj_directory="source"  "../source/ProvaOverload.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:9: recipe for target 'source/ProvaOverload.obj' failed
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 3: error #20: identifier "bool" is undefined
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 4: error #20: identifier "bool" is undefined
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 4: error #148: declaration is incompatible with "<error-type> copy(int, int *)" (declared at line 3)
+"D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h", line 5: warning #1-D: last line of file ends without a newline
+"../source/ProvaOverload.c", line 3: error #20: identifier "bool" is undefined
+"../source/ProvaOverload.c", line 3: error #148: declaration is incompatible with "<error-type> copy(float, float *)" (declared at line 4 of "D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include/ProvaOverload.h")
+"../source/ProvaOverload.c", line 6: error #20: identifier "true" is undefined
+"../source/ProvaOverload.c", line 9: error #20: identifier "bool" is undefined
+"../source/ProvaOverload.c", line 9: error #249: function "copy" has already been defined
+"../source/ProvaOverload.c", line 12: error #20: identifier "true" is undefined
+"../source/ProvaOverload.c", line 13: warning #1-D: last line of file ends without a newline
+9 errors detected in the compilation of "../source/ProvaOverload.c".
+gmake: *** [source/ProvaOverload.obj] Error 1
+Building file: "../source/HL_sys_main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser" --include_path="D:/desktop/Tesi-2021/CCS_workspace/ProvaParser/include" --include_path="C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"../source/HL_sys_main.c", line 92: warning #515-D: a value of type "int" cannot be assigned to an entity of type "Command *"
+"../source/HL_sys_main.c", line 84: warning #552-D: variable "c1" was set but never used
+Finished building: "../source/HL_sys_main.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ProvaParser ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building target: "ProvaParser.out"
+Invoking: Arm Linker
+"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -me -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"ProvaParser.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/lib" -i"C:/ti/ccs1020/ccs/tools/compiler/ti-cgt-arm_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ProvaParser_linkInfo.xml" --rom_model -o "ProvaParser.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_rti.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "./source/Library.obj" "./source/provaInline.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "ProvaParser.out"
+ 
+
+**** Build Finished ****
