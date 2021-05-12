@@ -7,17 +7,13 @@ bool nextPeriodA(Period* _period, ParameterLinearMovment _settings, bool _isNew)
   float omega;
   if (_isNew)
   {
-    pointCopy(_settings.firstPoint, &point);
+    point2DCopy(_settings.firstPoint, &point);
     calcAngles(point, true);
   }
-  if (_settings.isTrapezoidal)
-  {
-    velocity.module = getTrapezoidalSpeed(pointDistance(_settings.firstPoint, point), _settings.trapezoidal);
-  }
-  else
-  {
+
+
     velocity.module = getCicloydalSpeed(pointDistance(_settings.firstPoint, point), _settings.cicloydal);
-  }
+
   velocity.phase = atan2(_settings.lastPoint.y - _settings.firstPoint.y, _settings.lastPoint.x - _settings.firstPoint.x);
   omega = calcJointSpeed(velocity, point, true);
   if (omega > 0)
@@ -27,7 +23,7 @@ bool nextPeriodA(Period* _period, ParameterLinearMovment _settings, bool _isNew)
   {
     calcBeta(fitAngle(alpha.mainAngle - alpha.dAngle), _settings.targetLine, point, _settings.lastPoint, true);
   }
-  pointCopy(calcPoint(alpha.mainAngle, alpha.secondangle, &point));
+  calcPoint(alpha.mainAngle, alpha.secondAngle, &point);
   if (pointDistance(point, _settings.lastPoint) < tolerance)
   {
     _period->isPeriod = true;
@@ -47,17 +43,11 @@ bool nextPeriodB(Period* _period, ParameterLinearMovment _settings, bool _isNew)
   float omega;
   if (_isNew)
   {
-    pointCopy(_settings.firstPoint, &point);
+    point2DCopy(_settings.firstPoint, &point);
     calcAngles(point, false);
   }
-  if (_settings.isTrapezoidal)
-  {
-    velocity.module = getTrapezoidalSpeed(pointDistance(_settings.firstPoint, point), _settings.trapezoidal);
-  }
-  else
-  {
+
     velocity.module = getCicloydalSpeed(pointDistance(_settings.firstPoint, point), _settings.cicloydal);
-  }
   velocity.phase = atan2(_settings.lastPoint.y - _settings.firstPoint.y, _settings.lastPoint.x - _settings.firstPoint.x);
   omega = calcJointSpeed(velocity, point, false);
   if (omega > 0)
@@ -67,7 +57,7 @@ bool nextPeriodB(Period* _period, ParameterLinearMovment _settings, bool _isNew)
   {
     calcAlpha(fitAngle(beta.mainAngle - beta.dAngle), _settings.targetLine, point, _settings.lastPoint, false);
   }
-  pointCopy(calcPoint(beta.secondangle, beta.mainAngle, &point));
+  calcPoint(beta.secondAngle, beta.mainAngle, &point);
   if (pointDistance(point, _settings.lastPoint) < tolerance)
   {
     _period->isPeriod = true;
@@ -84,8 +74,8 @@ bool setMovment(Point2D _firstPoint, Point2D _lastPoint, Cicloydal _low, Paramet
 {
   if (isPoint2DEq(_firstPoint, _lastPoint))
     return false;
-  pointCopy(_firstPoint, &_settings->firstPoint);
-  pointCopy(_lastPoint, &_settings->lastPoint);
+  point2DCopy(_firstPoint, &_settings->firstPoint);
+  point2DCopy(_lastPoint, &_settings->lastPoint);
   copyCicloydal(_low, &_settings->cicloydal);
   setLine2Point(_firstPoint, _lastPoint, &_settings->targetLine);
   return true;

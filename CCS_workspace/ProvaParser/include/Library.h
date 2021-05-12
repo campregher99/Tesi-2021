@@ -3,7 +3,7 @@
 #include "math.h"
 #include "stdlib.h"
 #include "HL_sci.h"
-#include "provaExtern.h"
+#include "Point.h"
 #define ERROR 0
 #define CONTINUE 1
 #define LINEAR_MOV 11
@@ -25,25 +25,20 @@
 #define OK_LENGTH 3
 
 
-typedef struct
-{
-    double x;
-    double y;
-    double z;
-}Point;
+
 
 typedef struct
 {
-	char type;
-	Point point;
-	long int parameter;
+    char type;
+    Point point;
+    long int parameter;
 }Command;
 
 typedef struct 
 {
-	size_t size;
-	int index;
-	int* elements;
+    size_t size;
+    int index;
+    int* elements;
 }Queue;
 
 
@@ -51,7 +46,6 @@ Command* parser(char* _message);
 bool reader(Queue* _commands);
 bool pushQueue(Queue* _queue, int* _ptr);
 int* popQueue(Queue* _queue);
-void interpreter(Command* _commands, Queue* _period1, Queue* _period2, Queue* _period3);
 double stringToNumber(char* _string, unsigned int* _index);
 bool readMovment(char* _string, Command* _command, int* _index);
 bool readCondition(char* _string, Command* _command, int* _index);

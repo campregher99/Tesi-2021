@@ -5,7 +5,7 @@ float pointDistance(Point2D _point1, Point2D _point2)
   return sqrt(pow(_point1.x - _point2.x, 2) + pow(_point1.y - _point2.y, 2));
 }
 
-bool pointTransport(Point2D _startPoint, float _length, float _phase, Point* _endPoint)
+bool pointTransport(Point2D _startPoint, float _length, float _phase, Point2D* _endPoint)
 {
   if (fitAngle(_phase) == M_PI_2 || fitAngle(_phase) == 3 * M_PI_2)
   {
@@ -26,7 +26,7 @@ bool pointTransport(Point2D _startPoint, float _length, float _phase, Point* _en
 
 bool midPoint(Point2D _point1, Point2D _point2, Point2D* _midPoint)
 {
-  if (isPointEq(_point1, _point2))
+  if (isPoint2DEq(_point1, _point2))
     return false;
   _midPoint->x = (_point1.x + _point2.x) / 2;
   _midPoint->y = (_point1.y + _point2.y) / 2;

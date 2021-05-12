@@ -47,8 +47,9 @@
 #include "Library.h"
 #include "HL_sys_vim.h"
 #include "math.h"
-#include "provaExtern.h"
 #include "provaInline.h"
+#include "Scheduling.h"
+#include "GlobalVar.h"
 /* USER CODE END */
 
 /* Include Files */
@@ -70,27 +71,29 @@ bool isArrived;
 */
 
 /* USER CODE BEGIN (2) */
-int bello;
+int length1, length2, tolerance;
+MotorAngle alpha, beta;
+Point2D origin, actualPoin;
+float maxSpeed, maxAccel, minSpeed;
 /* USER CODE END */
 
 int main(void)
 {
 /* USER CODE BEGIN (3) */
     sciInit();
-
+    bool ciao;
     sciSendByte(sciREG1,'c');
-    bello = 10;
-    Queue commands;
+    Queue commands, periods1, periods2, periods3;
     Command *c1;
     queueInitializer(&commands,10,sizeof(Command));
-
+    queueInitializer(&periods1, 100, sizeof(unsigned int));
+    queueInitializer(&periods2, 100, sizeof(unsigned int));
+    queueInitializer(&periods1, 100, sizeof(unsigned int));
 
     while(1)
     {
-        if(reader(&commands))
-        {
-            c1=commands.elements[0];
-        }
+        reader(&commands);
+        interpreter(&commands, &periods1, &periods2, &periods3);
     }
 /* USER CODE END */
 

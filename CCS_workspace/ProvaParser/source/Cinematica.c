@@ -1,6 +1,6 @@
 #include "Cinematica.h"
 
-bool calcAngles(const Point _point, bool _isAlpha)
+bool calcAngles(const Point2D _point, bool _isAlpha)
 {
   if (_isAlpha)
   {
@@ -23,7 +23,7 @@ bool calcJoint1(float _alpha, Point2D* _point)
 
 float calcJointSpeed(Vector2D _velocity, Point2D _point, bool _isAlpha)
 {
-  Point point12, pointV2;
+  Point2D point12, pointV2;
   float q2, omega, phase;
   pointV2.x = _velocity.module * cos(_velocity.phase);
   pointV2.y = _velocity.module * sin(_velocity.phase);
@@ -56,7 +56,7 @@ bool calcAlpha(float _beta, Line _targetLine, Point2D _previousPoint, Point2D _l
   Line line;
   Point2D prevPointTrans, point1, point2, point;
   pointTransport(_previousPoint, length2, beta, &prevPointTrans);
-  setLineSlPo(prevPointTrans, _targetLine.slope);
+  setLineSlPo(prevPointTrans, _targetLine.slope, &line);
   point1.x = solve(1 + pow(line.slope, 2), 2 * line.slope * line.offset, pow(line.offset, 2) - pow(length1, 2), true);
   point1.y = line.slope * point1.x + line.offset;
   pointTransport(point1, length2, _beta, &point1);
@@ -82,11 +82,11 @@ bool calcAlpha(float _beta, Line _targetLine, Point2D _previousPoint, Point2D _l
   return calcAngles(point, _isAlpha);
 }
 
-bool calcBeta(float _alpha, Line _targetLine, Point _previousPoint, Point _lastPoint, bool _isAlpha)
+bool calcBeta(float _alpha, Line _targetLine, Point2D _previousPoint, Point2D _lastPoint, bool _isAlpha)
 {
-  Point joint1;
+  Point2D joint1;
   calcJoint1(_alpha, &joint1);
-  Point point1, point2, point;
+  Point2D point1, point2, point;
   point1.x = solveQE(1 + pow(_targetLine.slope, 2), -2 * joint1.x + 2 * (_targetLine.offset - joint1.y) * _targetLine.slope, pow(_targetLine.offset - joint1.y, 2) + pow(joint1.x, 2) - pow(length2, 2), true);
   point1.y = point1.x * _targetLine.slope + _targetLine.offset;
   point2.x = solve(1 + pow(_targetLine.slope, 2), -2 * joint1.x + 2 * (_targetLine.offset - joint1.y) * _targetLine.slope, pow(_targetLine.offset - joint1.y, 2) + pow(joint1.x, 2) - pow(length2, 2), false);

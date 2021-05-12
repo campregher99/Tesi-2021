@@ -4,9 +4,9 @@ bool setCicloydal(float _maxSpeed, float _distance, Cicloydal* _cicloydal)
 {
   if (_maxSpeed > maxSpeed)
     return false;
-  _cicloydal.a = (_maxSpeed - minSpeed) / 2;
-  _cicloydal.b = 2 * M_PI / _distance;
-  _cicloydal.distance = _distance;
+  _cicloydal->a = (_maxSpeed - minSpeed) / 2;
+  _cicloydal->b = 2 * M_PI / _distance;
+  _cicloydal->distance = _distance;
   return true;
 }
 

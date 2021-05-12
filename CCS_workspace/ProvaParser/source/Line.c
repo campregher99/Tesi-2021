@@ -2,7 +2,7 @@
 
 bool setLine2Point(Point2D _point1, Point2D _point2, Line* _line)
 {
-  if (isPointEq(_point1, _point2))
+  if (isPoint2DEq(_point1, _point2))
     return false;
   _line->slope = tan((_point1.y - _point2.y) / (_point1.x - _point2.x));
   _line->offset = _point1.y - _point1.x * _line->slope;
@@ -12,14 +12,14 @@ bool setLine2Point(Point2D _point1, Point2D _point2, Line* _line)
 bool setLineSlPo(Point2D _point, float _slope, Line* _line)
 {
   _line->slope = _slope;
-  _line->offset = _point1.y - _point1.x * _slope;
+  _line->offset = _point.y - _point.x * _slope;
   return true;
 }
 
 bool setOrtogonalLine(Point2D _point, Line _line, Line* _ortogonalLine)
 {
-  _line->slope = -1 / _ortogonalLine->slope;
-  _line->offset = _point1.y - _point1.x * _line->slope;
+  _ortogonalLine->slope= -1 / _line.slope ;
+  _ortogonalLine->offset= _point.y - _point.x * _ortogonalLine->slope;
   return true;
 }
 
@@ -32,7 +32,7 @@ bool isOnLine(Point2D _point, Line _line)
 
 bool isLineEq(Line _line1, Line _line2)
 {
-  if (micronRound(_line1.slope, 1000000) == micronRound(_line2.slope, 1000000) && micronRound(_line1.offset, 1000000) == micronRound(_line2.y, 1000000))
+  if (micronRound(_line1.slope, 1000000) == micronRound(_line2.slope, 1000000) && micronRound(_line1.offset, 1000000) == micronRound(_line2.offset, 1000000))
     return true;
   return false;
 }

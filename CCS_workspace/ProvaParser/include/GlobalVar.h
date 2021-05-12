@@ -2,6 +2,8 @@
 #define GLOBALVAR_H
 
 #include "Geometry.h"
+#include "LinearMovment.h"
+#include "stdlib.h"
 
 typedef struct
 {
@@ -20,7 +22,6 @@ typedef struct
 extern int length1, length2, tolerance;
 extern MotorAngle alpha, beta;
 extern Point2D origin, actualPoin;
-extern ParameterLinearMovment settingsLinMov;
 extern float maxSpeed, maxAccel, minSpeed;
 
 #endif

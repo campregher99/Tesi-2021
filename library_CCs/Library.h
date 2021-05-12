@@ -12,10 +12,11 @@
 #define JOINT 15
 #define PROG 16
 #define GRIPPER 17
-#define CH_STOP '!'
 #define NUL 92
 #define PAUSE 93
 #define IF 94
+#define V_MIN 174
+#define CH_STOP '!'
 
 #define ERROR_LENGTH 3
 
