@@ -3,6 +3,8 @@
 
 #include "Geometry.h"
 #include "math.h"
+#include "GlobalVar.h"
+#include <stdbool.h>
 
 typedef struct
 {

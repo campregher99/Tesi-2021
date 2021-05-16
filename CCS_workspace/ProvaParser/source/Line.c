@@ -25,7 +25,7 @@ bool setOrtogonalLine(Point2D _point, Line _line, Line* _ortogonalLine)
 
 bool isOnLine(Point2D _point, Line _line)
 {
-  if (micronRound(_point.y, 1000000) == micronRound(_line->slope * _point + _line->offset, 1000000))
+  if (micronRound(_point.y, 1000000) == micronRound(_line.slope * _point.x + _line.offset, 1000000))
     return true;
   return false;
 }

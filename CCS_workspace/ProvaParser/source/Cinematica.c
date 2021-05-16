@@ -12,12 +12,13 @@ bool calcAngles(const Point2D _point, bool _isAlpha)
     beta.secondAngle = calcPhase(_point) + acos(( pow(length1, 2) + pow( calcModule(_point), 2) - pow( length2, 2)) / ( 2 * length1 * calcModule(_point)));
     beta.mainAngle = acos((pow(length1, 2) - pow(calcModule(_point), 2) + pow(length2, 2)) / (2 * length1 * length2)) + beta.secondAngle - M_PI;;
   }
+  return true;
 }
 
 bool calcJoint1(float _alpha, Point2D* _point)
 {
-  _point->x = LENGTH1 * cos(_alpha);
-  _point->y = LENGTH1 * sin(_alpha);
+  _point->x = length1 * cos(_alpha);
+  _point->y = length1 * sin(_alpha);
   return true;
 }
 
@@ -34,7 +35,7 @@ float calcJointSpeed(Vector2D _velocity, Point2D _point, bool _isAlpha)
     point12.y = tan(alpha.mainAngle + M_PI_2) * point12.x;
     omega = pointDistance(origin, point12) / length1;
     phase = atan2(point12.y, point12.x);
-    if (roundMicron(alpha.mainAngle + M_PI_2) != roundMicron(phase))
+    if (micronRound(alpha.mainAngle + M_PI_2,1000000) != micronRound(phase,1000000))
       omega *= -1;
   }
   else
@@ -44,7 +45,7 @@ float calcJointSpeed(Vector2D _velocity, Point2D _point, bool _isAlpha)
     point12.y = tan(beta.secondAngle + M_PI_2) * point12.x;
     omega = pointDistance(point12, pointV2) / length2;
     phase = atan2(pointV2.y - point12.y, pointV2.x - point12.x);
-    if (roundMicron(alpha.mainAngle + M_PI_2) != roundMicron(phase))
+    if (micronRound(alpha.mainAngle + M_PI_2,1000000) != micronRound(phase,1000000))
       omega *= -1;
   }
   return omega;

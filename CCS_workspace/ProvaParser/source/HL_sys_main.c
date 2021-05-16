@@ -73,7 +73,7 @@ bool isArrived;
 /* USER CODE BEGIN (2) */
 int length1, length2, tolerance;
 MotorAngle alpha, beta;
-Point2D origin, actualPoin;
+Point2D origin, actualPoint;
 float maxSpeed, maxAccel, minSpeed;
 /* USER CODE END */
 
@@ -81,10 +81,8 @@ int main(void)
 {
 /* USER CODE BEGIN (3) */
     sciInit();
-    bool ciao;
     sciSendByte(sciREG1,'c');
     Queue commands, periods1, periods2, periods3;
-    Command *c1;
     queueInitializer(&commands,10,sizeof(Command));
     queueInitializer(&periods1, 100, sizeof(unsigned int));
     queueInitializer(&periods2, 100, sizeof(unsigned int));

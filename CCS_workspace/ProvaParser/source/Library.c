@@ -362,7 +362,6 @@ bool reader(Queue* _commands)
   else if(isRead&&!isParsed)
   {
     command=parser(message);
-    int c = (int)command->type;
     switch((int)command->type)
     {
       case ERROR:

@@ -4,7 +4,7 @@ bool interpreter(Queue* _cmds, Queue* _queue1, Queue* _queue2, Queue* _queue3)
 {
     Command* _cmd;
 
-	if(_cmds->index=-1)
+	if(_cmds->index==-1)
 		return false;
 	_cmd=popQueue(_cmds);
 	Command cmd;
@@ -49,6 +49,7 @@ bool interpreter(Queue* _cmds, Queue* _queue1, Queue* _queue2, Queue* _queue3)
 		default:
 		return false;
 	}
+	return true;
 }
 
 bool startCalcLoop(Command _cmd, Queue* _queue1, Queue* _queue2)

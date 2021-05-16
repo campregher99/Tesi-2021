@@ -3,6 +3,8 @@
 
 #include "math.h"
 #include "Geometry.h"
+#include "GlobalVar.h"
+#include <stdbool.h>
 
 typedef struct
 {
@@ -15,7 +17,7 @@ typedef struct
 {
   float x;
   float y;
-} Point2D;
+}Point2D;
 
 float pointDistance(Point2D _point1, Point2D _point2);
 bool pointTransport(Point2D _startPoint, float _length, float _phase, Point2D* _endPoint);

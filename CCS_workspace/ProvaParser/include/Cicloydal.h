@@ -1,6 +1,10 @@
 #ifndef CICLOYDAL_H
 #define CICLOYDAL_H
 
+#include "math.h"
+#include "GlobalVar.h"
+#include <stdbool.h>
+
 typedef struct
 {
 	float a;
