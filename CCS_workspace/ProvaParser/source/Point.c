@@ -50,8 +50,8 @@ bool point2DCopy(Point2D _point1, Point2D* _point2)
 
 bool isPointEq(Point _point1, Point _point2)
 {
-  if (micronRound(_point1.x, 1000000) == micronRound(_point2.x, 1000000) && micronRound(_point1.y, 1000000) == micronRound(_point2.y, 1000000) && micronRound(_point1.z, 1000000) == micronRound(_point2.z, 1000000))
-    return true;
+  /*if (micronRound(_point1.x, 1000000) == micronRound(_point2.x, 1000000) && micronRound(_point1.y, 1000000) == micronRound(_point2.y, 1000000) && micronRound(_point1.z, 1000000) == micronRound(_point2.z, 1000000))
+    return true;*/
   return false;
 }
 

@@ -2,8 +2,6 @@
 #define POINT_H
 
 #include "math.h"
-#include "Geometry.h"
-#include "GlobalVar.h"
 #include <stdbool.h>
 
 typedef struct

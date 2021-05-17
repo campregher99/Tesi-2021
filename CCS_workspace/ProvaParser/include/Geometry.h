@@ -1,6 +1,9 @@
 #ifndef GEOMETRY_H
 #define GEOMETRY_H
 
+#include "Geometry.h"
+#include "GlobalVar.h"
+#include <stdbool.h>
 #include "math.h"
 #include "Point.h"
 
