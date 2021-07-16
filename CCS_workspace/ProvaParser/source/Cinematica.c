@@ -58,10 +58,10 @@ bool calcAlpha(float _beta, Line _targetLine, Point2D _previousPoint, Point2D _l
   Point2D prevPointTrans, point1, point2, point;
   pointTransport(_previousPoint, length2, beta, &prevPointTrans);
   setLineSlPo(prevPointTrans, _targetLine.slope, &line);
-  point1.x = solve(1 + pow(line.slope, 2), 2 * line.slope * line.offset, pow(line.offset, 2) - pow(length1, 2), true);
+  point1.x = solveQE(1 + pow(line.slope, 2), 2 * line.slope * line.offset, pow(line.offset, 2) - pow(length1, 2), true);
   point1.y = line.slope * point1.x + line.offset;
   pointTransport(point1, length2, _beta, &point1);
-  point2.x = solve(1 + pow(line.slope, 2), 2 * line.slope * line.offset, pow(line.offset, 2) - pow(length1, 2), false);
+  point2.x = solveQE(1 + pow(line.slope, 2), 2 * line.slope * line.offset, pow(line.offset, 2) - pow(length1, 2), false);
   point2.y = line.slope * point2.x + line.offset;
   pointTransport(point2, length2, _beta, &point2);
   if (pointDistance(_previousPoint, _lastPoint) < pointDistance(_lastPoint, point1) || pointDistance(_previousPoint, _lastPoint) < pointDistance(_previousPoint, point1))
@@ -90,7 +90,7 @@ bool calcBeta(float _alpha, Line _targetLine, Point2D _previousPoint, Point2D _l
   Point2D point1, point2, point;
   point1.x = solveQE(1 + pow(_targetLine.slope, 2), -2 * joint1.x + 2 * (_targetLine.offset - joint1.y) * _targetLine.slope, pow(_targetLine.offset - joint1.y, 2) + pow(joint1.x, 2) - pow(length2, 2), true);
   point1.y = point1.x * _targetLine.slope + _targetLine.offset;
-  point2.x = solve(1 + pow(_targetLine.slope, 2), -2 * joint1.x + 2 * (_targetLine.offset - joint1.y) * _targetLine.slope, pow(_targetLine.offset - joint1.y, 2) + pow(joint1.x, 2) - pow(length2, 2), false);
+  point2.x = solveQE(1 + pow(_targetLine.slope, 2), -2 * joint1.x + 2 * (_targetLine.offset - joint1.y) * _targetLine.slope, pow(_targetLine.offset - joint1.y, 2) + pow(joint1.x, 2) - pow(length2, 2), false);
   point1.y = point1.x * _targetLine.slope + _targetLine.offset;
   if (pointDistance(_previousPoint, _lastPoint) < pointDistance(_lastPoint, point1) || pointDistance(_previousPoint, _lastPoint) < pointDistance(_previousPoint, point1))
   {

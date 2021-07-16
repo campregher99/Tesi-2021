@@ -189,6 +189,7 @@ Command* parser(char* _message)
     new = (Command*)malloc(sizeof(Command));
     new->type=ERROR;
     step =0;
+    i=0;
     return new;
   }
   if(isLast)
@@ -202,6 +203,7 @@ Command* parser(char* _message)
     else
     {
       step = 0;
+      i=0;
     }
     }else{
         new = (Command*)malloc(sizeof(Command));

@@ -70,7 +70,7 @@ bool nextPeriodB(Period* _period, ParameterLinearMovment _settings, bool _isNew)
   return true;
 }
 
-bool setMovment(Point2D _firstPoint, Point2D _lastPoint, Cicloydal _low, ParameterLinearMovment* _settings)
+bool setLinMovment(Point2D _firstPoint, Point2D _lastPoint, Cicloydal _low, ParameterLinearMovment* _settings)
 {
   if (isPoint2DEq(_firstPoint, _lastPoint))
     return false;
